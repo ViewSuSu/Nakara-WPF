@@ -5,14 +5,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	  <LangVersion>latest</LangVersion>
+	  <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\金砖.png" />
+    <None Remove="Images\联系人.png" />
+    <None Remove="Images\邮箱.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Images\金砖.png" />
+    <Resource Include="Images\联系人.png" />
+    <Resource Include="Images\邮箱.png" />
+    <Resource Include="Images\GoldBrick.png" />
   </ItemGroup>
 
 </Project>

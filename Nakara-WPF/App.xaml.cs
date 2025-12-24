@@ -1,6 +1,5 @@
-﻿using System.Configuration;
-using System.Data;
-using System.Windows;
+﻿using System.Windows;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Nakara_WPF
 {
@@ -9,9 +8,24 @@ namespace Nakara_WPF
     /// </summary>
     public partial class App : Application
     {
+        internal static IServiceProvider ServiceProvider { get; private set; }
+
         protected override void OnStartup(StartupEventArgs e)
         {
-            base.OnStartup(e);
+            ServiceProvider = ConfigureServices();
+            MainWindow = ServiceProvider.GetRequiredService<MainWindow>();
+            MainWindow.Show();
+        }
+
+        private static IServiceProvider ConfigureServices()
+        {
+            var services = new ServiceCollection();
+            services.AddSingleton<MainWindowViewModel>();
+            services.AddSingleton(sp => new MainWindow
+            {
+                DataContext = sp.GetRequiredService<MainWindowViewModel>(),
+            });
+            return services.BuildServiceProvider();
         }
     }
 }

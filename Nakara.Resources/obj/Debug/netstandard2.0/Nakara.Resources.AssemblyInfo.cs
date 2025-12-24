@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nakara.Resources")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cc6b015221347b5530a43916e1ca8ee40b86201")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+091988e2b5c0bba64b14c93561cc8c7030d84110")]
 [assembly: System.Reflection.AssemblyProductAttribute("Nakara.Resources")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Nakara.Resources")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
