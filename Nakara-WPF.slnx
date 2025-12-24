@@ -1,4 +1,6 @@
 <Solution>
-  <Project Path="ConsoleApp1/ConsoleApp1.csproj" />
-  <Project Path="WpfApp1/WpfApp1.csproj" />
+  <Project Path="Nakara-WPF/Nakara.csproj" />
+  <Project Path="Nakara.Controls/Nakara.Controls.csproj" Id="c291274c-ed86-4bc1-8f5c-76a8ea05882b" />
+  <Project Path="Nakara.Core/Nakara.Core.csproj" Id="6bed86ae-eecd-43db-b525-d7632a7cfa3f" />
+  <Project Path="Nakara.Resources/Nakara.Resources.csproj" Id="a9fbf120-908d-4ed4-ae6f-7e0ffc27e099" />
 </Solution>

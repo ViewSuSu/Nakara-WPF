@@ -1,0 +1,9 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Nakara.Controls">
+    <Style x:Key="GoldBrick" TargetType="controls:IconTextBlockCustomControl">
+        <Setter Property="Icon" Value="pack://application:,,,/Nakara.Resources;component/Images/金砖.png" />
+        <Setter Property="Text" Value="金砖" />
+    </Style>
+</ResourceDictionary>
