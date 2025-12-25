@@ -31,7 +31,6 @@
                 <ColumnDefinition Width="1.5*" />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <personalinformation:PersonalInformationUserControl Grid.Column="0" />
             <commonfunction:CommonFunctionUserControl Grid.Column="1" />
             <wealth:WealthUserControl Grid.Column="2" />
             <social:SocialUserControl Grid.Column="3" />
@@ -97,6 +96,12 @@
                 BorderBrush="White"
                 BorderThickness="1" />
         </Grid>
+        <personalinformation:PersonalInformationUserControl
+            Grid.Row="1"
+            Width="200"
+            Height="30"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom" />
         <ContentControl Grid.Row="1" prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.MainContentRegion}" />
     </Grid>
 </Window>

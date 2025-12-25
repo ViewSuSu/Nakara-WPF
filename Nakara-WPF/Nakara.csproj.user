@@ -2,6 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Modules\ModeSelection\ModeSelectionUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Modules\Social\FriendList\Views\FriendListUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
