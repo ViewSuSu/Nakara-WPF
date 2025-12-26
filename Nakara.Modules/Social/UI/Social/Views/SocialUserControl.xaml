@@ -11,7 +11,14 @@
     d:DesignHeight="100"
     d:DesignWidth="300"
     mc:Ignorable="d">
-    <UniformGrid Grid.Column="3" Columns="3">
+    <UniformGrid Grid.Column="3" Columns="4">
+        <Image Style="{StaticResource Email}">
+            <b:Interaction.Triggers>
+                <b:EventTrigger EventName="MouseLeftButtonDown">
+                    <b:InvokeCommandAction />
+                </b:EventTrigger>
+            </b:Interaction.Triggers>
+        </Image>
         <Image Style="{StaticResource Email}">
             <b:Interaction.Triggers>
                 <b:EventTrigger EventName="MouseLeftButtonDown">

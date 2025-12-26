@@ -6,7 +6,5 @@ using System.Threading.Tasks;
 
 namespace Nakara.Modules.PersonalInformation.UI.MatchRecord.ViewModels
 {
-    internal class MatchRecordUserControlViewModel
-    {
-    }
+    internal class MatchRecordUserControlViewModel { }
 }

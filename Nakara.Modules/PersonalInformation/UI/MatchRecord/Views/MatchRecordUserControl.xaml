@@ -7,7 +7,6 @@
     xmlns:local="clr-namespace:Nakara.Modules.PersonalInformation.UI.MatchRecord.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodels="clr-namespace:Nakara.Modules.Wealth.UI.ViewModels"
-    d:DataContext="{d:DesignInstance Type=viewmodels:WealthUserControlViewModel}"
     d:DesignHeight="450"
     d:DesignWidth="800"
     mc:Ignorable="d">
