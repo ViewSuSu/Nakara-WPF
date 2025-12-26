@@ -18,7 +18,7 @@ namespace Nakara.Modules.CommonFunction.UI.HeroList.Views
     /// <summary>
     /// HeroListUserControl.xaml 的交互逻辑
     /// </summary>
-    public partial class HeroListUserControl : UserControl
+    public partial class HeroListUserControl: UserControlBase
     {
         public HeroListUserControl()
         {

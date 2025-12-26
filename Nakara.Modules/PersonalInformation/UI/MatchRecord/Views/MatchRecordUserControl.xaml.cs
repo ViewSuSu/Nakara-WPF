@@ -18,7 +18,7 @@ namespace Nakara.Modules.PersonalInformation.UI.MatchRecord.Views
     /// <summary>
     /// MatchRecordUserControl.xaml 的交互逻辑
     /// </summary>
-    public partial class MatchRecordUserControl : UserControl
+    public partial class MatchRecordUserControl: UserControlBase
     {
         public MatchRecordUserControl()
         {

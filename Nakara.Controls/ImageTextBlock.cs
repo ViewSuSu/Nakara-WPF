@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 
 namespace Nakara.Controls
@@ -45,5 +46,34 @@ namespace Nakara.Controls
             typeof(ImageTextBlock),
             new PropertyMetadata(string.Empty)
         );
+
+        /// <summary>
+        /// 鼠标左键点击命令
+        /// </summary>
+        public ICommand Command
+        {
+            get => (ICommand)GetValue(ClickCommandProperty);
+            set => SetValue(ClickCommandProperty, value);
+        }
+
+        public static readonly DependencyProperty ClickCommandProperty =
+            DependencyProperty.Register(
+                nameof(Command),
+                typeof(ICommand),
+                typeof(ImageTextBlock),
+                new PropertyMetadata(null)
+            );
+
+        /// <summary>
+        /// 鼠标左键事件绑定
+        /// </summary>
+        protected override void OnMouseLeftButtonUp(MouseButtonEventArgs e)
+        {
+            base.OnMouseLeftButtonUp(e);
+            if (Command != null && Command.CanExecute(null))
+            {
+                Command.Execute(null);
+            }
+        }
     }
 }

@@ -1,11 +1,12 @@
 ﻿using System.Windows.Controls;
+using Nakara.Framework.Core.Bases;
 
 namespace Nakara.Modules.Social.UI.Email.Views
 {
     /// <summary>
     /// EmailUserControl.xaml 的交互逻辑
     /// </summary>
-    internal partial class EmailUserControl : UserControl
+    internal partial class EmailUserControl : UserControlBase
     {
         public EmailUserControl()
         {

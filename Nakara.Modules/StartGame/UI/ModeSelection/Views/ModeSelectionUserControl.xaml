@@ -1,10 +1,13 @@
-﻿<UserControl
+﻿<base:UserControlBase
     x:Class="Nakara.Modules.StartGame.UI.ModeSelection.Views.ModeSelectionUserControl"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:base="clr-namespace:Nakara.Framework.Core.Bases;assembly=Nakara.Framework"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="clr-namespace:Nakara.Modules.StartGame.UI.ModeSelection.ViewModels"
     d:Background="Gray"
+    d:DataContext="{d:DesignInstance Type=viewmodels:ModeSelectionUserControlViewModel}"
     d:DesignHeight="720"
     d:DesignWidth="1080"
     x:ClassModifier="internal"
@@ -502,4 +505,4 @@
             VerticalAlignment="Bottom"
             Command="{Binding CloseCommand}" />
     </Grid>
-</UserControl>
+</base:UserControlBase>
