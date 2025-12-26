@@ -1,4 +1,6 @@
-﻿namespace Nakara.Modules.StartGame.UI.StartGame.ViewModels
+﻿using Nakara.Modules.StartGame.UI.ModeSelection.Views;
+
+namespace Nakara.Modules.StartGame.UI.StartGame.ViewModels
 {
     internal class StartGameUserControlViewModel : BindableBase
     {
@@ -9,7 +11,8 @@
             this.eventAggregator = eventAggregator;
             StartGameCommand = new DelegateCommand(() =>
             {
-                this.eventAggregator.GetEvent<OpenModeSelectionEvent>().Publish();
+                this.eventAggregator.GetEvent<LoadHomePageRegionEvent>()
+                    .Publish(nameof(ModeSelectionUserControl));
             });
         }
 

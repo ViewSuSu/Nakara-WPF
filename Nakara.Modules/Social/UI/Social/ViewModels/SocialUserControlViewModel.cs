@@ -1,4 +1,6 @@
-﻿namespace Nakara.Modules.Social.UI.Social.ViewModels
+﻿using Nakara.Modules.Social.UI.FriendList.Views;
+
+namespace Nakara.Modules.Social.UI.Social.ViewModels
 {
     public class SocialUserControlViewModel : BindableBase
     {
@@ -15,7 +17,9 @@
 
         private void OnOpenFriendList()
         {
-            _eventAggregator.GetEvent<OpenFriendPanelEvent>().Publish();
+            _eventAggregator
+                .GetEvent<LoadSidePanelRegionEvent>()
+                .Publish(nameof(FriendListUserControl));
         }
     }
 }

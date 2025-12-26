@@ -1,5 +1,5 @@
-﻿using Nakara.Modules.Social.UI.FriendList.Views;
-using Nakara.Modules.StartGame.UI.ModeSelection.Views;
+﻿using Nakara.Shared.Consts;
+using Nakara.Shared.Evens;
 
 namespace Nakara.App.Shell
 {
@@ -13,23 +13,18 @@ namespace Nakara.App.Shell
             _eventAggregator = eventAggregator;
             _regionManager = regionManager;
 
-            // 订阅打开好友面板事件
             _eventAggregator
-                .GetEvent<OpenFriendPanelEvent>()
+                .GetEvent<LoadSidePanelRegionEvent>()
                 .Subscribe(
-                    () =>
+                    (viewName) =>
                     {
-                        _regionManager.RequestNavigate(
-                            GlobalConstant.SidePanelRegion,
-                            nameof(FriendListUserControl)
-                        );
+                        _regionManager.RequestNavigate(GlobalConstant.SidePanelRegion, viewName);
                     },
                     ThreadOption.UIThread
                 );
 
-            // 订阅关闭好友面板事件
             _eventAggregator
-                .GetEvent<CloseFriendPanelEvent>()
+                .GetEvent<RemoveSidePanelRegionEvent>()
                 .Subscribe(
                     () =>
                     {
@@ -38,19 +33,18 @@ namespace Nakara.App.Shell
                     ThreadOption.UIThread
                 );
 
-            //订阅打开模式选择事件
             _eventAggregator
-                .GetEvent<OpenModeSelectionEvent>()
-                .Subscribe(() =>
-                {
-                    _regionManager.RequestNavigate(
-                        GlobalConstant.HomePageRegion,
-                        nameof(ModeSelectionUserControl)
-                    );
-                });
-            //订阅关闭模式选择事件
+                .GetEvent<LoadHomePageRegionEvent>()
+                .Subscribe(
+                    (viewName) =>
+                    {
+                        _regionManager.RequestNavigate(GlobalConstant.HomePageRegion, viewName);
+                    },
+                    ThreadOption.UIThread
+                );
+
             _eventAggregator
-                .GetEvent<CloseModeSelectionEvent>()
+                .GetEvent<RemoveHomePageRegionEvent>()
                 .Subscribe(
                     () =>
                     {

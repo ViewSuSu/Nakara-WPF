@@ -7,6 +7,7 @@
     d:Background="Gray"
     d:DesignHeight="720"
     d:DesignWidth="1080"
+    x:ClassModifier="internal"
     mc:Ignorable="d">
     <!--  核心Grid分两行：第一行放标题，第二行放TabControl  -->
     <Grid Background="#1A233A">

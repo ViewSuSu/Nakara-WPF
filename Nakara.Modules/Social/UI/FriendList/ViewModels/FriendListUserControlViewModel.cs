@@ -21,7 +21,7 @@ namespace Nakara.Modules.Social.UI.FriendList.ViewModels
 
             CloseCommand = new DelegateCommand(() =>
             {
-                _eventAggregator.GetEvent<CloseFriendPanelEvent>().Publish();
+                _eventAggregator.GetEvent<RemoveSidePanelRegionEvent>().Publish();
             });
 
             RefreshCommand = new DelegateCommand(async () => await LoadDataAsync());

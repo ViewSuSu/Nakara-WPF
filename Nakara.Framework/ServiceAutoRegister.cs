@@ -16,9 +16,11 @@ namespace Nakara.Framework
         /// 注册核心层的服务
         /// </summary>
         /// <param name="containerRegistry"></param>
-        public static void RegisterCoreServices(this IContainerRegistry containerRegistry)
+        public static IContainerRegistry RegisterCoreServices(
+            this IContainerRegistry containerRegistry
+        )
         {
-            containerRegistry.RegisterComponents(assembly);
+            return containerRegistry.RegisterComponents(assembly);
         }
     }
 }

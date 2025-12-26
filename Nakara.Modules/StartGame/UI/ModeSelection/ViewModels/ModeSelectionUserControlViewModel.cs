@@ -14,7 +14,7 @@
             this.serverInformation = serverInformation;
             CloseCommand = new DelegateCommand(() =>
             {
-                this.eventAggregator.GetEvent<CloseModeSelectionEvent>().Publish();
+                this.eventAggregator.GetEvent<RemoveHomePageRegionEvent>().Publish();
             });
         }
 

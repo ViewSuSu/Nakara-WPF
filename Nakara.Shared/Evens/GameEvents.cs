@@ -1,22 +1,10 @@
 ﻿namespace Nakara.Shared.Evens
 {
-    /// <summary>
-    /// 请求打开好友面板事件
-    /// </summary>
-    public class OpenFriendPanelEvent : PubSubEvent { }
+    public class LoadSidePanelRegionEvent : PubSubEvent<string> { }
 
-    /// <summary>
-    /// 请求关闭好友面板事件
-    /// </summary>
-    public class CloseFriendPanelEvent : PubSubEvent { }
+    public class RemoveSidePanelRegionEvent : PubSubEvent { }
 
-    /// <summary>
-    /// 打开模式选择面板事件
-    /// </summary>
-    public class OpenModeSelectionEvent : PubSubEvent { }
+    public class LoadHomePageRegionEvent : PubSubEvent<string> { }
 
-    /// <summary>
-    /// 关闭模式选择面板事件
-    /// </summary>
-    public class CloseModeSelectionEvent : PubSubEvent { }
+    public class RemoveHomePageRegionEvent : PubSubEvent { }
 }
