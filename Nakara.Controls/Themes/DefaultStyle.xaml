@@ -14,6 +14,18 @@
         <Setter Property="Stretch" Value="Uniform" />
     </Style>
     <Style
+        x:Key="Music"
+        BasedOn="{StaticResource BaseImageSize}"
+        TargetType="Image">
+        <Setter Property="Source" Value="/Nakara.Controls;component/Themes/Images/音乐.png" />
+    </Style>
+    <Style
+        x:Key="Tutorial"
+        BasedOn="{StaticResource BaseImageSize}"
+        TargetType="Image">
+        <Setter Property="Source" Value="/Nakara.Controls;component/Themes/Images/教程.png" />
+    </Style>
+    <Style
         x:Key="Email"
         BasedOn="{StaticResource BaseImageSize}"
         TargetType="Image">
@@ -36,5 +48,64 @@
         BasedOn="{StaticResource BaseImageSize}"
         TargetType="Image">
         <Setter Property="Source" Value="/Nakara.Controls;component/Themes/Images/设置.png" />
+    </Style>
+
+    <Style x:Key="BattleEncyclopediaButtonStyle" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border
+                            x:Name="BtnBackground"
+                            Background="#8B6914"
+                            BorderBrush="#A07817"
+                            BorderThickness="2"
+                            CornerRadius="4">
+                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                                <Path
+                                    Width="10"
+                                    Height="10"
+                                    Margin="5,0"
+                                    HorizontalAlignment="Left"
+                                    Data="M10,0 L0,5 L10,10 Z"
+                                    Fill="White" />
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontFamily="微软雅黑"
+                                    FontSize="14"
+                                    Foreground="White"
+                                    Text="{TemplateBinding Content}" />
+                                <Path
+                                    Width="10"
+                                    Height="10"
+                                    Margin="5,0"
+                                    HorizontalAlignment="Right"
+                                    Data="M0,0 L10,5 L0,10 Z"
+                                    Fill="White" />
+                            </Grid>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="BtnBackground" Property="Background" Value="#A07817" />
+                            <Setter TargetName="BtnBackground" Property="BorderBrush" Value="#C09819" />
+                            <Setter TargetName="BtnBackground" Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect
+                                        BlurRadius="3"
+                                        Opacity="0.5"
+                                        ShadowDepth="0" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="BtnBackground" Property="Background" Value="#6B5A12" />
+                            <Setter TargetName="BtnBackground" Property="BorderBrush" Value="#8B7814" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
 </ResourceDictionary>

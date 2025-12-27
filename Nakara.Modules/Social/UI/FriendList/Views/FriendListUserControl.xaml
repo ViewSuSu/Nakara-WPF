@@ -5,10 +5,12 @@
     xmlns:base="clr-namespace:Nakara.Framework.Core.Bases;assembly=Nakara.Framework"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="clr-namespace:Nakara.Modules.Social.UI.FriendList.ViewModels"
     d:Background="Gray"
+    d:DataContext="{d:DesignInstance Type=viewmodels:FriendListUserControlViewModel}"
     d:DesignHeight="600"
     d:DesignWidth="300"
     x:ClassModifier="internal"
     mc:Ignorable="d">
-    <Grid Background="White" />
+    <Grid />
 </base:UserControlBase>

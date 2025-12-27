@@ -56,7 +56,13 @@
     <Compile Update="PersonalInformation\UI\TippingRecord\Views\TippingRecordPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Social\UI\Music\Views\MusicUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Social\UI\Setting\Views\SettingUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tutorial\UI\Views\TutorialUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="StartGame\UI\EventCenter\Views\EventCenterUserControl.xaml.cs">

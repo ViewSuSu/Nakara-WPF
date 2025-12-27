@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
-using Nakara.Modules.Social.Domain.FriendList;
 using Nakara.Modules.Social.Domain.FriendList.Interfaces;
+using Nakara.Modules.Social.UI.FriendList.Models;
 
 namespace Nakara.Modules.Social.UI.FriendList.ViewModels
 {

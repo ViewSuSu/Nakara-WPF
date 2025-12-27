@@ -18,6 +18,7 @@ namespace Nakara.App.Shell
                 .Subscribe(
                     (viewName) =>
                     {
+                        RevemoveRegionByName(GlobalConstant.SidePanelRegion);
                         _regionManager.RequestNavigate(GlobalConstant.SidePanelRegion, viewName);
                     },
                     ThreadOption.UIThread
@@ -38,6 +39,7 @@ namespace Nakara.App.Shell
                 .Subscribe(
                     (viewName) =>
                     {
+                        RevemoveRegionByName(GlobalConstant.HomePageRegion);
                         _regionManager.RequestNavigate(GlobalConstant.HomePageRegion, viewName);
                     },
                     ThreadOption.UIThread
@@ -58,6 +60,7 @@ namespace Nakara.App.Shell
                 .Subscribe(
                     (viewName) =>
                     {
+                        RevemoveRegionByName(GlobalConstant.MainContentRegion);
                         _regionManager.RequestNavigate(GlobalConstant.MainContentRegion, viewName);
                     },
                     ThreadOption.UIThread

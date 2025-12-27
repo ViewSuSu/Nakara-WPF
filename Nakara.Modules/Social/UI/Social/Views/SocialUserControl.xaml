@@ -7,36 +7,45 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Nakara.Modules.Social.UI.Social.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="clr-namespace:Nakara.Modules.Social.UI.Social.ViewModels"
     d:Background="Gray"
+    d:DataContext="{d:DesignInstance Type=viewmodels:SocialUserControlViewModel}"
     d:DesignHeight="100"
     d:DesignWidth="300"
     mc:Ignorable="d">
-    <UniformGrid Grid.Column="3" Columns="4">
-        <Image Style="{StaticResource Email}">
+    <UniformGrid Grid.Column="3" Columns="5">
+        <Image Style="{StaticResource Music}">
             <b:Interaction.Triggers>
                 <b:EventTrigger EventName="MouseLeftButtonDown">
-                    <b:InvokeCommandAction />
+                    <b:InvokeCommandAction Command="{Binding NavigateToMusicCommand}" />
+                </b:EventTrigger>
+            </b:Interaction.Triggers>
+        </Image>
+        <Image Style="{StaticResource Tutorial}">
+            <b:Interaction.Triggers>
+                <b:EventTrigger EventName="MouseLeftButtonDown">
+                    <b:InvokeCommandAction Command="{Binding NavigateToTutorialCommand}" />
                 </b:EventTrigger>
             </b:Interaction.Triggers>
         </Image>
         <Image Style="{StaticResource Email}">
             <b:Interaction.Triggers>
                 <b:EventTrigger EventName="MouseLeftButtonDown">
-                    <b:InvokeCommandAction />
+                    <b:InvokeCommandAction Command="{Binding NavigateToEmailCommand}" />
                 </b:EventTrigger>
             </b:Interaction.Triggers>
         </Image>
         <Image Style="{StaticResource Contact}">
             <b:Interaction.Triggers>
                 <b:EventTrigger EventName="MouseLeftButtonDown">
-                    <b:InvokeCommandAction Command="{Binding OpenFrendListCommand}" />
+                    <b:InvokeCommandAction Command="{Binding NavigateToFrendListCommand}" />
                 </b:EventTrigger>
             </b:Interaction.Triggers>
         </Image>
         <Image Style="{StaticResource Setting}">
             <b:Interaction.Triggers>
                 <b:EventTrigger EventName="MouseLeftButtonDown">
-                    <b:InvokeCommandAction />
+                    <b:InvokeCommandAction Command="{Binding NavigateToSettingCommand}" />
                 </b:EventTrigger>
             </b:Interaction.Triggers>
         </Image>
