@@ -21,7 +21,7 @@
                 <RowDefinition Height="1.5*" />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0">
+            <Grid Grid.Row="0" Cursor="Hand">
                 <Grid.Background>
                     <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/Region/StartGame/活动中心.png" Stretch="UniformToFill" />
                 </Grid.Background>
@@ -53,7 +53,10 @@
                     </b:Interaction.Triggers>
                 </Grid>
             </Grid>
-            <Grid Grid.Row="1" Margin="0,2">
+            <Grid
+                Grid.Row="1"
+                Margin="0,2"
+                Cursor="Hand">
                 <Grid.Background>
                     <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/Region/StartGame/段位.png" Stretch="Fill" />
                 </Grid.Background>
@@ -81,7 +84,10 @@
                         IsChecked="True" />
                 </Border>
             </Grid>
-            <Grid Grid.Row="3" Margin="0,2">
+            <Grid
+                Grid.Row="3"
+                Margin="0,2"
+                Cursor="Hand">
                 <Grid.Background>
                     <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/Region/StartGame/模式选择.png" Stretch="UniformToFill" />
                 </Grid.Background>
@@ -118,7 +124,7 @@
                         Text="龙隐洞天" />
                 </Grid>
             </Grid>
-            <Grid Grid.Row="4">
+            <Grid Grid.Row="4" Cursor="Hand">
                 <Grid.Background>
                     <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/Region/StartGame/开始游戏.png" Stretch="UniformToFill" />
                 </Grid.Background>

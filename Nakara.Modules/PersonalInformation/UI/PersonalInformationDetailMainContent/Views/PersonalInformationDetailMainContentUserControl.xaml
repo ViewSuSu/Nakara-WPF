@@ -11,6 +11,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Nakara.Modules.PersonalInformation.UI.PersonalInformationDetailMainContent.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:personalInformationDetailsPage="clr-namespace:Nakara.Modules.PersonalInformation.UI.PersonalInformationDetails.Views"
     xmlns:prism="http://prismlibrary.com/"
     xmlns:viewmodels="clr-namespace:Nakara.Modules.PersonalInformation.UI.PersonalInformationDetailMainContent.ViewModels"
     xmlns:wealth="clr-namespace:Nakara.Modules.Wealth.UI.Views"
@@ -21,64 +22,128 @@
     Background="Gray"
     mc:Ignorable="d">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="0.1*" />
-            <RowDefinition />
-            <RowDefinition Height="0.2*" />
-        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/background2.png" Stretch="UniformToFill" />
+        </Grid.Background>
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.3*" />
-                <ColumnDefinition />
-                <ColumnDefinition Width="0.3*" />
-            </Grid.ColumnDefinitions>
-            <TextBlock
-                Grid.Column="0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                FontSize="40"
-                FontWeight="Bold"
-                Foreground="White"
-                Text="名片" />
-            <StackPanel
-                Grid.Column="1"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Center"
-                Orientation="Horizontal">
-                <TextBlock Margin="5,0" Text="个人信息">
-                    <b:Interaction.Triggers>
-                        <b:EventTrigger EventName="MouseLeftButtonDown">
-                            <b:InvokeCommandAction Command="{Binding PersonalInfomationCommand}" />
-                        </b:EventTrigger>
-                    </b:Interaction.Triggers>
-                </TextBlock>
-                <TextBlock Margin="5,0" Text="英雄数据" />
-                <TextBlock Margin="5,0" Text="赛季数据" />
-                <TextBlock Margin="5,0" Text="历史战绩">
-                    <b:Interaction.Triggers>
-                        <b:EventTrigger EventName="MouseLeftButtonDown">
-                            <b:InvokeCommandAction Command="{Binding NavigateToHistoryCommand}" />
-                        </b:EventTrigger>
-                    </b:Interaction.Triggers>
-                </TextBlock>
-                <TextBlock Margin="5,0" Text="打赏记录" />
-                <TextBlock Margin="5,0" Text="社交头像" />
-                <TextBlock Margin="5,0" Text="头像框" />
-                <TextBlock Margin="5,0" Text="生涯成就" />
-                <TextBlock Margin="5,0" Text="图鉴收集" />
-                <TextBlock Margin="5,0" Text="信誉分" />
-            </StackPanel>
-            <wealth:WealthUserControl Grid.Column="2" />
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.12*" />
+                <RowDefinition />
+                <RowDefinition Height="0.1*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Margin="50,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="30"
+                    Foreground="White"
+                    Text="名片" />
+                <wealth:WealthUserControl
+                    Grid.Column="1"
+                    Width="150"
+                    HorizontalAlignment="Right" />
+            </Grid>
+            <TabControl
+                Grid.Row="0"
+                Grid.RowSpan="3"
+                Background="Transparent"
+                BorderThickness="0">
+                <TabControl.Resources>
+                    <Style TargetType="{x:Type TabPanel}">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                    </Style>
+                </TabControl.Resources>
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="个人信息"
+                    Style="{StaticResource CommonFunctionTabItem}">
+                    <personalInformationDetailsPage:PersonalInformationDetailsPage />
+                </TabItem>
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="英雄数据"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="赛季数据"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="历史战绩"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="打赏记录"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="社交头像"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="头像框"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="生涯成就"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="图鉴收集"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="信誉分"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    Width="100"
+                    VerticalAlignment="Center"
+                    Background="Transparent"
+                    Visibility="Hidden" />
+                <TabItem
+                    Width="100"
+                    VerticalAlignment="Center"
+                    Background="Transparent"
+                    Visibility="Hidden" />
+            </TabControl>
         </Grid>
-        <ContentControl
-            Grid.Row="1"
-            Grid.RowSpan="2"
-            prism:RegionManager.RegionName="{x:Static const:PersonalInformationDetailMainContentRegionConsts.PersonalInformationMainContent}" />
-        <chatbox:ChatBoxUserControl Grid.Row="2" Panel.ZIndex="10" />
         <controls:EscBackControl
-            Grid.Row="2"
             HorizontalAlignment="Right"
             VerticalAlignment="Bottom"
+            Panel.ZIndex="10"
             Command="{Binding ReturnCommand}" />
     </Grid>
 </bases:UserControlBase>

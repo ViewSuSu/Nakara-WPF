@@ -8,31 +8,8 @@
 		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <Compile Remove="PersonalInformation\Domain\HistoryMatchRecord\**" />
-	  <Compile Remove="Social\Domain\Email\**" />
-	  <Compile Remove="Social\Domain\Setting\**" />
-	  <Compile Remove="Social\UI\Converters\**" />
-	  <EmbeddedResource Remove="PersonalInformation\Domain\HistoryMatchRecord\**" />
-	  <EmbeddedResource Remove="Social\Domain\Email\**" />
-	  <EmbeddedResource Remove="Social\Domain\Setting\**" />
-	  <EmbeddedResource Remove="Social\UI\Converters\**" />
-	  <None Remove="PersonalInformation\Domain\HistoryMatchRecord\**" />
-	  <None Remove="Social\Domain\Email\**" />
-	  <None Remove="Social\Domain\Setting\**" />
-	  <None Remove="Social\UI\Converters\**" />
-	  <Page Remove="PersonalInformation\Domain\HistoryMatchRecord\**" />
-	  <Page Remove="Social\Domain\Email\**" />
-	  <Page Remove="Social\Domain\Setting\**" />
-	  <Page Remove="Social\UI\Converters\**" />
-	</ItemGroup>
 
 
-  <ItemGroup>
-    <Folder Include="CommonFunction\Domain\HeroPage\" />
-    <Folder Include="Social\UI\SettingDetails\Views\" />
-    <Folder Include="Social\UI\SettingDetails\ViewModels\" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Nakara.Shared\Nakara.Shared.csproj" />

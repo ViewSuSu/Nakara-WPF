@@ -10,8 +10,6 @@ namespace Nakara.Modules.Social.UI.Social.Views
         public SocialUserControl()
         {
             InitializeComponent();
-            if (DesignerProperties.GetIsInDesignMode(this))
-                return;
         }
     }
 }

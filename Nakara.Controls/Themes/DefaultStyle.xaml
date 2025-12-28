@@ -156,5 +156,89 @@
         </Setter>
     </Style>
 
+    <Style x:Key="FriendListTabItem" TargetType="TabItem">
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TabItem">
+                    <StackPanel Orientation="Horizontal">
+                        <Border
+                            x:Name="PART_Border"
+                            Height="{TemplateBinding Height}"
+                            Background="{TemplateBinding Background}"
+                            SnapsToDevicePixels="True">
+                            <ContentPresenter
+                                x:Name="PART_Content"
+                                Margin="{TemplateBinding Padding}"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                ContentSource="Header"
+                                TextElement.FontSize="{TemplateBinding FontSize}"
+                                TextElement.Foreground="{TemplateBinding Foreground}" />
+                        </Border>
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="PART_Border" Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/Button/FriendTabItemBackground.png" Stretch="Fill" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="PART_Content" Property="TextElement.Foreground" Value="#E6E6E6" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SettingCommandButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Padding" Value="10,5" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        x:Name="BackgroundBorder"
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        SnapsToDevicePixels="True">
+                        <ContentPresenter
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                            TextElement.FontSize="{TemplateBinding FontSize}"
+                            TextElement.Foreground="{TemplateBinding Foreground}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter TargetName="BackgroundBorder" Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/Button/SettingCommandDefaultBackground.png" Stretch="Fill" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="BackgroundBorder" Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/Button/SettingCommandHightlightBackground.png" Stretch="Fill" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 </ResourceDictionary>

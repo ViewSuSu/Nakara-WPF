@@ -1,18 +1,10 @@
-﻿namespace Nakara.Modules.Tutorial.UI.ViewModels
+﻿using Nakara.Framework.Core.Bases.ViewModels;
+
+namespace Nakara.Modules.Tutorial.UI.ViewModels
 {
-    internal class TutorialUserControlViewModel
+    internal class TutorialUserControlViewModel : CanReturnToMainWindowPageViewModelBase
     {
-        private readonly IEventAggregator eventAggregator;
-
         public TutorialUserControlViewModel(IEventAggregator eventAggregator)
-        {
-            this.eventAggregator = eventAggregator;
-            ReturnCommand = new DelegateCommand(() =>
-            {
-                eventAggregator.GetEvent<RemoveHomePageRegionEvent>().Publish();
-            });
-        }
-
-        public DelegateCommand ReturnCommand { get; set; }
+            : base(eventAggregator) { }
     }
 }

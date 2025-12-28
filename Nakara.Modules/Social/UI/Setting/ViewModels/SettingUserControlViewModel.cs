@@ -1,26 +1,25 @@
-﻿using Nakara.Modules.Tutorial.UI.Views;
+﻿using Nakara.Framework.Core.Bases.ViewModels;
+using Nakara.Modules.Tutorial.UI.Views;
 
 namespace Nakara.Modules.Social.UI.Setting.ViewModels
 {
-    internal class SettingUserControlViewModel
+    internal class SettingUserControlViewModel : CanReturnToMainWindowPageViewModelBase
     {
-        private readonly IEventAggregator eventAggregator;
-
         public SettingUserControlViewModel(IEventAggregator eventAggregator)
+            : base(eventAggregator)
         {
-            this.eventAggregator = eventAggregator;
-            BackToGameCommand = new DelegateCommand(() =>
-            {
-                this.eventAggregator.GetEvent<RemoveHomePageRegionEvent>().Publish();
-            });
             NavigateToTutorialCommand = new DelegateCommand(() =>
             {
                 this.eventAggregator.GetEvent<LoadHomePageRegionEvent>()
                     .Publish(nameof(TutorialUserControl));
             });
+            ExitCommand = new DelegateCommand(() =>
+            {
+                System.Windows.Application.Current.Shutdown();
+            });
         }
 
-        public DelegateCommand BackToGameCommand { get; set; }
         public DelegateCommand NavigateToTutorialCommand { get; set; }
+        public DelegateCommand ExitCommand { get; set; }
     }
 }

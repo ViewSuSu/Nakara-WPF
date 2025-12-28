@@ -12,6 +12,10 @@
 	  <None Remove="Image\background.png" />
 	  <None Remove="Image\background2.png" />
 	  <None Remove="Image\BattlePassBackground.png" />
+	  <None Remove="Image\Button\FriendTabItemBackground.png" />
+	  <None Remove="Image\Button\SettingCommandDefaultBackground.png" />
+	  <None Remove="Image\Button\SettingCommandHightlightBackground.png" />
+	  <None Remove="Image\heroShow.png" />
 	  <None Remove="Image\Icon.png" />
 	  <None Remove="Image\logo.png" />
 	  <None Remove="Image\Button\古币.png" />
@@ -42,12 +46,16 @@
 	  <Resource Include="Image\background.png" />
 	  <Resource Include="Image\background2.png" />
 	  <Resource Include="Image\BattlePassBackground.png" />
+	  <Resource Include="Image\Button\FriendTabItemBackground.png" />
+	  <Resource Include="Image\Button\SettingCommandDefaultBackground.png" />
+	  <Resource Include="Image\Button\SettingCommandHightlightBackground.png" />
 	  <Resource Include="Image\Button\教程.png" />
 	  <Resource Include="Image\Button\用户.png" />
 	  <Resource Include="Image\Button\联系人.png" />
 	  <Resource Include="Image\Button\设置.png" />
 	  <Resource Include="Image\Button\邮箱.png" />
 	  <Resource Include="Image\Button\音乐.png" />
+	  <Resource Include="Image\heroShow.png" />
 	  <Resource Include="Image\Icon.png" />
 	  <Resource Include="Image\logo.png" />
 	  <Resource Include="Image\Button\古币.png" />

@@ -7,44 +7,94 @@
     xmlns:controls="clr-namespace:Nakara.Controls;assembly=Nakara.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="clr-namespace:Nakara.Modules.Tutorial.UI.ViewModels"
     behaviors:EscKeyAttachedProperty.Command="{Binding ReturnCommand}"
     d:Background="Gray"
-    d:DesignHeight="450"
-    d:DesignWidth="800"
+    d:DataContext="{d:DesignInstance Type=viewmodels:TutorialUserControlViewModel}"
+    d:DesignHeight="720"
+    d:DesignWidth="1080"
     Background="Gray"
     mc:Ignorable="d">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="0.1*" />
-            <RowDefinition />
-        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/background2.png" Stretch="UniformToFill" />
+        </Grid.Background>
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.2*" />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <TextBlock
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                FontSize="20"
-                Foreground="White"
-                Text="战斗百科" />
-            <StackPanel
-                Grid.Column="1"
-                VerticalAlignment="Center"
-                Orientation="Horizontal">
-                <TextBlock Text="克制" />
-                <TextBlock Text="战斗技巧" />
-                <TextBlock Text="武器招式" />
-                <TextBlock Text="事件" />
-                <TextBlock Text="魂玉" />
-            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*" />
+                <RowDefinition />
+                <RowDefinition Height="0.1*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Margin="50,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBlock
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="30"
+                    Foreground="White"
+                    Text="战斗百科" />
+            </Grid>
+            <TabControl
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Background="Transparent"
+                BorderThickness="0">
+                <TabControl.Resources>
+                    <Style TargetType="{x:Type TabPanel}">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                    </Style>
+                </TabControl.Resources>
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="克制"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="战斗技巧"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="武器招式"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="事件"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="魂玉"
+                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}" />
+                <TabItem
+                    Width="500"
+                    VerticalAlignment="Center"
+                    d:IsSelected="True"
+                    Background="Transparent"
+                    Header="魂玉"
+                    Style="{StaticResource CommonFunctionTabItem}"
+                    Visibility="Hidden" />
+            </TabControl>
         </Grid>
         <controls:EscBackControl
-            Grid.Row="1"
-            Margin="5"
             HorizontalAlignment="Right"
             VerticalAlignment="Bottom"
+            Panel.ZIndex="10"
             Command="{Binding ReturnCommand}" />
     </Grid>
 </bases:UserControlBase>

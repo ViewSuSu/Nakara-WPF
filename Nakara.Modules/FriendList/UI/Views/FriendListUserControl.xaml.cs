@@ -1,4 +1,4 @@
-﻿namespace Nakara.Modules.Social.UI.FriendList.Views
+﻿namespace Nakara.Modules.FriendList.UI.Views
 {
     /// <summary>
     /// FriendListUserControl.xaml 的交互逻辑

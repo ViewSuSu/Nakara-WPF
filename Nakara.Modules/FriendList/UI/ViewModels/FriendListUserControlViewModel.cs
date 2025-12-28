@@ -1,8 +1,8 @@
 ﻿using System.Collections.ObjectModel;
+using Nakara.Modules.FriendList.UI.Models;
 using Nakara.Modules.Social.Domain.FriendList.Interfaces;
-using Nakara.Modules.Social.UI.FriendList.Models;
 
-namespace Nakara.Modules.Social.UI.FriendList.ViewModels
+namespace Nakara.Modules.FriendList.UI.ViewModels
 {
     internal class FriendListUserControlViewModel : BindableBase, IActiveAware
     {

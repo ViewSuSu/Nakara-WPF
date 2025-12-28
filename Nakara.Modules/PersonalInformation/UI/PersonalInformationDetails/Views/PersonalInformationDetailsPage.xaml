@@ -13,7 +13,7 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
-            <ColumnDefinition Width="0.35*" />
+            <ColumnDefinition Width="0.55*" />
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0" Margin="30,50">
             <Grid.RowDefinitions>
@@ -79,10 +79,21 @@
                         <Image />
                         <Image />
                     </UniformGrid>
-                    <ListBox Grid.Row="2" d:ItemsSource="{d:SampleData ItemCount=5}">
+                    <ListBox
+                        Grid.Row="2"
+                        HorizontalContentAlignment="Stretch"
+                        d:ItemsSource="{d:SampleData ItemCount=5}"
+                        Background="Transparent"
+                        BorderThickness="0">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal" />
+                                <Grid HorizontalAlignment="Stretch">
+                                    <TextBlock d:Text="排位赛" Foreground="White" />
+                                    <TextBlock HorizontalAlignment="Right" Foreground="White">
+                                        <Run Text="6196" />
+                                        <Run Text="场" />
+                                    </TextBlock>
+                                </Grid>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
@@ -141,7 +152,7 @@
             </Grid>
         </Grid>
         <Grid Grid.Column="1">
-            <Image />
+            <Image Source="pack://application:,,,/Nakara.Resources;component/Image/heroShow.png" Stretch="UniformToFill" />
         </Grid>
     </Grid>
 </bases:UserControlBase>

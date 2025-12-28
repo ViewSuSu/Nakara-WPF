@@ -1,5 +1,5 @@
-﻿using Nakara.Modules.Social.Domain.FriendList.Interfaces;
-using Nakara.Modules.Social.UI.FriendList.Models;
+﻿using Nakara.Modules.FriendList.UI.Models;
+using Nakara.Modules.Social.Domain.FriendList.Interfaces;
 
 namespace Nakara.Modules.Social.Infrastructure.FriendList
 {
