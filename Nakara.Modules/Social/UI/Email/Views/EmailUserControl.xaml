@@ -2,13 +2,17 @@
     x:Class="Nakara.Modules.Social.UI.Email.Views.EmailUserControl"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:attach="clr-namespace:Nakara.Framework.UI.AttachedProperties;assembly=Nakara.Framework"
     xmlns:base="clr-namespace:Nakara.Framework.Core.Bases;assembly=Nakara.Framework"
+    xmlns:controls="clr-namespace:Nakara.Controls;assembly=Nakara.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:viewmodels="clr-namespace:Nakara.Modules.Wealth.UI.ViewModels"
-    d:DataContext="{d:DesignInstance Type=viewmodels:WealthUserControlViewModel}"
-    d:DesignHeight="450"
-    d:DesignWidth="800"
+    xmlns:viewmodels="clr-namespace:Nakara.Modules.Wealth.UI.Main.ViewModels"
+    xmlns:viewmodels1="clr-namespace:Nakara.Modules.Social.UI.Email.ViewModels"
+    attach:EscKeyAttachedProperty.Command="{Binding ReturnCommand}"
+    d:DataContext="{d:DesignInstance Type=viewmodels1:EmailUserControlViewModel}"
+    d:DesignHeight="720"
+    d:DesignWidth="1080"
     x:ClassModifier="internal"
     mc:Ignorable="d">
     <Grid>
@@ -17,5 +21,10 @@
             <RowDefinition />
             <RowDefinition Height="0.2*" />
         </Grid.RowDefinitions>
+        <controls:EscBackControl
+            Grid.Row="2"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Command="{Binding ReturnCommand}" />
     </Grid>
 </base:UserControlBase>

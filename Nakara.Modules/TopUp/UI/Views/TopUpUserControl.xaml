@@ -8,7 +8,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Nakara.Modules.TopUp.UI.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:wealth="clr-namespace:Nakara.Modules.Wealth.UI.Views"
+    xmlns:wealth="clr-namespace:Nakara.Modules.Wealth.UI.Main.Views"
     attached:EscKeyAttachedProperty.Command="{Binding ReturnCommand}"
     d:Background="Gray"
     d:DesignHeight="720"

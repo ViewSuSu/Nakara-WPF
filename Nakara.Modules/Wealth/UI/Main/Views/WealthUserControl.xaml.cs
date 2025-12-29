@@ -1,4 +1,4 @@
-﻿namespace Nakara.Modules.Wealth.UI.Views
+﻿namespace Nakara.Modules.Wealth.UI.Main.Views
 {
     /// <summary>
     /// WealthUserControl.xaml 的交互逻辑

@@ -1,4 +1,10 @@
-﻿namespace Nakara.Modules.CommonFunction.UI.SkillPoint.ViewModels
+﻿using Nakara.Framework.Core.Bases.ViewModels;
+
+namespace Nakara.Modules.CommonFunction.UI.SkillPoint.ViewModels
 {
-    internal class SkillPointUserControlViewModel { }
+    internal class SkillPointUserControlViewModel : CanRemoveMainContentRegionViewModelBase
+    {
+        public SkillPointUserControlViewModel(IContainerExtension containerExtension)
+            : base(containerExtension) { }
+    }
 }

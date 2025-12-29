@@ -12,7 +12,7 @@
     xmlns:prism="http://prismlibrary.com/"
     xmlns:social="clr-namespace:Nakara.Modules.Social.UI.Social.Views;assembly=Nakara.Modules"
     xmlns:startGame="clr-namespace:Nakara.Modules.StartGame.UI.StartGame.Views;assembly=Nakara.Modules"
-    xmlns:wealth="clr-namespace:Nakara.Modules.Wealth.UI.Views;assembly=Nakara.Modules"
+    xmlns:wealth="clr-namespace:Nakara.Modules.Wealth.UI.Main.Views;assembly=Nakara.Modules"
     Title="Nakara"
     Width="1080"
     Height="720"
@@ -38,7 +38,7 @@
                     <ColumnDefinition Width="0.5*" />
                     <ColumnDefinition Width="1.5*" />
                 </Grid.ColumnDefinitions>
-                <battlePass:BattlePassUserControl Grid.Column="0" Height="50" />
+                <battlePass:BattlePassUserControl Grid.Column="0" Height="55" />
                 <commonfunction:CommonFunctionUserControl Grid.Column="1" HorizontalAlignment="Center" />
                 <wealth:WealthUserControl Grid.Column="2" VerticalAlignment="Center" />
                 <social:SocialUserControl Grid.Column="4" VerticalAlignment="Center" />

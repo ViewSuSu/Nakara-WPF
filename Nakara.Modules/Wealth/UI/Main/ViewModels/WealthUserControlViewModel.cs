@@ -1,7 +1,7 @@
 ﻿using Nakara.Modules.TopUp.UI.Views;
-using Nakara.Modules.Wealth.UI.Models;
+using Nakara.Modules.Wealth.UI.Main.Models;
 
-namespace Nakara.Modules.Wealth.UI.ViewModels
+namespace Nakara.Modules.Wealth.UI.Main.ViewModels
 {
     public partial class WealthUserControlViewModel : BindableBase
     {

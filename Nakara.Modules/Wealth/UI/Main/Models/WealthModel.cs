@@ -1,4 +1,4 @@
-﻿namespace Nakara.Modules.Wealth.UI.Models
+﻿namespace Nakara.Modules.Wealth.UI.Main.Models
 {
     public class WealthModel
     {

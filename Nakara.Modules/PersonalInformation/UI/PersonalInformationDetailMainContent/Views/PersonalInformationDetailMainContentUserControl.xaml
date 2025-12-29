@@ -14,7 +14,7 @@
     xmlns:personalInformationDetailsPage="clr-namespace:Nakara.Modules.PersonalInformation.UI.PersonalInformationDetails.Views"
     xmlns:prism="http://prismlibrary.com/"
     xmlns:viewmodels="clr-namespace:Nakara.Modules.PersonalInformation.UI.PersonalInformationDetailMainContent.ViewModels"
-    xmlns:wealth="clr-namespace:Nakara.Modules.Wealth.UI.Views"
+    xmlns:wealth="clr-namespace:Nakara.Modules.Wealth.UI.Main.Views"
     attached:EscKeyAttachedProperty.Command="{Binding ReturnCommand}"
     d:DataContext="{d:DesignInstance Type=viewmodels:PersonalInformationDetailMainContentUserControlViewModel}"
     d:DesignHeight="720"

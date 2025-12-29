@@ -5,9 +5,9 @@ namespace Nakara.Framework.Core.Bases.ViewModels
     /// <summary>
     /// 可以被返回到主窗口的页面ViewModel基类
     /// </summary>
-    public abstract class CanReturnToMainWindowPageViewModelBase : ViewModelBase
+    public abstract class CanRemoveHomePageRegionViewModelBase : ViewModelBase
     {
-        protected CanReturnToMainWindowPageViewModelBase(IContainerExtension containerExtension)
+        protected CanRemoveHomePageRegionViewModelBase(IContainerExtension containerExtension)
             : base(containerExtension)
         {
             ReturnCommand = new DelegateCommand(() =>

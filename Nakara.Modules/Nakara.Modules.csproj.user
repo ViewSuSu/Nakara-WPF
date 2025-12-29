@@ -23,10 +23,7 @@
     <Compile Update="CommonFunction\UI\CustomMatch\Views\CustomMatchUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="CommonFunction\UI\Hall\Views\HallUserControl.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="CommonFunction\UI\HeroPage\Views\HeroPage.xaml.cs">
+    <Compile Update="CommonFunction\UI\Hero\Views\HeroPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="CommonFunction\UI\Inventory\Views\InventoryUserControl.xaml.cs">

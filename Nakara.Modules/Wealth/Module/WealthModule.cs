@@ -1,5 +1,5 @@
-﻿using Nakara.Modules.Wealth.UI.ViewModels;
-using Nakara.Modules.Wealth.UI.Views;
+﻿using Nakara.Modules.Wealth.UI.Main.ViewModels;
+using Nakara.Modules.Wealth.UI.Main.Views;
 
 namespace Nakara.Modules.Wealth.Module
 {

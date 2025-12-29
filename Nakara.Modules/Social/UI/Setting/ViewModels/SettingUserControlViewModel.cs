@@ -3,7 +3,7 @@ using Nakara.Modules.Tutorial.UI.Views;
 
 namespace Nakara.Modules.Social.UI.Setting.ViewModels
 {
-    internal class SettingUserControlViewModel : CanReturnToMainWindowPageViewModelBase
+    internal class SettingUserControlViewModel : CanRemoveHomePageRegionViewModelBase
     {
         public SettingUserControlViewModel(IContainerExtension containerExtension)
             : base(containerExtension)

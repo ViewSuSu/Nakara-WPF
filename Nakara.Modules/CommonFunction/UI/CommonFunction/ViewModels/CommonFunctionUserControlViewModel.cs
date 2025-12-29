@@ -1,6 +1,6 @@
-﻿using Nakara.Modules.CommonFunction.UI.CustomMatch.Views;
-using Nakara.Modules.CommonFunction.UI.Hall.Views;
-using Nakara.Modules.CommonFunction.UI.HeroPage.Views;
+﻿using Nakara.Framework.Core.Bases.ViewModels;
+using Nakara.Modules.CommonFunction.UI.CustomMatch.Views;
+using Nakara.Modules.CommonFunction.UI.Hero.Views;
 using Nakara.Modules.CommonFunction.UI.Inventory.Views;
 using Nakara.Modules.CommonFunction.UI.Leaderboard.Views;
 using Nakara.Modules.CommonFunction.UI.SkillPoint.Views;
@@ -8,13 +8,11 @@ using Nakara.Modules.CommonFunction.UI.Store.Views;
 
 namespace Nakara.Modules.CommonFunction.UI.CommonFunction.ViewModels
 {
-    public partial class CommonFunctionUserControlViewModel : BindableBase
+    public partial class CommonFunctionUserControlViewModel : ViewModelBase
     {
-        private readonly IEventAggregator eventAggregator;
-
-        public CommonFunctionUserControlViewModel(IEventAggregator eventAggregator)
+        public CommonFunctionUserControlViewModel(IContainerExtension containerExtension)
+            : base(containerExtension)
         {
-            this.eventAggregator = eventAggregator;
             NavigateToHeroCommand = new DelegateCommand(() =>
             {
                 this.eventAggregator.GetEvent<LoadMainContentRegionEvent>()

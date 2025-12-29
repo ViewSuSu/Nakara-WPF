@@ -6,7 +6,7 @@ using Nakara.Modules.EventCenter.UI.LatestNews.Views;
 
 namespace Nakara.Modules.EventCenter.UI.Main.ViewModels
 {
-    internal class EventCenterMainUserControlViewModel : CanReturnToMainWindowPageViewModelBase
+    internal class EventCenterMainUserControlViewModel : CanRemoveHomePageRegionViewModelBase
     {
         public EventCenterMainUserControlViewModel(IContainerExtension containerExtension)
             : base(containerExtension) { }

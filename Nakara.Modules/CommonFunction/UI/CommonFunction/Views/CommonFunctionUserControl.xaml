@@ -13,7 +13,10 @@
     d:DesignHeight="100"
     prism:ViewModelLocator.AutoWireViewModel="True"
     mc:Ignorable="d">
-    <TabControl Background="Transparent" BorderThickness="0">
+    <TabControl
+        VerticalAlignment="Center"
+        Background="Transparent"
+        BorderThickness="0">
         <TabItem
             attach:TabItemAttachedProperty.SelectedCommand="{Binding NavigateToHeroCommand}"
             Header="英雄"

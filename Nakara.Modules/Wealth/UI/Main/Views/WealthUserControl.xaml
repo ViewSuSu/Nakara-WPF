@@ -1,33 +1,43 @@
 ﻿<base:UserControlBase
-    x:Class="Nakara.Modules.Wealth.UI.Views.WealthUserControl"
+    x:Class="Nakara.Modules.Wealth.UI.Main.Views.WealthUserControl"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:base="clr-namespace:Nakara.Framework.Core.Bases;assembly=Nakara.Framework"
     xmlns:controls="clr-namespace:Nakara.Controls;assembly=Nakara.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:viewmodels="clr-namespace:Nakara.Modules.Wealth.UI.ViewModels"
+    xmlns:viewmodels="clr-namespace:Nakara.Modules.Wealth.UI.Main.ViewModels"
     d:Background="Gray"
     d:DataContext="{d:DesignInstance Type=viewmodels:WealthUserControlViewModel}"
-    d:DesignHeight="100"
+    d:DesignHeight="50"
     d:DesignWidth="300"
     mc:Ignorable="d">
     <UniformGrid Grid.Column="2" Columns="3">
         <controls:IconTextBlockCustomControl
-            VerticalAlignment="Center"
             d:Text="12500"
             Spacing="-5"
             Style="{StaticResource AncientCoins}"
             Text="{Binding WealthModel.AncientCoins}" />
+        <Grid x:Name="GoldBrickPopup">
+            <controls:IconTextBlockCustomControl
+                d:Text="12600"
+                Command="{Binding NavigateToTopUpCommand}"
+                Spacing="-5"
+                Style="{StaticResource GoldBrick}"
+                Text="{Binding WealthModel.GoldBrick}" />
+        </Grid>
+        <Popup
+            IsOpen="{Binding ElementName=GoldBrickPopup, Path=IsMouseOver, Mode=OneWay}"
+            Placement="Bottom"
+            PlacementTarget="{Binding ElementName=GoldBrickControl}"
+            StaysOpen="True">
+            <Border
+                Width="300"
+                Height="200"
+                BorderBrush="White"
+                BorderThickness="1" />
+        </Popup>
         <controls:IconTextBlockCustomControl
-            VerticalAlignment="Center"
-            d:Text="12600"
-            Command="{Binding NavigateToTopUpCommand}"
-            Spacing="-5"
-            Style="{StaticResource GoldBrick}"
-            Text="{Binding WealthModel.GoldBrick}" />
-        <controls:IconTextBlockCustomControl
-            VerticalAlignment="Center"
             d:Text="12500"
             Spacing="-5"
             Style="{StaticResource HuanSi}"

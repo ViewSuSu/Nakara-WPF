@@ -1,12 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
-using System.Collections.Generic;
 
 namespace Nakara.Framework.UI.AttachedProperties
 {
+    /// <summary>
+    /// Esc键附加属性
+    /// </summary>
     public static class EscKeyAttachedProperty
     {
         #region Win32 Hook
@@ -20,14 +23,24 @@ namespace Nakara.Framework.UI.AttachedProperties
         private const int WM_KEYDOWN = 0x0100;
 
         [DllImport("user32.dll", SetLastError = true)]
-        private static extern IntPtr SetWindowsHookEx(int idHook, LowLevelKeyboardProc lpfn, IntPtr hMod, uint dwThreadId);
+        private static extern IntPtr SetWindowsHookEx(
+            int idHook,
+            LowLevelKeyboardProc lpfn,
+            IntPtr hMod,
+            uint dwThreadId
+        );
 
         [DllImport("user32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool UnhookWindowsHookEx(IntPtr hhk);
 
         [DllImport("user32.dll")]
-        private static extern IntPtr CallNextHookEx(IntPtr hhk, int nCode, IntPtr wParam, IntPtr lParam);
+        private static extern IntPtr CallNextHookEx(
+            IntPtr hhk,
+            int nCode,
+            IntPtr wParam,
+            IntPtr lParam
+        );
 
         [DllImport("kernel32.dll")]
         private static extern IntPtr GetModuleHandle(string lpModuleName);
@@ -36,25 +49,33 @@ namespace Nakara.Framework.UI.AttachedProperties
 
         #region 附加属性
 
-        public static ICommand GetCommand(DependencyObject obj) => (ICommand)obj.GetValue(CommandProperty);
-        public static void SetCommand(DependencyObject obj, ICommand value) => obj.SetValue(CommandProperty, value);
+        public static ICommand GetCommand(DependencyObject obj) =>
+            (ICommand)obj.GetValue(CommandProperty);
+
+        public static void SetCommand(DependencyObject obj, ICommand value) =>
+            obj.SetValue(CommandProperty, value);
 
         public static readonly DependencyProperty CommandProperty =
             DependencyProperty.RegisterAttached(
                 "Command",
                 typeof(ICommand),
                 typeof(EscKeyAttachedProperty),
-                new PropertyMetadata(null, OnCommandChanged));
+                new PropertyMetadata(null, OnCommandChanged)
+            );
 
-        public static object GetCommandParameter(DependencyObject obj) => obj.GetValue(CommandParameterProperty);
-        public static void SetCommandParameter(DependencyObject obj, object value) => obj.SetValue(CommandParameterProperty, value);
+        public static object GetCommandParameter(DependencyObject obj) =>
+            obj.GetValue(CommandParameterProperty);
+
+        public static void SetCommandParameter(DependencyObject obj, object value) =>
+            obj.SetValue(CommandParameterProperty, value);
 
         public static readonly DependencyProperty CommandParameterProperty =
             DependencyProperty.RegisterAttached(
                 "CommandParameter",
                 typeof(object),
                 typeof(EscKeyAttachedProperty),
-                new PropertyMetadata(null));
+                new PropertyMetadata(null)
+            );
 
         #endregion
 
@@ -67,7 +88,10 @@ namespace Nakara.Framework.UI.AttachedProperties
 
         #region 附加属性回调
 
-        private static void OnCommandChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        private static void OnCommandChanged(
+            DependencyObject d,
+            DependencyPropertyChangedEventArgs e
+        )
         {
             if (d is FrameworkElement element)
             {
@@ -138,7 +162,12 @@ namespace Nakara.Framework.UI.AttachedProperties
                         {
                             // 判断控件所在窗口是否激活
                             var window = Window.GetWindow(element);
-                            if (window != null && window.IsActive && element.IsVisible && element.IsLoaded)
+                            if (
+                                window != null
+                                && window.IsActive
+                                && element.IsVisible
+                                && element.IsLoaded
+                            )
                             {
                                 var command = GetCommand(element);
                                 var param = GetCommandParameter(element);
