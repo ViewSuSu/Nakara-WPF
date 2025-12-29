@@ -1,8 +1,8 @@
 ﻿namespace Nakara.Framework.Core.Evens
 {
-    public class LoadSidePanelRegionEvent : PubSubEvent<string> { }
+    public class LoadRightSidePanelRegionEvent : PubSubEvent<string> { }
 
-    public class RemoveSidePanelRegionEvent : PubSubEvent { }
+    public class RemoveRightSidePanelRegionEvent : PubSubEvent { }
 
     public class LoadHomePageRegionEvent : PubSubEvent<string> { }
 

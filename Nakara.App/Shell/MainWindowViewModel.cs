@@ -52,6 +52,29 @@ namespace Nakara.App.Shell
                     },
                     ThreadOption.UIThread
                 );
+
+            _eventAggregator
+                .GetEvent<LoadRightSidePanelRegionEvent>()
+                .Subscribe(
+                    (viewName) =>
+                    {
+                        _regionManager.RequestNavigate(
+                            GlobalConstant.RightSidePanelRegion,
+                            viewName
+                        );
+                    },
+                    ThreadOption.UIThread
+                );
+
+            _eventAggregator
+                .GetEvent<RemoveRightSidePanelRegionEvent>()
+                .Subscribe(
+                    () =>
+                    {
+                        RevemoveRegionByName(GlobalConstant.RightSidePanelRegion);
+                    },
+                    ThreadOption.UIThread
+                );
         }
 
         private void RevemoveRegionByName(string regionName)

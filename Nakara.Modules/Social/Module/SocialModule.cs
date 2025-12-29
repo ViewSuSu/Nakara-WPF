@@ -1,6 +1,4 @@
-﻿using Nakara.Modules.FriendList.UI.ViewModels;
-using Nakara.Modules.Social.Domain.FriendList.Interfaces;
-using Nakara.Modules.Social.Infrastructure.FriendList;
+﻿using Nakara.Modules.Friend.UI.ViewModels;
 using Nakara.Modules.Social.UI.Email.ViewModels;
 using Nakara.Modules.Social.UI.Email.Views;
 using Nakara.Modules.Social.UI.Music.ViewModels;
@@ -26,7 +24,6 @@ namespace Nakara.Modules.Social.Module
             containerRegistry.RegisterForNavigation<MusicUserControl, MusicUserControlViewModel>();
             containerRegistry.Register<SocialUserControl>();
             containerRegistry.Register<SocialUserControlViewModel>();
-            containerRegistry.Register<IFriendService, FriendService>();
         }
     }
 }

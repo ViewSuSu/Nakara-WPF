@@ -34,7 +34,8 @@
                 <ListBox
                     HorizontalContentAlignment="Stretch"
                     d:ItemsSource="{d:SampleData ItemCount=5}"
-                    Background="Transparent">
+                    Background="Transparent"
+                    ItemsSource="{Binding MatchDataItems, Mode=OneWay}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Grid Margin="0,5">
@@ -47,11 +48,14 @@
                                     <ColumnDefinition />
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" />
-                                <TextBlock Grid.Column="1">
-                                    <Run d:Text="7" />
+                                <Image Grid.Column="0" Source="{Binding Avatar, Mode=OneWay}" />
+                                <TextBlock
+                                    Grid.Column="1"
+                                    Margin="10,0,0,0"
+                                    VerticalAlignment="Center">
+                                    <Run d:Text="7" Text="{Binding CurrentRank, Mode=OneWay}" />
                                     <Run d:Text="/" />
-                                    <Run d:Text="17" />
+                                    <Run d:Text="17" Text="{Binding AllTeams, Mode=OneWay}" />
                                 </TextBlock>
                                 <Image Grid.Column="2" />
                             </Grid>

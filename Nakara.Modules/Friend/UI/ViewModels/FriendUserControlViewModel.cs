@@ -1,17 +1,17 @@
 ﻿using System.Collections.ObjectModel;
-using Nakara.Modules.FriendList.UI.Models;
-using Nakara.Modules.Social.Domain.FriendList.Interfaces;
+using Nakara.Shared.Datas;
+using Nakara.Shared.Services.Abstractions;
 
-namespace Nakara.Modules.FriendList.UI.ViewModels
+namespace Nakara.Modules.Friend.UI.ViewModels
 {
-    internal class FriendListUserControlViewModel : BindableBase, IActiveAware
+    internal class FriendUserControlViewModel : BindableBase, IActiveAware
     {
         private readonly IFriendService _friendService;
         private readonly IEventAggregator _eventAggregator;
         private bool _isActive;
         private bool _isDataLoaded;
 
-        public FriendListUserControlViewModel(
+        public FriendUserControlViewModel(
             IFriendService friendService,
             IEventAggregator eventAggregator
         )
@@ -21,7 +21,7 @@ namespace Nakara.Modules.FriendList.UI.ViewModels
 
             CloseCommand = new DelegateCommand(() =>
             {
-                _eventAggregator.GetEvent<RemoveSidePanelRegionEvent>().Publish();
+                _eventAggregator.GetEvent<RemoveRightSidePanelRegionEvent>().Publish();
             });
 
             RefreshCommand = new DelegateCommand(async () => await LoadDataAsync());
@@ -31,9 +31,9 @@ namespace Nakara.Modules.FriendList.UI.ViewModels
         public DelegateCommand RefreshCommand { get; }
 
         // 好友列表数据
-        private ObservableCollection<Friend> _friends = new ObservableCollection<Friend>();
+        private ObservableCollection<FriendData> _friends = new ObservableCollection<FriendData>();
 
-        public ObservableCollection<Friend> Friends
+        public ObservableCollection<FriendData> Friends
         {
             get => _friends;
             set => SetProperty(ref _friends, value);
@@ -78,7 +78,7 @@ namespace Nakara.Modules.FriendList.UI.ViewModels
             IsLoading = true;
             try
             {
-                IEnumerable<Friend> friendList = await _friendService.GetFriendsAsync();
+                IEnumerable<FriendData> friendList = await _friendService.GetFriendsAsync();
                 Friends.Clear();
                 foreach (var friend in friendList)
                 {

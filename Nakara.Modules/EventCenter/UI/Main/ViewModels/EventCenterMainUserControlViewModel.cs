@@ -8,12 +8,7 @@ namespace Nakara.Modules.EventCenter.UI.Main.ViewModels
 {
     internal class EventCenterMainUserControlViewModel : CanReturnToMainWindowPageViewModelBase
     {
-        private readonly IRegionManager regionManager;
-
-        public EventCenterMainUserControlViewModel(
-            IEventAggregator eventAggregator,
-            IRegionManager regionManager
-        )
-            : base(eventAggregator) { }
+        public EventCenterMainUserControlViewModel(IContainerExtension containerExtension)
+            : base(containerExtension) { }
     }
 }

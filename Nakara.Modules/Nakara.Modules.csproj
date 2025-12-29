@@ -15,4 +15,11 @@
     <ProjectReference Include="..\Nakara.Shared\Nakara.Shared.csproj" />
   </ItemGroup>
 
+
+
+
+  <ItemGroup>
+    <Folder Include="Friend\UI\Models\" />
+  </ItemGroup>
+
 </Project>

@@ -5,8 +5,8 @@ namespace Nakara.Modules.Social.UI.Setting.ViewModels
 {
     internal class SettingUserControlViewModel : CanReturnToMainWindowPageViewModelBase
     {
-        public SettingUserControlViewModel(IEventAggregator eventAggregator)
-            : base(eventAggregator)
+        public SettingUserControlViewModel(IContainerExtension containerExtension)
+            : base(containerExtension)
         {
             NavigateToTutorialCommand = new DelegateCommand(() =>
             {

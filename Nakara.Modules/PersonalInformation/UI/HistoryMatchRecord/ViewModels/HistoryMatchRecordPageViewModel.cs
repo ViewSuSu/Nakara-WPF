@@ -12,7 +12,7 @@ namespace Nakara.Modules.PersonalInformation.UI.HistoryMatchRecord.ViewModels
         public HistoryMatchRecordPageViewModel(IMatchDataInfomation matchDataInfomation)
         {
             this.matchDataInfomation = matchDataInfomation;
-            this.MatchDataItems = matchDataInfomation.GetMatchDataItemsAsync().Result;
+            this.MatchDataItems = this.matchDataInfomation.GetMatchDataItemsAsync().Result;
         }
     }
 }

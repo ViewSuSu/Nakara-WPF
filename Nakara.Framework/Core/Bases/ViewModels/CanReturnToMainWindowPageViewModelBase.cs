@@ -5,13 +5,11 @@ namespace Nakara.Framework.Core.Bases.ViewModels
     /// <summary>
     /// 可以被返回到主窗口的页面ViewModel基类
     /// </summary>
-    public abstract class CanReturnToMainWindowPageViewModelBase : BindableBase
+    public abstract class CanReturnToMainWindowPageViewModelBase : ViewModelBase
     {
-        protected readonly IEventAggregator eventAggregator;
-
-        protected CanReturnToMainWindowPageViewModelBase(IEventAggregator eventAggregator)
+        protected CanReturnToMainWindowPageViewModelBase(IContainerExtension containerExtension)
+            : base(containerExtension)
         {
-            this.eventAggregator = eventAggregator;
             ReturnCommand = new DelegateCommand(() =>
             {
                 this.eventAggregator.GetEvent<RemoveHomePageRegionEvent>().Publish();
