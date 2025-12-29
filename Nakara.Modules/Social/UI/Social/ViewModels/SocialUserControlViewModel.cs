@@ -1,4 +1,5 @@
 ﻿using Nakara.Modules.Social.UI.Email.Views;
+using Nakara.Modules.Social.UI.Friend.UI.Views;
 using Nakara.Modules.Social.UI.Setting.Views;
 using Nakara.Modules.Tutorial.UI.Views;
 
@@ -35,6 +36,12 @@ namespace Nakara.Modules.Social.UI.Social.ViewModels
                 _eventAggregator
                     .GetEvent<LoadHomePageRegionEvent>()
                     .Publish(nameof(SettingUserControl));
+            });
+            NavigateToFrendListCommand = new DelegateCommand(() =>
+            {
+                _eventAggregator
+                    .GetEvent<LoadRightSidePanelRegionEvent>()
+                    .Publish(nameof(FriendUserControl));
             });
         }
 

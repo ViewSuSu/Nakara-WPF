@@ -2,7 +2,7 @@
 using Nakara.Shared.Datas;
 using Nakara.Shared.Services.Abstractions;
 
-namespace Nakara.Modules.Friend.UI.ViewModels
+namespace Nakara.Modules.Social.UI.Friend.UI.ViewModels
 {
     internal class FriendUserControlViewModel : BindableBase, IActiveAware
     {
@@ -23,12 +23,9 @@ namespace Nakara.Modules.Friend.UI.ViewModels
             {
                 _eventAggregator.GetEvent<RemoveRightSidePanelRegionEvent>().Publish();
             });
-
-            RefreshCommand = new DelegateCommand(async () => await LoadDataAsync());
         }
 
         public DelegateCommand CloseCommand { get; }
-        public DelegateCommand RefreshCommand { get; }
 
         // 好友列表数据
         private ObservableCollection<FriendData> _friends = new ObservableCollection<FriendData>();

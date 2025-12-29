@@ -5,11 +5,13 @@
     <Style TargetType="{x:Type local:IconTextBlockCustomControl}">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Padding" Value="5" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:IconTextBlockCustomControl}">
                     <Border
                         x:Name="Root"
+                        Padding="{TemplateBinding Padding}"
                         Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}">
@@ -22,23 +24,51 @@
                                     <ContentPresenter />
                                 </ControlTemplate>
                             </Button.Template>
-                            <StackPanel HorizontalAlignment="Center" Orientation="Vertical">
+                            <StackPanel
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                Orientation="Vertical">
                                 <Image
-                                    Width="30"
-                                    Height="30"
+                                    x:Name="PART_Icon"
+                                    Width="{TemplateBinding IconWidth}"
+                                    Height="{TemplateBinding IconHeight}"
                                     HorizontalAlignment="Center"
                                     Source="{TemplateBinding Icon}"
-                                    Stretch="Uniform" />
+                                    Stretch="{TemplateBinding IconStretch}" />
                                 <TextBlock
+                                    x:Name="PART_Text"
+                                    Margin="{TemplateBinding TextMargin}"
                                     HorizontalAlignment="Center"
-                                    FontSize="10"
-                                    Foreground="White"
+                                    FontSize="{TemplateBinding TextFontSize}"
+                                    Foreground="{TemplateBinding TextForeground}"
                                     Text="{TemplateBinding Text}"
                                     TextAlignment="Center"
                                     TextWrapping="Wrap" />
                             </StackPanel>
                         </Button>
                     </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Root" Property="Opacity" Value="0.8" />
+                        </Trigger>
+
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="Root" Property="Opacity" Value="0.5" />
+                            <Setter TargetName="PART_Text" Property="Foreground" Value="Gray" />
+                        </Trigger>
+
+                        <Trigger Property="Icon" Value="{x:Null}">
+                            <Setter TargetName="PART_Icon" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter TargetName="PART_Text" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="Text" Value="">
+                            <Setter TargetName="PART_Text" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

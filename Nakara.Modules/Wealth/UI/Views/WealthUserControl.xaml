@@ -7,20 +7,30 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodels="clr-namespace:Nakara.Modules.Wealth.UI.ViewModels"
+    d:Background="Gray"
     d:DataContext="{d:DesignInstance Type=viewmodels:WealthUserControlViewModel}"
     d:DesignHeight="100"
     d:DesignWidth="300"
     mc:Ignorable="d">
     <UniformGrid Grid.Column="2" Columns="3">
         <controls:IconTextBlockCustomControl
+            VerticalAlignment="Center"
             d:Text="12500"
+            Spacing="-5"
             Style="{StaticResource AncientCoins}"
             Text="{Binding WealthModel.AncientCoins}" />
         <controls:IconTextBlockCustomControl
+            VerticalAlignment="Center"
             d:Text="12600"
             Command="{Binding NavigateToTopUpCommand}"
+            Spacing="-5"
             Style="{StaticResource GoldBrick}"
             Text="{Binding WealthModel.GoldBrick}" />
-        <controls:IconTextBlockCustomControl d:Text="12500" Style="{StaticResource HuanSi}" />
+        <controls:IconTextBlockCustomControl
+            VerticalAlignment="Center"
+            d:Text="12500"
+            Spacing="-5"
+            Style="{StaticResource HuanSi}"
+            Text="{Binding WealthModel.GoldBrick}" />
     </UniformGrid>
 </base:UserControlBase>

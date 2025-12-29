@@ -11,5 +11,10 @@
         /// 古币
         /// </summary>
         public double AncientCoins { get; set; }
+
+        /// <summary>
+        /// 幻丝
+        /// </summary>
+        public double HuanSi { get; set; }
     }
 }

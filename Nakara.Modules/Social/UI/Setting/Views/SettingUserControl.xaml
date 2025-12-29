@@ -94,8 +94,8 @@
                     Width="240"
                     Height="30"
                     Margin="0,5"
-                    Content="退至桌面"
                     Command="{Binding ExitCommand}"
+                    Content="退至桌面"
                     Style="{StaticResource SettingCommandButtonStyle}" />
             </StackPanel>
             <b:Interaction.Triggers>
@@ -104,6 +104,5 @@
                 </b:EventTrigger>
             </b:Interaction.Triggers>
         </Grid>
-
     </Grid>
 </base:UserControlBase>

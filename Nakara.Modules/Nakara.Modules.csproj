@@ -19,7 +19,7 @@
 
 
   <ItemGroup>
-    <Folder Include="Friend\UI\Models\" />
+    <Folder Include="Social\UI\Friend\UI\Models\" />
   </ItemGroup>
 
 </Project>

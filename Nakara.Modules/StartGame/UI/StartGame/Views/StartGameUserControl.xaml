@@ -123,6 +123,11 @@
                         Foreground="White"
                         Text="龙隐洞天" />
                 </Grid>
+                <b:Interaction.Triggers>
+                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                        <b:InvokeCommandAction Command="{Binding NavigateToModelSelectionCommand}" />
+                    </b:EventTrigger>
+                </b:Interaction.Triggers>
             </Grid>
             <Grid Grid.Row="4" Cursor="Hand">
                 <Grid.Background>

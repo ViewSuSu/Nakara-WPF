@@ -88,9 +88,8 @@
                 </Grid.ColumnDefinitions>
                 <ContentControl
                     Grid.Column="1"
-                    prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.RightSidePanelRegion}"
-                    BorderBrush="White"
-                    BorderThickness="1" />
+                    Panel.ZIndex="3"
+                    prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.RightSidePanelRegion}" />
             </Grid>
             <personalinformation:PersonalInformationUserControl
                 Grid.Row="1"
@@ -98,12 +97,11 @@
                 Height="30"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Bottom" />
-
-            <ContentControl Grid.Row="1" prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.MainContentRegion}" />
             <ContentControl
-                Grid.RowSpan="2"
-                Panel.ZIndex="10"
-                prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.HomePageRegion}" />
+                Grid.Row="1"
+                Panel.ZIndex="2"
+                prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.MainContentRegion}" />
+            <ContentControl Grid.RowSpan="2" prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.HomePageRegion}" />
         </Grid>
     </Grid>
 </Window>

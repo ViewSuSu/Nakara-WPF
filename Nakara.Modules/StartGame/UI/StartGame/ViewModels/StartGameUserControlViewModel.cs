@@ -11,19 +11,19 @@ namespace Nakara.Modules.StartGame.UI.StartGame.ViewModels
         public StartGameUserControlViewModel(IEventAggregator eventAggregator)
         {
             this.eventAggregator = eventAggregator;
-            StartGameCommand = new DelegateCommand(() =>
-            {
-                this.eventAggregator.GetEvent<LoadHomePageRegionEvent>()
-                    .Publish(nameof(ModeSelectionUserControl));
-            });
             NavigateToEventCenterMainCommand = new DelegateCommand(() =>
             {
                 this.eventAggregator.GetEvent<LoadHomePageRegionEvent>()
                     .Publish(nameof(EventCenterMainUserControl));
             });
+            NavigateToModelSelectionCommand = new DelegateCommand(() =>
+            {
+                this.eventAggregator.GetEvent<LoadHomePageRegionEvent>()
+                    .Publish(nameof(ModeSelectionUserControl));
+            });
         }
 
-        public DelegateCommand StartGameCommand { get; set; }
         public DelegateCommand NavigateToEventCenterMainCommand { get; set; }
+        public DelegateCommand NavigateToModelSelectionCommand { get; set; }
     }
 }

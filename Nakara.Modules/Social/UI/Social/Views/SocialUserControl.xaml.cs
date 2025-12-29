@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-namespace Nakara.Modules.Social.UI.Social.Views
+﻿namespace Nakara.Modules.Social.UI.Social.Views
 {
     /// <summary>
     /// SocialUserControl.xaml 的交互逻辑

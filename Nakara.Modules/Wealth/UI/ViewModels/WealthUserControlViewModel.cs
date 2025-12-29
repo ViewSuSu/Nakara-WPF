@@ -8,7 +8,12 @@ namespace Nakara.Modules.Wealth.UI.ViewModels
         private readonly IEventAggregator eventAggregator;
 
         public WealthModel WealthModel { get; } =
-            new WealthModel() { GoldBrick = 12500, AncientCoins = 1111 };
+            new WealthModel()
+            {
+                GoldBrick = 12500,
+                AncientCoins = 1111,
+                HuanSi = 108520,
+            };
 
         public WealthUserControlViewModel(IEventAggregator eventAggregator)
         {
