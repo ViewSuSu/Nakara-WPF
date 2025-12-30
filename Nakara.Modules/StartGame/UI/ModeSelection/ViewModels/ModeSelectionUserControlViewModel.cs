@@ -1,5 +1,4 @@
-﻿using Nakara.Framework.Core.Bases.ViewModels;
-using Nakara.Shared.Services.Abstractions;
+﻿using Nakara.Shared.Services.Abstractions;
 using Nakara.Shared.Services.Models;
 
 namespace Nakara.Modules.StartGame.UI.ModeSelection.ViewModels
@@ -11,6 +10,7 @@ namespace Nakara.Modules.StartGame.UI.ModeSelection.ViewModels
         public List<ServerInformationModel> ServerInfos { get; }
 
         private ServerInformationModel selectedItem;
+
         public ServerInformationModel SelectedItem
         {
             get { return selectedItem; }

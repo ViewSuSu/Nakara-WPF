@@ -1,5 +1,4 @@
-﻿using Nakara.Framework.Core.Bases.ViewModels;
-using Nakara.Modules.Tutorial.UI.Views;
+﻿using Nakara.Modules.Tutorial.UI.Views;
 
 namespace Nakara.Modules.Social.UI.Setting.ViewModels
 {

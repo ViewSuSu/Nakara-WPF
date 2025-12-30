@@ -1,5 +1,4 @@
-﻿using Nakara.Modules.EventCenter.UI.LatestNews.Views;
-using Nakara.Modules.EventCenter.UI.Main.Views;
+﻿using Nakara.Modules.EventCenter.UI.Main.Views;
 using Nakara.Modules.StartGame.UI.ModeSelection.Views;
 
 namespace Nakara.Modules.StartGame.UI.StartGame.ViewModels

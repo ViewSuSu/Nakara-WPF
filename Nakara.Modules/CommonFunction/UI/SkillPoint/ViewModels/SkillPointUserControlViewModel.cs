@@ -1,6 +1,4 @@
-﻿using Nakara.Framework.Core.Bases.ViewModels;
-
-namespace Nakara.Modules.CommonFunction.UI.SkillPoint.ViewModels
+﻿namespace Nakara.Modules.CommonFunction.UI.SkillPoint.ViewModels
 {
     internal class SkillPointUserControlViewModel : CanRemoveMainContentRegionViewModelBase
     {

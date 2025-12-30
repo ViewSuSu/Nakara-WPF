@@ -1,6 +1,4 @@
-﻿using Nakara.Framework.Core.Bases.ViewModels;
-
-namespace Nakara.Modules.Tutorial.UI.ViewModels
+﻿namespace Nakara.Modules.Tutorial.UI.ViewModels
 {
     internal class TutorialUserControlViewModel : CanRemoveHomePageRegionViewModelBase
     {

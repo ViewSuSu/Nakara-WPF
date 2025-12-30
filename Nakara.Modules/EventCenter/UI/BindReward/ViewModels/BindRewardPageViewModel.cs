@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Nakara.Modules.EventCenter.UI.BindReward.ViewModels
+﻿namespace Nakara.Modules.EventCenter.UI.BindReward.ViewModels
 {
-    internal class BindRewardPageViewModel
-    {
-    }
+    internal class BindRewardPageViewModel { }
 }

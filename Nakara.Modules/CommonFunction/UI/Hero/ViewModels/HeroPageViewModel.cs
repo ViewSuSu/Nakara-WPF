@@ -1,6 +1,4 @@
-﻿using Nakara.Framework.Core.Bases.ViewModels;
-
-namespace Nakara.Modules.CommonFunction.UI.Hero.ViewModels
+﻿namespace Nakara.Modules.CommonFunction.UI.Hero.ViewModels
 {
     internal class HeroPageViewModel : CanRemoveMainContentRegionViewModelBase
     {

@@ -1,6 +1,4 @@
-﻿using System.Windows.Controls;
-
-namespace Nakara.Modules.PersonalInformation.UI.HeroData.Views
+﻿namespace Nakara.Modules.PersonalInformation.UI.HeroData.Views
 {
     /// <summary>
     /// HeroDataPage.xaml 的交互逻辑
