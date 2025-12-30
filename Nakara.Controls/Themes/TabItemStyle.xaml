@@ -5,7 +5,7 @@
         <Setter Property="Cursor" Value="Hand" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Padding" Value="5,0" />
-        <Setter Property="Height" Value="60" />
+        <Setter Property="MinHeight" Value="45" />
         <Setter Property="FontSize" Value="10" />
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="Template">

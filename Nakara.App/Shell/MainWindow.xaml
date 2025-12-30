@@ -27,7 +27,7 @@
         </Grid.Background>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="60" />
+                <RowDefinition Height="50" />
                 <RowDefinition />
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
@@ -38,7 +38,7 @@
                     <ColumnDefinition Width="0.5*" />
                     <ColumnDefinition Width="1.5*" />
                 </Grid.ColumnDefinitions>
-                <battlePass:BattlePassUserControl Grid.Column="0" Height="55" />
+                <battlePass:BattlePassUserControl Grid.Column="0"  />
                 <commonfunction:CommonFunctionUserControl Grid.Column="1" HorizontalAlignment="Center" />
                 <wealth:WealthUserControl Grid.Column="2" VerticalAlignment="Center" />
                 <social:SocialUserControl Grid.Column="4" VerticalAlignment="Center" />

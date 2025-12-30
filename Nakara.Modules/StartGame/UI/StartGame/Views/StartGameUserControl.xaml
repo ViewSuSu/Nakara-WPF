@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
     xmlns:base="clr-namespace:Nakara.Framework.Core.Bases;assembly=Nakara.Framework"
+    xmlns:controls="clr-namespace:Nakara.Controls;assembly=Nakara.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodels="clr-namespace:Nakara.Modules.StartGame.UI.StartGame.ViewModels"
@@ -21,10 +22,10 @@
                 <RowDefinition Height="1.5*" />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0" Cursor="Hand">
-                <Grid.Background>
+            <controls:HighlightBorder Grid.Row="0" Cursor="Hand">
+                <controls:HighlightBorder.Background>
                     <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/Region/StartGame/活动中心.png" Stretch="UniformToFill" />
-                </Grid.Background>
+                </controls:HighlightBorder.Background>
                 <Grid Background="Transparent">
                     <Grid.RowDefinitions>
                         <RowDefinition />
@@ -52,14 +53,14 @@
                         </b:EventTrigger>
                     </b:Interaction.Triggers>
                 </Grid>
-            </Grid>
-            <Grid
+            </controls:HighlightBorder>
+            <controls:HighlightBorder
                 Grid.Row="1"
                 Margin="0,2"
                 Cursor="Hand">
-                <Grid.Background>
+                <controls:HighlightBorder.Background>
                     <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/Region/StartGame/段位.png" Stretch="Fill" />
-                </Grid.Background>
+                </controls:HighlightBorder.Background>
                 <StackPanel
                     Margin="10,0,0,0"
                     HorizontalAlignment="Left"
@@ -73,7 +74,7 @@
                         </TextBlock>
                     </StackPanel>
                 </StackPanel>
-            </Grid>
+            </controls:HighlightBorder>
             <Grid Grid.Row="2">
                 <Border Background="Black">
                     <CheckBox
@@ -81,16 +82,17 @@
                         VerticalAlignment="Center"
                         Content="自动补充队友"
                         Foreground="White"
-                        IsChecked="True" />
+                        IsChecked="True"
+                        Style="{StaticResource DiamondCheckBoxStyle}" />
                 </Border>
             </Grid>
-            <Grid
+            <controls:HighlightBorder
                 Grid.Row="3"
                 Margin="0,2"
                 Cursor="Hand">
-                <Grid.Background>
+                <controls:HighlightBorder.Background>
                     <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/Region/StartGame/模式选择.png" Stretch="UniformToFill" />
-                </Grid.Background>
+                </controls:HighlightBorder.Background>
                 <Grid Margin="10,3,5,3">
                     <StackPanel
                         HorizontalAlignment="Left"
@@ -128,11 +130,11 @@
                         <b:InvokeCommandAction Command="{Binding NavigateToModelSelectionCommand}" />
                     </b:EventTrigger>
                 </b:Interaction.Triggers>
-            </Grid>
-            <Grid Grid.Row="4" Cursor="Hand">
-                <Grid.Background>
+            </controls:HighlightBorder>
+            <controls:HighlightBorder Grid.Row="4" Cursor="Hand">
+                <controls:HighlightBorder.Background>
                     <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/Region/StartGame/开始游戏.png" Stretch="UniformToFill" />
-                </Grid.Background>
+                </controls:HighlightBorder.Background>
                 <TextBlock
                     Grid.Row="3"
                     HorizontalAlignment="Center"
@@ -146,7 +148,7 @@
                         </b:EventTrigger>
                     </b:Interaction.Triggers>
                 </TextBlock>
-            </Grid>
+            </controls:HighlightBorder>
         </Grid>
     </Grid>
 </base:UserControlBase>

@@ -9,5 +9,7 @@
         <ResourceDictionary Source="/Nakara.Controls;component/Themes/TabControlStyle.xaml" />
         <ResourceDictionary Source="/Nakara.Controls;component/Themes/ImageStyle.xaml" />
         <ResourceDictionary Source="/Nakara.Controls;component/Themes/CustonControlStyle.xaml" />
+        <ResourceDictionary Source="/Nakara.Controls;component/Themes/ComboboxStyle.xaml" />
+        <ResourceDictionary Source="/Nakara.Controls;component/Themes/CheckBoxStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

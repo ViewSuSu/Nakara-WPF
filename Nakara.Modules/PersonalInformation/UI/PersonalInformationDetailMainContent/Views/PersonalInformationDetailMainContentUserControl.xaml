@@ -93,7 +93,7 @@
                     d:IsSelected="True"
                     Background="Transparent"
                     Header="历史战绩"
-                    Style="{StaticResource CommonFunctionTabItem}">
+                    Style="{StaticResource CommonFunctionTabItem}" Cursor="Hand">
                     <historyMatchRecord:HistoryMatchRecordPage />
                 </TabItem>
                 <TabItem

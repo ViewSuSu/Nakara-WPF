@@ -499,14 +499,39 @@
         </TabControl>
         <Grid Grid.Row="2" Margin="50,0">
             <StackPanel
+                Height="30"
                 Margin="0,0,20,0"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Bottom"
                 Orientation="Horizontal">
-                <TextBlock
-                    Margin="0,0,10,50"
-                    Foreground="White"
-                    Text="杭州市" />
-                <TextBlock Foreground="Green" Text="21ms" />
+                <controls:UpwardComboBox
+                    Width="150"
+                    HorizontalContentAlignment="Stretch"
+                    d:ItemsSource="{d:SampleData ItemCount=5}"
+                    ItemsSource="{Binding ServerInfos, Mode=OneWay}"
+                    ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                    ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                    SelectedItem="{Binding SelectedItem}">
+                    <controls:UpwardComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <TextBlock
+                                    Grid.Column="0"
+                                    HorizontalAlignment="Left"
+                                    d:Text="杭州市"
+                                    Foreground="White"
+                                    Text="{Binding City, Mode=OneWay}" />
+                                <TextBlock
+                                    Grid.Column="2"
+                                    HorizontalAlignment="Right"
+                                    Foreground="Green">
+                                    <Run d:Text="20" Text="{Binding NetworkLatency}" />
+                                    <Run Text="ms" />
+                                </TextBlock>
+                            </Grid>
+                        </DataTemplate>
+                    </controls:UpwardComboBox.ItemTemplate>
+                </controls:UpwardComboBox>
             </StackPanel>
             <!--<StackPanel
                         Margin="20,0,20,20"

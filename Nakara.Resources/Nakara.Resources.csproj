@@ -16,6 +16,9 @@
 	  <None Remove="Image\Button\SettingCommandDefaultBackground.png" />
 	  <None Remove="Image\Button\SettingCommandHightlightBackground.png" />
 	  <None Remove="Image\heroShow.png" />
+	  <None Remove="Image\HeroStandArt\岳山.png" />
+	  <None Remove="Image\HeroStandArt\胡为.png" />
+	  <None Remove="Image\HeroStandArt\胡桃.png" />
 	  <None Remove="Image\Icon.png" />
 	  <None Remove="Image\logo.png" />
 	  <None Remove="Image\Button\古币.png" />
@@ -56,6 +59,9 @@
 	  <Resource Include="Image\Button\邮箱.png" />
 	  <Resource Include="Image\Button\音乐.png" />
 	  <Resource Include="Image\heroShow.png" />
+	  <Resource Include="Image\HeroStandArt\岳山.png" />
+	  <Resource Include="Image\HeroStandArt\胡为.png" />
+	  <Resource Include="Image\HeroStandArt\胡桃.png" />
 	  <Resource Include="Image\Icon.png" />
 	  <Resource Include="Image\logo.png" />
 	  <Resource Include="Image\Button\古币.png" />
@@ -66,6 +72,7 @@
 	  <Resource Include="Image\Region\EventCenter\LatestNews\3.png" />
 	  <Resource Include="Image\Region\EventCenter\LatestNews\4.png" />
 	  <Resource Include="Image\Region\EventCenter\LatestNews\5.png" />
+	  <Resource Include="Image\Region\ModeSelection\background.png" />
 	  <Resource Include="Image\Region\StartGame\开始游戏.png" />
 	  <Resource Include="Image\Region\StartGame\模式.png" />
 	  <Resource Include="Image\Region\StartGame\模式选择.png" />

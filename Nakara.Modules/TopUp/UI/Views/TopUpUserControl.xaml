@@ -49,23 +49,32 @@
                     <RowDefinition Height="0.7*" />
                     <RowDefinition />
                 </Grid.RowDefinitions>
+
                 <UniformGrid Grid.Row="0" Columns="3">
-                    <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/TopUp/1.png" Stretch="UniformToFill" />
-                    <Image
-                        Margin="10,0"
-                        Source="pack://application:,,,/Nakara.Resources;component/Image/Region/TopUp/2.png"
-                        Stretch="UniformToFill" />
-                    <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/TopUp/3.png" Stretch="UniformToFill" />
+                    <controls:HighlightBorder>
+                        <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/TopUp/1.png" Stretch="UniformToFill" />
+                    </controls:HighlightBorder>
+
+                    <controls:HighlightBorder Margin="10,0">
+                        <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/TopUp/2.png" Stretch="UniformToFill" />
+                    </controls:HighlightBorder>
+
+                    <controls:HighlightBorder>
+                        <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/TopUp/3.png" Stretch="UniformToFill" />
+                    </controls:HighlightBorder>
                 </UniformGrid>
+
                 <UniformGrid
                     Grid.Row="1"
                     Margin="0,10"
                     Columns="2">
-                    <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/TopUp/4.png" Stretch="UniformToFill" />
-                    <Image
-                        Margin="10,0,0,0"
-                        Source="pack://application:,,,/Nakara.Resources;component/Image/Region/TopUp/5.png"
-                        Stretch="UniformToFill" />
+                    <controls:HighlightBorder>
+                        <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/TopUp/4.png" Stretch="UniformToFill" />
+                    </controls:HighlightBorder>
+
+                    <controls:HighlightBorder Margin="10,0,0,0">
+                        <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/TopUp/5.png" Stretch="UniformToFill" />
+                    </controls:HighlightBorder>
                 </UniformGrid>
             </Grid>
         </Grid>

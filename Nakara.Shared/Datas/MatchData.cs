@@ -14,7 +14,6 @@ namespace Nakara.Shared.Jsons
 
     public class MatchDataItem
     {
-
         /// <summary>
         /// 英雄头像
         /// </summary>
@@ -45,7 +44,6 @@ namespace Nakara.Shared.Jsons
         /// </summary>
         public double Damage { get; set; }
 
-
         /// <summary>
         /// 当前段位
         /// </summary>
@@ -60,7 +58,6 @@ namespace Nakara.Shared.Jsons
         /// 比赛时间
         /// </summary>
         public DateTime GameTime { get; set; }
-
 
         /// <summary>
         /// 是否是豪杰对局

@@ -75,9 +75,9 @@
                         </UniformGrid>
                     </Grid>
                     <UniformGrid Grid.Row="1" Columns="3">
-                        <Image />
-                        <Image />
-                        <Image />
+                        <Image Source="pack://application:,,,/Nakara.Resources;component/Image/HeroStandArt/胡桃.png" Stretch="Uniform" />
+                        <Image Source="pack://application:,,,/Nakara.Resources;component/Image/HeroStandArt/胡为.png" Stretch="Uniform" />
+                        <Image Source="pack://application:,,,/Nakara.Resources;component/Image/HeroStandArt/岳山.png" Stretch="Uniform" />
                     </UniformGrid>
                     <ListBox
                         Grid.Row="2"

@@ -1,6 +1,6 @@
 ﻿namespace Nakara.Shared.Services.Models
 {
-    internal class ServerInformationModel
+    public class ServerInformationModel
     {
         /// <summary>
         /// 城市

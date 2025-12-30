@@ -1,0 +1,89 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="DiamondCheckBoxStyle" TargetType="CheckBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <!--  菱形容器  -->
+                        <Grid
+                            x:Name="diamondContainer"
+                            Width="18"
+                            Height="18"
+                            Margin="0,0,5,0">
+
+                            <!--  使用Viewbox确保内容适配  -->
+                            <Viewbox Stretch="Uniform">
+                                <!--  菱形边框  -->
+                                <Canvas Width="18" Height="18">
+                                    <!--  菱形：从(2,9)开始，到(16,9)结束  -->
+                                    <Path
+                                        x:Name="diamondBorder"
+                                        Data="M9,2 L16,9 9,16 2,9 Z"
+                                        Fill="Transparent"
+                                        Stroke="{TemplateBinding Foreground}"
+                                        StrokeThickness="1.5" />
+
+                                    <!--  对勾标记（完美居中）  -->
+                                    <Path
+                                        x:Name="checkedPath"
+                                        Data="M5,9 L8,12 13,7"
+                                        Opacity="0"
+                                        Stroke="{TemplateBinding Foreground}"
+                                        StrokeEndLineCap="Round"
+                                        StrokeLineJoin="Round"
+                                        StrokeStartLineCap="Round"
+                                        StrokeThickness="2.5" />
+
+                                    <!--  不确定标记（完美居中）  -->
+                                    <Path
+                                        x:Name="indeterminatePath"
+                                        Data="M5,9 L13,9"
+                                        Opacity="0"
+                                        Stroke="{TemplateBinding Foreground}"
+                                        StrokeEndLineCap="Round"
+                                        StrokeStartLineCap="Round"
+                                        StrokeThickness="2.5" />
+                                </Canvas>
+                            </Viewbox>
+                        </Grid>
+
+                        <ContentPresenter
+                            x:Name="contentPresenter"
+                            Grid.Column="1"
+                            Margin="2,0,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            RecognizesAccessKey="True" />
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <!--  选中状态  -->
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="checkedPath" Property="Opacity" Value="1" />
+                        </Trigger>
+
+                        <!--  不确定状态  -->
+                        <Trigger Property="IsChecked" Value="{x:Null}">
+                            <Setter TargetName="indeterminatePath" Property="Opacity" Value="1" />
+                        </Trigger>
+
+                        <!--  禁用状态  -->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Opacity" Value="0.6" />
+                        </Trigger>
+
+                        <!--  鼠标悬停效果  -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="diamondBorder" Property="StrokeThickness" Value="2" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

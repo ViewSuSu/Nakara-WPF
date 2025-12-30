@@ -7,7 +7,9 @@
     xmlns:local="clr-namespace:Nakara.Modules.PersonalInformation.UI.HistoryMatchRecord.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodels="clr-namespace:Nakara.Modules.Wealth.UI.Main.ViewModels"
+    xmlns:viewmodels1="clr-namespace:Nakara.Modules.PersonalInformation.UI.HistoryMatchRecord.ViewModels"
     d:Background="Gray"
+    d:DataContext="{d:DesignInstance Type=viewmodels1:HistoryMatchRecordPageViewModel}"
     d:DesignHeight="720"
     d:DesignWidth="1080"
     mc:Ignorable="d">
@@ -29,7 +31,6 @@
                 <Button Width="100" Content="征神之路" />
                 <Button Width="100" Content="无间镖客" />
             </StackPanel>
-
             <Border Grid.Row="1">
                 <ListBox
                     HorizontalContentAlignment="Stretch"
@@ -40,7 +41,7 @@
                         <DataTemplate>
                             <Grid Margin="0,5">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="40" />
+                                    <ColumnDefinition Width="80" />
                                     <ColumnDefinition Width="2*" />
                                     <ColumnDefinition Width="40" />
                                     <ColumnDefinition />
@@ -49,15 +50,28 @@
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
                                 <Image Grid.Column="0" Source="{Binding Avatar, Mode=OneWay}" />
-                                <TextBlock
+                                <StackPanel
                                     Grid.Column="1"
                                     Margin="10,0,0,0"
-                                    VerticalAlignment="Center">
-                                    <Run d:Text="7" Text="{Binding CurrentRank, Mode=OneWay}" />
-                                    <Run d:Text="/" />
-                                    <Run d:Text="17" Text="{Binding AllTeams, Mode=OneWay}" />
-                                </TextBlock>
+                                    Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Foreground="White">
+                                        <Run d:Text="7" Text="{Binding CurrentRank, Mode=OneWay}" />
+                                        <Run d:Text="/" />
+                                        <Run d:Text="17" Text="{Binding AllTeams, Mode=OneWay}" />
+                                    </TextBlock>
+                                    <TextBlock
+                                        Margin="10,0,0,0"
+                                        VerticalAlignment="Center"
+                                        d:Text="15"
+                                        Foreground="White"
+                                        Text="{Binding KillNumber}" />
+                                </StackPanel>
                                 <Image Grid.Column="2" />
+                                <TextBlock
+                                    Grid.Column="6"
+                                    VerticalAlignment="Center"
+                                    Foreground="White"
+                                    Text="{Binding GameTime, StringFormat={}{0:yyyy-MM-dd HH:mm}}" />
                             </Grid>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
