@@ -14,6 +14,9 @@
     d:DesignWidth="1080"
     mc:Ignorable="d">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Nakara.Resources;component/Image/background2.png" Stretch="UniformToFill" />
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition Height="0.1*" />
@@ -27,9 +30,22 @@
                 Grid.Row="0"
                 HorizontalAlignment="Left"
                 Orientation="Horizontal">
-                <Button Width="100" Content="天选之人" />
-                <Button Width="100" Content="征神之路" />
-                <Button Width="100" Content="无间镖客" />
+                <Button
+                    Width="100"
+                    Background="#1A000000"
+                    Content="天选之人"
+                    Style="{StaticResource HistoryMatchRecordButton}" />
+                <Button
+                    Width="100"
+                    Margin="10,0"
+                    Background="#1A000000"
+                    Content="征神之路"
+                    Style="{StaticResource HistoryMatchRecordButton}" />
+                <Button
+                    Width="100"
+                    Background="#1A000000"
+                    Content="无间镖客"
+                    Style="{StaticResource HistoryMatchRecordButton}" />
             </StackPanel>
             <Border Grid.Row="1">
                 <ListBox
@@ -39,39 +55,155 @@
                     ItemsSource="{Binding MatchDataItems, Mode=OneWay}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <Grid Margin="0,5">
+                            <Grid
+                                Height="70"
+                                Margin="0,5"
+                                Background="#1A000000">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="80" />
-                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="40" />
                                     <ColumnDefinition />
+                                    <ColumnDefinition Width="*" />
                                     <ColumnDefinition />
-                                    <ColumnDefinition />
-                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="0.9*" />
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" Source="{Binding Avatar, Mode=OneWay}" />
-                                <StackPanel
-                                    Grid.Column="1"
+                                <Border
+                                    Grid.Column="0"
                                     Margin="10,0,0,0"
-                                    Orientation="Horizontal">
-                                    <TextBlock VerticalAlignment="Center" Foreground="White">
-                                        <Run d:Text="7" Text="{Binding CurrentRank, Mode=OneWay}" />
-                                        <Run d:Text="/" />
-                                        <Run d:Text="17" Text="{Binding AllTeams, Mode=OneWay}" />
-                                    </TextBlock>
-                                    <TextBlock
-                                        Margin="10,0,0,0"
+                                    BorderBrush="White"
+                                    BorderThickness="0.1">
+                                    <Image
+                                        Width="60"
+                                        d:Source="pack://application:,,,/Nakara.Resources;component/Image/Hero/顾清寒.png"
+                                        Source="{Binding Avatar, Mode=OneWay}" />
+                                </Border>
+                                <Grid Grid.Column="1" Margin="5,0,0,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Image
+                                        Height="20"
+                                        HorizontalAlignment="Left"
                                         VerticalAlignment="Center"
-                                        d:Text="15"
-                                        Foreground="White"
-                                        Text="{Binding KillNumber}" />
-                                </StackPanel>
-                                <Image Grid.Column="2" />
-                                <TextBlock
-                                    Grid.Column="6"
+                                        d:Source="pack://application:,,,/Nakara.Resources;component/Image/出类拔萃.png" />
+                                    <StackPanel
+                                        Grid.Row="1"
+                                        Margin="0,5,0,0"
+                                        VerticalAlignment="Center"
+                                        Orientation="Horizontal">
+                                        <TextBlock VerticalAlignment="Center" Foreground="White">
+                                            <Run d:Text="7" Text="{Binding CurrentRank, Mode=OneWay}" />
+                                            <Run Text="/" />
+                                            <Run d:Text="17" Text="{Binding AllTeams, Mode=OneWay}" />
+                                        </TextBlock>
+                                    </StackPanel>
+                                </Grid>
+                                <StackPanel
+                                    Grid.Column="2"
+                                    HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
-                                    Foreground="White"
-                                    Text="{Binding GameTime, StringFormat={}{0:yyyy-MM-dd HH:mm}}" />
+                                    Orientation="Horizontal">
+                                    <Image
+                                        Height="20"
+                                        Source="pack://application:,,,/Nakara.Resources;component/Image/击杀数.png"
+                                        Stretch="UniformToFill" />
+                                    <TextBlock
+                                        Margin="5,0,0,0"
+                                        VerticalAlignment="Center"
+                                        d:Text="1"
+                                        Foreground="White" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Column="3"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Orientation="Horizontal">
+                                    <Image
+                                        Height="20"
+                                        Source="pack://application:,,,/Nakara.Resources;component/Image/造成伤害.png"
+                                        Stretch="UniformToFill" />
+                                    <TextBlock
+                                        Margin="5,0,0,0"
+                                        VerticalAlignment="Center"
+                                        d:Text="12345"
+                                        Foreground="White" />
+                                </StackPanel>
+                                <Grid Grid.Column="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition Width="30" />
+                                    </Grid.ColumnDefinitions>
+                                    <UniformGrid Rows="2">
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock
+                                                VerticalAlignment="Center"
+                                                d:Text="无相龙王"
+                                                FontSize="15"
+                                                Foreground="White" />
+                                            <Image
+                                                Width="20"
+                                                Margin="5,0,0,0"
+                                                Source="pack://application:,,,/Nakara.Resources;component/Image/星.png" />
+                                            <TextBlock
+                                                VerticalAlignment="Center"
+                                                d:Text="15"
+                                                Foreground="#FFFFA500" />
+                                        </StackPanel>
+                                        <Grid VerticalAlignment="Center">
+
+                                            <ProgressBar
+                                                Height="15"
+                                                d:Maximum="100"
+                                                d:Value="40"
+                                                Background="Black"
+                                                Foreground="Orange" />
+                                            <TextBlock Margin="5,0,0,0" Foreground="White">
+                                                <Run d:Text="42" />
+                                                <Run d:Text="(" />
+                                                <Run d:Text="12" />
+                                                <Run d:Text=")" />
+                                            </TextBlock>
+                                        </Grid>
+                                    </UniformGrid>
+                                    <Image
+                                        Grid.Column="1"
+                                        VerticalAlignment="Center"
+                                        Source="pack://application:,,,/Nakara.Resources;component/Image/400+.png"
+                                        Visibility="{Binding IsEasy}" />
+                                </Grid>
+                                <Grid Grid.Column="6" Margin="10,0,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition Width="30" />
+                                    </Grid.ColumnDefinitions>
+                                    <UniformGrid Rows="2">
+                                        <Grid>
+                                            <TextBlock
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Center"
+                                                d:Text="排位赛三排"
+                                                FontSize="15"
+                                                Foreground="White" />
+                                            <Image
+                                                Width="20"
+                                                HorizontalAlignment="Right"
+                                                Source="pack://application:,,,/Nakara.Resources;component/Image/豪杰对局.png"
+                                                Visibility="{Binding IsHaoJie}" />
+                                        </Grid>
+                                        <TextBlock
+                                            Grid.Row="1"
+                                            VerticalAlignment="Center"
+                                            Foreground="#14FFFFFF"
+                                            Text="{Binding GameTime, StringFormat={}{0:HH:mm  yyyy/MM/dd }}" />
+                                    </UniformGrid>
+                                    <Image
+                                        Grid.Column="1"
+                                        Width="20"
+                                        VerticalAlignment="Center"
+                                        Source="pack://application:,,,/Nakara.Resources;component/Image/对局详情.png" />
+                                </Grid>
                             </Grid>
                         </DataTemplate>
                     </ListBox.ItemTemplate>

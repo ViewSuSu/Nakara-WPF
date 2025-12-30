@@ -9,6 +9,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Remove="Image\400+.png" />
 	  <None Remove="Image\Avatar\1.png" />
 	  <None Remove="Image\Avatar\10.png" />
 	  <None Remove="Image\Avatar\11.png" />
@@ -43,6 +44,7 @@
 	  <None Remove="Image\background2.png" />
 	  <None Remove="Image\BattlePassBackground.png" />
 	  <None Remove="Image\Button\FriendTabItemBackground.png" />
+	  <None Remove="Image\Button\HistoryMatchRecordBackground.png" />
 	  <None Remove="Image\Button\SettingCommandDefaultBackground.png" />
 	  <None Remove="Image\Button\SettingCommandHightlightBackground.png" />
 	  <None Remove="Image\Button\入劫门.png" />
@@ -58,6 +60,25 @@
 	  <None Remove="Image\HeroStandArt\岳山.png" />
 	  <None Remove="Image\HeroStandArt\胡为.png" />
 	  <None Remove="Image\HeroStandArt\胡桃.png" />
+	  <None Remove="Image\Hero\哈迪.png" />
+	  <None Remove="Image\Hero\天海.png" />
+	  <None Remove="Image\Hero\妖刀姬.png" />
+	  <None Remove="Image\Hero\季莹莹.png" />
+	  <None Remove="Image\Hero\宁红叶.png" />
+	  <None Remove="Image\Hero\岳山.png" />
+	  <None Remove="Image\Hero\崔三娘.png" />
+	  <None Remove="Image\Hero\无尘.png" />
+	  <None Remove="Image\Hero\武田信忠.png" />
+	  <None Remove="Image\Hero\殷紫萍.png" />
+	  <None Remove="Image\Hero\沈妙.png" />
+	  <None Remove="Image\Hero\济沧海.png" />
+	  <None Remove="Image\Hero\特木尔.png" />
+	  <None Remove="Image\Hero\玉玲珑.png" />
+	  <None Remove="Image\Hero\胡为.png" />
+	  <None Remove="Image\Hero\胡桃.png" />
+	  <None Remove="Image\Hero\迦南.png" />
+	  <None Remove="Image\Hero\顾清寒.png" />
+	  <None Remove="Image\Hero\魏轻.png" />
 	  <None Remove="Image\Icon.png" />
 	  <None Remove="Image\logo.png" />
 	  <None Remove="Image\Button\古币.png" />
@@ -83,13 +104,21 @@
 	  <None Remove="Image\Region\StartGame\段位.png" />
 	  <None Remove="Image\Region\StartGame\活动中心.png" />
 	  <None Remove="Image\Region\Wealth\1.png" />
+	  <None Remove="Image\一人之下.png" />
+	  <None Remove="Image\出类拔萃.png" />
+	  <None Remove="Image\击杀数.png" />
+	  <None Remove="Image\唯我独尊.png" />
+	  <None Remove="Image\对局详情.png" />
 	  <None Remove="Image\提示Tip.png" />
 	  <None Remove="Image\星.png" />
 	  <None Remove="Image\活动中心logo.png" />
+	  <None Remove="Image\豪杰对局.png" />
 	  <None Remove="Image\通用功能按钮高亮背景.png" />
+	  <None Remove="Image\造成伤害.png" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Resource Include="Image\400+.png" />
 	  <Resource Include="Image\Avatar\1.png" />
 	  <Resource Include="Image\Avatar\10.png" />
 	  <Resource Include="Image\Avatar\11.png" />
@@ -124,6 +153,7 @@
 	  <Resource Include="Image\background2.png" />
 	  <Resource Include="Image\BattlePassBackground.png" />
 	  <Resource Include="Image\Button\FriendTabItemBackground.png" />
+	  <Resource Include="Image\Button\HistoryMatchRecordBackground.png" />
 	  <Resource Include="Image\Button\SettingCommandDefaultBackground.png" />
 	  <Resource Include="Image\Button\SettingCommandHightlightBackground.png" />
 	  <Resource Include="Image\Button\入劫门.png" />
@@ -144,6 +174,63 @@
 	  <Resource Include="Image\HeroStandArt\岳山.png" />
 	  <Resource Include="Image\HeroStandArt\胡为.png" />
 	  <Resource Include="Image\HeroStandArt\胡桃.png" />
+	  <Resource Include="Image\Hero\哈迪.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\天海.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\妖刀姬.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\季莹莹.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\宁红叶.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\岳山.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\崔三娘.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\无尘.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\武田信忠.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\殷紫萍.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\沈妙.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\济沧海.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\特木尔.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\玉玲珑.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\胡为.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\胡桃.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\迦南.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\顾清寒.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Image\Hero\魏轻.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
 	  <Resource Include="Image\Icon.png" />
 	  <Resource Include="Image\InventoryProps\胡桃.png" />
 	  <Resource Include="Image\logo.png" />
@@ -172,68 +259,15 @@
 	  <Resource Include="Image\Button\提示Tip.png" />
 	  <Resource Include="Image\Button\CommonFunctionButtonBackground.png" />
 	  <Resource Include="Image\Region\Wealth\1.png" />
+	  <Resource Include="Image\一人之下.png" />
+	  <Resource Include="Image\出类拔萃.png" />
+	  <Resource Include="Image\击杀数.png" />
+	  <Resource Include="Image\唯我独尊.png" />
+	  <Resource Include="Image\对局详情.png" />
 	  <Resource Include="Image\星.png" />
 	  <Resource Include="Image\活动中心logo.png" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Update="Image\Hero\哈迪.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\天海.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\妖刀姬.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\季莹莹.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\宁红叶.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\岳山.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\崔三娘.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\无尘.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\武田信忠.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\殷紫萍.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\沈妙.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\济沧海.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\特木尔.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\玉玲珑.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\胡为.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\胡桃.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\迦南.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\顾清寒.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Image\Hero\魏轻.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
+	  <Resource Include="Image\豪杰对局.png" />
+	  <Resource Include="Image\造成伤害.png" />
 	</ItemGroup>
 
 </Project>

@@ -46,7 +46,7 @@
                     Margin="0,5"
                     Command="{Binding ReturnCommand}"
                     Content="回到游戏"
-                    Style="{StaticResource SettingCommandButtonStyle}" />
+                    Style="{StaticResource SettingBackToGameCommandButtonStyle}" />
                 <Button
                     Width="240"
                     Height="30"
