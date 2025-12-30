@@ -63,6 +63,7 @@
 	  <Resource Include="Image\HeroStandArt\胡为.png" />
 	  <Resource Include="Image\HeroStandArt\胡桃.png" />
 	  <Resource Include="Image\Icon.png" />
+	  <Resource Include="Image\InventoryProps\胡桃.png" />
 	  <Resource Include="Image\logo.png" />
 	  <Resource Include="Image\Button\古币.png" />
 	  <Resource Include="Image\Button\幻丝.png" />

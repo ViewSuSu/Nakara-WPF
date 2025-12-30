@@ -35,7 +35,37 @@
     <Compile Update="CommonFunction\UI\SkillPoint\Views\SkillPointUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EventCenter\UI\BaiZeCard\Views\BaiZeCardPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventCenter\UI\BindReward\Views\BindRewardPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="EventCenter\UI\LatestNews\Views\LatestNewsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventCenter\UI\MoonGazingPavilion\Views\MoonGazingPavilionPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventCenter\UI\NetEasePayRewards\Views\NetEasePayRewardsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventCenter\UI\PassingTheFlame\Views\PassingTheFlamePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventCenter\UI\PatchNote\Views\PatchNotePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventCenter\UI\PenglaiGuide\Views\PenglaiGuidePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventCenter\UI\TargetedChestGuarantee\Views\TargetedChestGuaranteePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventCenter\UI\TimeLimitedEvent\Views\TimeLimitedEventPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventCenter\UI\WelcomeBackEvent\Views\WelcomeBackEventPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="PersonalInformation\UI\AvatarFrame\Views\AvatarFramePage.xaml.cs">

@@ -4,13 +4,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:attach="clr-namespace:Nakara.Framework.UI.AttachedProperties;assembly=Nakara.Framework"
     xmlns:b="clr-namespace:Microsoft.Xaml.Behaviors;assembly=Microsoft.Xaml.Behaviors"
+    xmlns:baize="clr-namespace:Nakara.Modules.EventCenter.UI.BaiZeCard.Views"
     xmlns:bases="clr-namespace:Nakara.Framework.Core.Bases;assembly=Nakara.Framework"
+    xmlns:bindReward="clr-namespace:Nakara.Modules.EventCenter.UI.BindReward.Views"
     xmlns:controls="clr-namespace:Nakara.Controls;assembly=Nakara.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:latestNews="clr-namespace:Nakara.Modules.EventCenter.UI.LatestNews.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:moonGazingPavilion="clr-namespace:Nakara.Modules.EventCenter.UI.MoonGazingPavilion.Views"
+    xmlns:netEasePayRewards="clr-namespace:Nakara.Modules.EventCenter.UI.NetEasePayRewards.Views"
+    xmlns:passingTheFlame="clr-namespace:Nakara.Modules.EventCenter.UI.PassingTheFlame.Views"
+    xmlns:patchNotePage="clr-namespace:Nakara.Modules.EventCenter.UI.PatchNote.Views"
+    xmlns:penglaiGuide="clr-namespace:Nakara.Modules.EventCenter.UI.PenglaiGuide.Views"
     xmlns:prism="http://prismlibrary.com/"
+    xmlns:targetedChestGuarantee="clr-namespace:Nakara.Modules.EventCenter.UI.TargetedChestGuarantee.Views"
+    xmlns:timeLimitedEvent="clr-namespace:Nakara.Modules.EventCenter.UI.TimeLimitedEvent.Views"
     xmlns:viewmodels="clr-namespace:Nakara.Modules.EventCenter.UI.Main.ViewModels"
+    xmlns:welcomeback="clr-namespace:Nakara.Modules.EventCenter.UI.WelcomeBackEvent.Views"
     attach:EscKeyAttachedProperty.Command="{Binding ReturnCommand}"
     d:DataContext="{d:DesignInstance Type=viewmodels:EventCenterMainUserControlViewModel}"
     d:DesignHeight="720"
@@ -33,7 +43,7 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock
                     HorizontalAlignment="Left"
-                    VerticalAlignment="Center"
+                    VerticalAlignment="Top"
                     FontSize="30"
                     Foreground="White"
                     Text="活动中心" />
@@ -60,85 +70,87 @@
                     VerticalAlignment="Center"
                     d:IsSelected="True"
                     Background="Transparent"
-                    Header="紫禁之巅"
-                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
-                    Style="{StaticResource CommonFunctionTabItem}" />
-                <TabItem
-                    VerticalAlignment="Center"
-                    d:IsSelected="True"
-                    Background="Transparent"
                     Header="限时活动"
-                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
-                    Style="{StaticResource CommonFunctionTabItem}" />
+                    Style="{StaticResource CommonFunctionTabItem}">
+                    <timeLimitedEvent:TimeLimitedEventPage />
+                </TabItem>
                 <TabItem
                     VerticalAlignment="Center"
                     d:IsSelected="True"
                     Background="Transparent"
                     Header="揽月阁"
-                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
-                    Style="{StaticResource CommonFunctionTabItem}" />
-                <TabItem
-                    VerticalAlignment="Center"
-                    d:IsSelected="True"
-                    Background="Transparent"
-                    Header="侠风拓展包"
-                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
-                    Style="{StaticResource CommonFunctionTabItem}" />
+                    Style="{StaticResource CommonFunctionTabItem}">
+                    <moonGazingPavilion:MoonGazingPavilionPage />
+                </TabItem>
                 <TabItem
                     VerticalAlignment="Center"
                     d:IsSelected="True"
                     Background="Transparent"
                     Header="白泽月卡"
-                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
-                    Style="{StaticResource CommonFunctionTabItem}" />
+                    Style="{StaticResource CommonFunctionTabItem}">
+                    <baize:BaiZeCardPage />
+                </TabItem>
                 <TabItem
                     VerticalAlignment="Center"
                     d:IsSelected="True"
                     Background="Transparent"
                     Header="绑定有礼"
-                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
-                    Style="{StaticResource CommonFunctionTabItem}" />
+                    Style="{StaticResource CommonFunctionTabItem}">
+                    <bindReward:BindRewardPage />
+                </TabItem>
                 <TabItem
                     VerticalAlignment="Center"
                     d:IsSelected="True"
                     Background="Transparent"
                     Header="英雄归来"
-                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
-                    Style="{StaticResource CommonFunctionTabItem}" />
+                    Style="{StaticResource CommonFunctionTabItem}">
+                    <welcomeback:WelcomeBackEventPage />
+                </TabItem>
                 <TabItem
                     VerticalAlignment="Center"
                     d:IsSelected="True"
                     Background="Transparent"
                     Header="传火"
-                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
-                    Style="{StaticResource CommonFunctionTabItem}" />
+                    Style="{StaticResource CommonFunctionTabItem}">
+                    <passingTheFlame:PassingTheFlamePage />
+                </TabItem>
                 <TabItem
                     VerticalAlignment="Center"
                     d:IsSelected="True"
                     Background="Transparent"
                     Header="蓬莱指南"
-                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
-                    Style="{StaticResource CommonFunctionTabItem}" />
+                    Style="{StaticResource CommonFunctionTabItem}">
+                    <penglaiGuide:PenglaiGuidePage />
+                </TabItem>
                 <TabItem
                     VerticalAlignment="Center"
                     d:IsSelected="True"
                     Background="Transparent"
                     Header="更新公告"
-                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
-                    Style="{StaticResource CommonFunctionTabItem}" />
+                    Style="{StaticResource CommonFunctionTabItem}">
+                    <patchNotePage:PatchNotePage />
+                </TabItem>
                 <TabItem
                     VerticalAlignment="Center"
                     d:IsSelected="True"
                     Background="Transparent"
                     Header="网易支付好礼"
-                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
-                    Style="{StaticResource CommonFunctionTabItem}" />
+                    Style="{StaticResource CommonFunctionTabItem}">
+                    <netEasePayRewards:NetEasePayRewardsPage />
+                </TabItem>
                 <TabItem
                     VerticalAlignment="Center"
                     d:IsSelected="True"
                     Background="Transparent"
                     Header="宝箱定向保底"
-                    IsSelected="{Binding NavigaToLatestNewsCommand.IsSelected}"
+                    Style="{StaticResource CommonFunctionTabItem}">
+                    <targetedChestGuarantee:TargetedChestGuaranteePage />
+                </TabItem>
+                <TabItem
+                    Width="100"
+                    VerticalAlignment="Center"
+                    Background="Transparent"
+                    Header=""
                     Style="{StaticResource CommonFunctionTabItem}" />
             </TabControl>
         </Grid>

@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:bases="clr-namespace:Nakara.Framework.Core.Bases;assembly=Nakara.Framework"
+    xmlns:controls="clr-namespace:Nakara.Controls;assembly=Nakara.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Nakara.Modules.EventCenter.UI.LatestNews.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -17,33 +18,29 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <Image
-                    Grid.Column="0"
-                    Margin="5,0"
-                    Source="pack://application:,,,/Nakara.Resources;component/Image/Region/EventCenter/LatestNews/1.png"
-                    Stretch="UniformToFill" />
+                <controls:HighlightBorder Grid.Column="0" Margin="5,0">
+                    <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/EventCenter/LatestNews/1.png" Stretch="UniformToFill" />
+                </controls:HighlightBorder>
                 <Grid Grid.Column="1" Margin="5,0">
                     <UniformGrid Rows="2">
-                        <Image
-                            Margin="0,5"
-                            Source="pack://application:,,,/Nakara.Resources;component/Image/Region/EventCenter/LatestNews/2.png"
-                            Stretch="UniformToFill" />
-                        <Image
-                            Margin="0,5"
-                            Source="pack://application:,,,/Nakara.Resources;component/Image/Region/EventCenter/LatestNews/4.png"
-                            Stretch="UniformToFill" />
+                        <controls:HighlightBorder Margin="0,5">
+                            <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/EventCenter/LatestNews/2.png" Stretch="UniformToFill" />
+                        </controls:HighlightBorder>
+
+                        <controls:HighlightBorder Margin="0,5">
+                            <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/EventCenter/LatestNews/4.png" Stretch="UniformToFill" />
+                        </controls:HighlightBorder>
                     </UniformGrid>
                 </Grid>
                 <Grid Grid.Column="2" Margin="5,0">
                     <UniformGrid Rows="2">
-                        <Image
-                            Margin="0,5"
-                            Source="pack://application:,,,/Nakara.Resources;component/Image/Region/EventCenter/LatestNews/3.png"
-                            Stretch="UniformToFill" />
-                        <Image
-                            Margin="0,5"
-                            Source="pack://application:,,,/Nakara.Resources;component/Image/Region/EventCenter/LatestNews/5.png"
-                            Stretch="UniformToFill" />
+                        <controls:HighlightBorder Margin="0,5">
+                            <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/EventCenter/LatestNews/3.png" Stretch="UniformToFill" />
+                        </controls:HighlightBorder>
+
+                        <controls:HighlightBorder Margin="0,5">
+                            <Image Source="pack://application:,,,/Nakara.Resources;component/Image/Region/EventCenter/LatestNews/5.png" Stretch="UniformToFill" />
+                        </controls:HighlightBorder>
                     </UniformGrid>
                 </Grid>
             </Grid>
