@@ -102,7 +102,11 @@
                 Grid.Row="1"
                 Panel.ZIndex="2"
                 prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.MainContentRegion}" />
-            <ContentControl Grid.RowSpan="2" prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.HomePageRegion}" />
+            <ContentControl Grid.RowSpan="2" prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.HomePageRegion1}" />
+            <ContentControl
+                Grid.RowSpan="2"
+                Panel.ZIndex="1"
+                prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.HomePageRegion2}" />
         </Grid>
     </Grid>
 </Window>

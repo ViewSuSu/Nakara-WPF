@@ -8,6 +8,10 @@
 
     public class RemoveHomePageRegionEvent : PubSubEvent { }
 
+    public class LoadHomePageRegionEvent2 : PubSubEvent<string> { }
+
+    public class RemoveHomePageRegionEvent2 : PubSubEvent { }
+
     public class LoadMainContentRegionEvent : PubSubEvent<string> { }
 
     public class RemoveMainContentRegionEvent : PubSubEvent { }

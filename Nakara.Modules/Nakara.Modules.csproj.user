@@ -92,6 +92,9 @@
     <Compile Update="PersonalInformation\UI\PersonalInformationDetailMainContent\Views\PersonalInformationDetailMainContentUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PersonalInformation\UI\PersonalInformationDetails\Views\HeroTagPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PersonalInformation\UI\PersonalInformationDetails\Views\PersonalInformationDetailsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

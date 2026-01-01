@@ -18,7 +18,7 @@ namespace Nakara.App.Shell
                 .Subscribe(
                     (viewName) =>
                     {
-                        _regionManager.RequestNavigate(GlobalConstant.HomePageRegion, viewName);
+                        _regionManager.RequestNavigate(GlobalConstant.HomePageRegion1, viewName);
                     },
                     ThreadOption.UIThread
                 );
@@ -28,7 +28,27 @@ namespace Nakara.App.Shell
                 .Subscribe(
                     () =>
                     {
-                        RevemoveRegionByName(GlobalConstant.HomePageRegion);
+                        RevemoveRegionByName(GlobalConstant.HomePageRegion1);
+                    },
+                    ThreadOption.UIThread
+                );
+
+            _eventAggregator
+                .GetEvent<LoadHomePageRegionEvent2>()
+                .Subscribe(
+                    (viewName) =>
+                    {
+                        _regionManager.RequestNavigate(GlobalConstant.HomePageRegion2, viewName);
+                    },
+                    ThreadOption.UIThread
+                );
+
+            _eventAggregator
+                .GetEvent<RemoveHomePageRegionEvent2>()
+                .Subscribe(
+                    () =>
+                    {
+                        RevemoveRegionByName(GlobalConstant.HomePageRegion2);
                     },
                     ThreadOption.UIThread
                 );

@@ -52,6 +52,7 @@
                     HorizontalContentAlignment="Stretch"
                     d:ItemsSource="{d:SampleData ItemCount=5}"
                     Background="Transparent"
+                    BorderThickness="0"
                     ItemsSource="{Binding MatchDataItems, Mode=OneWay}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
@@ -94,9 +95,9 @@
                                         VerticalAlignment="Center"
                                         Orientation="Horizontal">
                                         <TextBlock VerticalAlignment="Center" Foreground="White">
-                                            <Run d:Text="7" Text="{Binding CurrentRank, Mode=OneWay}" />
+                                            <Run Text="7" />
                                             <Run Text="/" />
-                                            <Run d:Text="17" Text="{Binding AllTeams, Mode=OneWay}" />
+                                            <Run Text="17" />
                                         </TextBlock>
                                     </StackPanel>
                                 </Grid>
@@ -112,8 +113,8 @@
                                     <TextBlock
                                         Margin="5,0,0,0"
                                         VerticalAlignment="Center"
-                                        d:Text="1"
-                                        Foreground="White" />
+                                        Foreground="White"
+                                        Text="1" />
                                 </StackPanel>
                                 <StackPanel
                                     Grid.Column="3"
@@ -127,8 +128,8 @@
                                     <TextBlock
                                         Margin="5,0,0,0"
                                         VerticalAlignment="Center"
-                                        d:Text="12345"
-                                        Foreground="White" />
+                                        Foreground="White"
+                                        Text="12345" />
                                 </StackPanel>
                                 <ItemsControl
                                     Grid.Column="4"
@@ -160,17 +161,17 @@
                                         <StackPanel Orientation="Horizontal">
                                             <TextBlock
                                                 VerticalAlignment="Center"
-                                                d:Text="无相龙王"
                                                 FontSize="15"
-                                                Foreground="White" />
+                                                Foreground="White"
+                                                Text="无相龙王" />
                                             <Image
                                                 Width="20"
                                                 Margin="5,0,0,0"
                                                 Source="pack://application:,,,/Nakara.Resources;component/Image/星.png" />
                                             <TextBlock
                                                 VerticalAlignment="Center"
-                                                d:Text="15"
-                                                Foreground="#FFFFA500" />
+                                                Foreground="#FFFFA500"
+                                                Text="15" />
                                         </StackPanel>
                                         <Grid VerticalAlignment="Center">
 
@@ -181,10 +182,10 @@
                                                 Background="Black"
                                                 Foreground="Orange" />
                                             <TextBlock Margin="5,0,0,0" Foreground="White">
-                                                <Run d:Text="42" />
-                                                <Run d:Text="(" />
-                                                <Run d:Text="12" />
-                                                <Run d:Text=")" />
+                                                <Run Text="42" />
+                                                <Run Text="(" />
+                                                <Run Text="12" />
+                                                <Run Text=")" />
                                             </TextBlock>
                                         </Grid>
                                     </UniformGrid>
@@ -204,9 +205,9 @@
                                             <TextBlock
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
-                                                d:Text="排位赛三排"
                                                 FontSize="15"
-                                                Foreground="White" />
+                                                Foreground="White"
+                                                Text="排位赛三排" />
                                             <Image
                                                 Width="20"
                                                 HorizontalAlignment="Right"
@@ -216,9 +217,8 @@
                                         <TextBlock
                                             Grid.Row="1"
                                             VerticalAlignment="Center"
-                                            d:Text="15:37 2025/12/21"
                                             Foreground="#64FFFFFF"
-                                            Text="{Binding GameTime, StringFormat={}{0:HH:mm  yyyy/MM/dd }}" />
+                                            Text="15:37 2025/12/21" />
                                     </UniformGrid>
                                     <Image
                                         Grid.Column="1"
