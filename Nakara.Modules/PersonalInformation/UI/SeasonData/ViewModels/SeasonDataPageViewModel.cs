@@ -1,4 +1,8 @@
 ﻿namespace Nakara.Modules.PersonalInformation.UI.SeasonData.ViewModels
 {
-    internal class SeasonDataPageViewModel { }
+    internal class SeasonDataPageViewModel : ViewModelBase
+    {
+        public SeasonDataPageViewModel(IContainerExtension containerExtension)
+            : base(containerExtension) { }
+    }
 }

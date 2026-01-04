@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:bases="clr-namespace:Nakara.Framework.Core.Bases;assembly=Nakara.Framework"
+    xmlns:controls="clr-namespace:Nakara.Controls;assembly=Nakara.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Nakara.Modules.PersonalInformation.UI.SocialAvatar.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -17,7 +18,7 @@
             <ColumnDefinition Width="0.5*" />
         </Grid.ColumnDefinitions>
         <TabControl Background="Transparent" Style="{StaticResource AverageTabControlStyle}">
-            <TabItem Header="全部" Style="{StaticResource IconTopTextHistoryTabItemStyle}">
+            <controls:IconTabItem Header="全部">
                 <ItemsControl d:ItemsSource="{d:SampleData ItemCount=50}" ItemsSource="{Binding InventoryItems}">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
@@ -27,7 +28,10 @@
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <Grid Margin="5">
-                                <Image Source="{Binding Icon}" Stretch="Uniform" />
+                                <Image
+                                    d:Source="pack://application:,,,/Nakara.Resources;component/Image/Avatar/1.png"
+                                    Source="{Binding Icon}"
+                                    Stretch="Uniform" />
                                 <Image
                                     Width="20"
                                     Height="20"
@@ -37,13 +41,13 @@
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
-            </TabItem>
-            <TabItem Header="英雄" Style="{StaticResource IconTopTextHistoryTabItemStyle}" />
-            <TabItem Header="武器" Style="{StaticResource IconTopTextHistoryTabItemStyle}" />
-            <TabItem Header="赛季奖励" Style="{StaticResource IconTopTextHistoryTabItemStyle}" />
-            <TabItem Header="隐族秘宝" Style="{StaticResource IconTopTextHistoryTabItemStyle}" />
-            <TabItem Header="限时活动" Style="{StaticResource IconTopTextHistoryTabItemStyle}" />
-            <TabItem Header="其他" Style="{StaticResource IconTopTextHistoryTabItemStyle}" />
+            </controls:IconTabItem>
+            <controls:IconTabItem Header="英雄" />
+            <controls:IconTabItem Header="武器" />
+            <controls:IconTabItem Header="赛季奖励" />
+            <controls:IconTabItem Header="隐族秘宝" />
+            <controls:IconTabItem Header="限时活动" />
+            <controls:IconTabItem Header="其他" />
         </TabControl>
         <Grid Grid.Column="1" Margin="20,0">
             <Grid.RowDefinitions>

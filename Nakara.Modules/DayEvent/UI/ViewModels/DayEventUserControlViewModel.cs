@@ -9,6 +9,11 @@ namespace Nakara.Modules.DayEvent.UI.ViewModels
     class DayEventUserControlViewModel : ViewModelBase
     {
         public DayEventUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+            : base(containerExtension)
+        {
+            TaskDetailsComamnd = new DelegateCommand(() => { });
+        }
+
+        public DelegateCommand TaskDetailsComamnd { get; set; }
     }
 }

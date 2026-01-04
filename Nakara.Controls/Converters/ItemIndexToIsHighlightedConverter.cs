@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Data;
 
 namespace Nakara.Controls.Converters
 {
+    /// <summary>
+    /// 将项索引转换为是否高亮显示的转换器
+    /// </summary>
     internal class ItemIndexToIsHighlightedConverter : IMultiValueConverter
     {
         public object Convert(
@@ -18,12 +17,10 @@ namespace Nakara.Controls.Converters
             CultureInfo culture
         )
         {
-            // values[0]: ComboBoxItem
-            // values[1]: ComboBox
             if (
                 values.Length >= 2
-                && values[0] is ComboBoxItem comboBoxItem
-                && values[1] is System.Windows.Controls.ComboBox comboBox
+                && values[0] is ToggleButtonComboBoxItem comboBoxItem
+                && values[1] is ToggleButtonComboBox comboBox
             )
             {
                 try
@@ -34,17 +31,15 @@ namespace Nakara.Controls.Converters
                     );
 
                     // 获取ComboBox的HighlightIndex属性
-                    var highlightIndex = ComboBoxToggleExtensions.GetHighlightIndex(comboBox);
+                    var highlightIndex = comboBox.HighlightIndex;
 
                     // 比较索引
-                    if (itemIndex >= 0 && itemIndex == highlightIndex)
-                    {
-                        return true;
-                    }
+                    return itemIndex >= 0 && itemIndex == highlightIndex;
                 }
                 catch
                 {
                     // 忽略错误，返回false
+                    return false;
                 }
             }
             return false;
@@ -57,7 +52,7 @@ namespace Nakara.Controls.Converters
             CultureInfo culture
         )
         {
-            throw new NotImplementedException();
+            throw new NotSupportedException();
         }
     }
 }

@@ -5,7 +5,6 @@
     xmlns:prism="http://prismlibrary.com/">
     <prism:PrismApplication.Resources>
         <ResourceDictionary>
-            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/Nakara.Controls;component/Themes/DefaultStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>

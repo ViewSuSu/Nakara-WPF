@@ -526,18 +526,17 @@
                         <RowDefinition Height="0.5*" />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <ComboBox
+                    <controls:ToggleButtonComboBox
                         Grid.Row="0"
                         Width="100"
                         HorizontalAlignment="Left"
-                        controls:ComboBoxToggleExtensions.HighlightIndex="0"
-                        SelectedIndex="0"
-                        Style="{StaticResource ComboBoxToggle}">
-                        <ComboBoxItem Content="所有赛季" />
-                        <ComboBoxItem Content="当前赛季" />
-                        <ComboBoxItem Content="第18赛季：侠风" />
-                        <ComboBoxItem Content="第17赛季：裂变" />
-                    </ComboBox>
+                        HighlightIndex="0"
+                        SelectedIndex="0">
+                        <controls:ToggleButtonComboBoxItem Content="所有赛季" />
+                        <controls:ToggleButtonComboBoxItem Content="当前赛季" />
+                        <controls:ToggleButtonComboBoxItem Content="第18赛季：侠风" />
+                        <controls:ToggleButtonComboBoxItem Content="第17赛季：裂变" />
+                    </controls:ToggleButtonComboBox>
                     <TextBlock
                         Grid.Row="0"
                         HorizontalAlignment="Right"
