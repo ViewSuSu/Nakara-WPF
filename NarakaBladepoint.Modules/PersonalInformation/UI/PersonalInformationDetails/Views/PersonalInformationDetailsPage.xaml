@@ -17,14 +17,14 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
-            <ColumnDefinition Width="0.55*" />
+            <ColumnDefinition Width="0.5*" />
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0" Margin="30,50">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.5*" />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0" Background="#3A000000">
+            <Grid Grid.Row="0" Background="#5A000000">
                 <Grid Margin="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.075*" />
@@ -34,14 +34,20 @@
                     <Image
                         Height="30"
                         VerticalAlignment="Top"
-                        Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/13.png" />
+                        Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/13.png">
+                        <b:Interaction.Triggers>
+                            <b:EventTrigger EventName="MouseLeftButtonDown">
+                                <b:InvokeCommandAction Command="{Binding ChangeMingPianCommand}" />
+                            </b:EventTrigger>
+                        </b:Interaction.Triggers>
+                    </Image>
                     <StackPanel
                         Grid.Column="1"
                         HorizontalAlignment="Center"
                         Orientation="Vertical">
                         <Image Height="100" />
                         <Image
-                            Width="60"
+                            Width="40"
                             VerticalAlignment="Bottom"
                             Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/5.png" />
                     </StackPanel>
@@ -52,10 +58,135 @@
                             <RowDefinition />
                             <RowDefinition Height="1.5*" />
                         </Grid.RowDefinitions>
-                        <TextBlock
-                            VerticalAlignment="Center"
-                            Foreground="White"
-                            Text="野排牢张" />
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.5*" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Border Height="30">
+                                <Grid>
+                                    <TextBlock
+                                        Margin="5,0"
+                                        VerticalAlignment="Center"
+                                        FontSize="18"
+                                        Foreground="White"
+                                        Text="野排牢张" />
+                                    <Image
+                                        Width="30"
+                                        HorizontalAlignment="Right"
+                                        Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/点击设置标签.png">
+                                        <b:Interaction.Triggers>
+                                            <b:EventTrigger EventName="MouseLeftButtonDown">
+                                                <b:InvokeCommandAction Command="{Binding ChangeInfoCommand}" />
+                                            </b:EventTrigger>
+                                        </b:Interaction.Triggers>
+                                    </Image>
+                                </Grid>
+                            </Border>
+                            <Grid Grid.Column="1" VerticalAlignment="Center">
+                                <TextBlock
+                                    VerticalAlignment="Center"
+                                    Foreground="White"
+                                    Text="未加入聚义厅" />
+                                <StackPanel
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    Orientation="Horizontal">
+                                    <Image
+                                        Width="20"
+                                        HorizontalAlignment="Right"
+                                        Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/9.png" />
+                                    <Image
+                                        Width="20"
+                                        Margin="5,0,0,0"
+                                        HorizontalAlignment="Right"
+                                        Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/10.png" />
+                                    <TextBlock
+                                        Margin="5,0,0,0"
+                                        VerticalAlignment="Center"
+                                        Foreground="White"
+                                        Text="ID:15315313545343" />
+                                </StackPanel>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.5*" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Border Height="30" Background="#5A000000">
+                                <Grid Margin="5,0">
+                                    <TextBlock
+                                        VerticalAlignment="Center"
+                                        Foreground="White"
+                                        Text="未选择称号" />
+                                    <Image
+                                        Width="20"
+                                        HorizontalAlignment="Right"
+                                        Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/12.png" />
+                                </Grid>
+                                <b:Interaction.Triggers>
+                                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                                        <b:InvokeCommandAction Command="{Binding ChoseChengHaoCommand}" />
+                                    </b:EventTrigger>
+                                </b:Interaction.Triggers>
+                            </Border>
+                            <Grid Grid.Column="1" VerticalAlignment="Center">
+                                <StackPanel
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    Orientation="Horizontal">
+                                    <Image
+                                        Width="20"
+                                        HorizontalAlignment="Right"
+                                        Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/6.png" />
+                                    <TextBlock
+                                        VerticalAlignment="Center"
+                                        Foreground="White"
+                                        Text="10000" />
+                                    <Image
+                                        Width="20"
+                                        Margin="5,0,0,0"
+                                        HorizontalAlignment="Right"
+                                        Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/8.png" />
+
+                                    <Image
+                                        Width="20"
+                                        Margin="30,0,0,0"
+                                        HorizontalAlignment="Right"
+                                        Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/7.png" />
+                                    <TextBlock
+                                        Margin="5,0,0,0"
+                                        VerticalAlignment="Center"
+                                        Foreground="White"
+                                        Text="822" />
+                                    <Image
+                                        Width="20"
+                                        Margin="5,0,0,0"
+                                        HorizontalAlignment="Right"
+                                        Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/8.png" />
+                                </StackPanel>
+                            </Grid>
+                        </Grid>
+
+                        <Border
+                            Grid.Row="2"
+                            Height="30"
+                            Background="#5A000000">
+                            <Grid>
+                                <TextBlock
+                                    Margin="5,0"
+                                    VerticalAlignment="Center"
+                                    Foreground="White"
+                                    Text="点击装配标签" />
+                                <Image HorizontalAlignment="Right" Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/点击设置标签.png" />
+                            </Grid>
+                            <b:Interaction.Triggers>
+                                <b:EventTrigger EventName="MouseLeftButtonDown">
+                                    <b:InvokeCommandAction Command="{Binding ChangeTagCommand}" />
+                                </b:EventTrigger>
+                            </b:Interaction.Triggers>
+                        </Border>
                         <StackPanel Grid.Row="3" Orientation="Horizontal">
                             <controls:HighlightBorder
                                 Width="40"
@@ -80,6 +211,11 @@
                                 <controls:HighlightBorder.Background>
                                     <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/19.png" Stretch="UniformToFill" />
                                 </controls:HighlightBorder.Background>
+                                <b:Interaction.Triggers>
+                                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                                        <b:InvokeCommandAction Command="{Binding HeroTagCommand}" />
+                                    </b:EventTrigger>
+                                </b:Interaction.Triggers>
                             </controls:HighlightBorder>
                             <controls:HighlightBorder
                                 Width="40"
@@ -90,6 +226,11 @@
                                 <controls:HighlightBorder.Background>
                                     <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/19.png" Stretch="UniformToFill" />
                                 </controls:HighlightBorder.Background>
+                                <b:Interaction.Triggers>
+                                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                                        <b:InvokeCommandAction Command="{Binding HeroTagCommand}" />
+                                    </b:EventTrigger>
+                                </b:Interaction.Triggers>
                             </controls:HighlightBorder>
                             <controls:HighlightBorder
                                 Width="40"
@@ -100,6 +241,11 @@
                                 <controls:HighlightBorder.Background>
                                     <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/19.png" Stretch="UniformToFill" />
                                 </controls:HighlightBorder.Background>
+                                <b:Interaction.Triggers>
+                                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                                        <b:InvokeCommandAction Command="{Binding HeroTagCommand}" />
+                                    </b:EventTrigger>
+                                </b:Interaction.Triggers>
                             </controls:HighlightBorder>
                             <controls:HighlightBorder
                                 Width="40"
@@ -110,6 +256,11 @@
                                 <controls:HighlightBorder.Background>
                                     <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/19.png" Stretch="UniformToFill" />
                                 </controls:HighlightBorder.Background>
+                                <b:Interaction.Triggers>
+                                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                                        <b:InvokeCommandAction Command="{Binding HeroTagCommand}" />
+                                    </b:EventTrigger>
+                                </b:Interaction.Triggers>
                             </controls:HighlightBorder>
                             <controls:HighlightBorder
                                 Width="40"
@@ -120,6 +271,11 @@
                                 <controls:HighlightBorder.Background>
                                     <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/19.png" Stretch="UniformToFill" />
                                 </controls:HighlightBorder.Background>
+                                <b:Interaction.Triggers>
+                                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                                        <b:InvokeCommandAction Command="{Binding HeroTagCommand}" />
+                                    </b:EventTrigger>
+                                </b:Interaction.Triggers>
                             </controls:HighlightBorder>
                             <controls:HighlightBorder
                                 Width="40"
@@ -130,6 +286,11 @@
                                 <controls:HighlightBorder.Background>
                                     <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/19.png" Stretch="UniformToFill" />
                                 </controls:HighlightBorder.Background>
+                                <b:Interaction.Triggers>
+                                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                                        <b:InvokeCommandAction Command="{Binding HeroTagCommand}" />
+                                    </b:EventTrigger>
+                                </b:Interaction.Triggers>
                             </controls:HighlightBorder>
                             <controls:HighlightBorder
                                 Width="40"
@@ -140,6 +301,11 @@
                                 <controls:HighlightBorder.Background>
                                     <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/19.png" Stretch="UniformToFill" />
                                 </controls:HighlightBorder.Background>
+                                <b:Interaction.Triggers>
+                                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                                        <b:InvokeCommandAction Command="{Binding HeroTagCommand}" />
+                                    </b:EventTrigger>
+                                </b:Interaction.Triggers>
                             </controls:HighlightBorder>
                             <controls:HighlightBorder
                                 Width="40"
@@ -150,12 +316,18 @@
                                 <controls:HighlightBorder.Background>
                                     <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/19.png" Stretch="UniformToFill" />
                                 </controls:HighlightBorder.Background>
+                                <b:Interaction.Triggers>
+                                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                                        <b:InvokeCommandAction Command="{Binding HeroTagCommand}" />
+                                    </b:EventTrigger>
+                                </b:Interaction.Triggers>
                             </controls:HighlightBorder>
                         </StackPanel>
                         <Image
                             Grid.Row="3"
                             Width="20"
                             Height="20"
+                            Margin="0,0,8,0"
                             HorizontalAlignment="Right"
                             VerticalAlignment="Center"
                             Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/12.png"
@@ -528,7 +700,6 @@
                         Grid.Row="0"
                         Width="100"
                         HorizontalAlignment="Left"
-                        HighlightIndex="0"
                         SelectedIndex="0">
                         <controls:ToggleButtonComboBoxItem Content="所有赛季" />
                         <controls:ToggleButtonComboBoxItem Content="当前赛季" />

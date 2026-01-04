@@ -15,7 +15,7 @@
     xmlns:social="clr-namespace:NarakaBladepoint.Modules.Social.UI.Social.Views;assembly=NarakaBladepoint.Modules"
     xmlns:startGame="clr-namespace:NarakaBladepoint.Modules.StartGame.UI.StartGame.Views;assembly=NarakaBladepoint.Modules"
     xmlns:wealth="clr-namespace:NarakaBladepoint.Modules.Wealth.UI.Main.Views;assembly=NarakaBladepoint.Modules"
-    Title="NarakaBladepoint"
+    Title="Naraka"
     Width="1080"
     Height="720"
     prism:ViewModelLocator.AutoWireViewModel="True"

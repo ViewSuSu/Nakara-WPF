@@ -6,7 +6,7 @@ using System.Windows.Media;
 namespace NarakaBladepoint.Controls
 {
     /// <summary>
-    /// 支持高亮显示特定项的自定义ComboBox控件
+    /// 支持自动高亮选中项的自定义ComboBox控件
     /// </summary>
     public class ToggleButtonComboBox : ComboBox
     {
@@ -25,30 +25,6 @@ namespace NarakaBladepoint.Controls
         #region 依赖属性
 
         /// <summary>
-        /// 高亮索引依赖属性
-        /// </summary>
-        public static readonly DependencyProperty HighlightIndexProperty =
-            DependencyProperty.Register(
-                "HighlightIndex",
-                typeof(int),
-                typeof(ToggleButtonComboBox),
-                new FrameworkPropertyMetadata(
-                    -1,
-                    FrameworkPropertyMetadataOptions.AffectsRender,
-                    OnHighlightIndexChanged
-                )
-            );
-
-        /// <summary>
-        /// 获取或设置要高亮显示的项的索引
-        /// </summary>
-        public int HighlightIndex
-        {
-            get => (int)GetValue(HighlightIndexProperty);
-            set => SetValue(HighlightIndexProperty, value);
-        }
-
-        /// <summary>
         /// 高亮背景依赖属性
         /// </summary>
         public static readonly DependencyProperty HighlightBackgroundProperty =
@@ -56,11 +32,7 @@ namespace NarakaBladepoint.Controls
                 "HighlightBackground",
                 typeof(Brush),
                 typeof(ToggleButtonComboBox),
-                new FrameworkPropertyMetadata(
-                    null,
-                    FrameworkPropertyMetadataOptions.AffectsRender,
-                    OnHighlightBackgroundChanged
-                )
+                new PropertyMetadata(null)
             );
 
         /// <summary>
@@ -74,43 +46,7 @@ namespace NarakaBladepoint.Controls
 
         #endregion 依赖属性
 
-        #region 私有方法
-
-        private static void OnHighlightIndexChanged(
-            DependencyObject d,
-            DependencyPropertyChangedEventArgs e
-        )
-        {
-            var control = d as ToggleButtonComboBox;
-            if (control != null)
-            {
-                control.OnHighlightIndexChanged();
-            }
-        }
-
-        private static void OnHighlightBackgroundChanged(
-            DependencyObject d,
-            DependencyPropertyChangedEventArgs e
-        )
-        {
-            var control = d as ToggleButtonComboBox;
-            if (control != null)
-            {
-                control.OnHighlightBackgroundChanged();
-            }
-        }
-
-        private void OnHighlightIndexChanged()
-        {
-            // 通知所有项容器重新评估高亮状态
-            RefreshHighlightState();
-        }
-
-        private void OnHighlightBackgroundChanged()
-        {
-            // 通知所有项容器重新评估高亮状态
-            RefreshHighlightState();
-        }
+        #region 重写方法
 
         protected override DependencyObject GetContainerForItemOverride()
         {
@@ -122,6 +58,30 @@ namespace NarakaBladepoint.Controls
             return item is ToggleButtonComboBoxItem;
         }
 
+        protected override void OnSelectionChanged(SelectionChangedEventArgs e)
+        {
+            base.OnSelectionChanged(e);
+
+            // 通知所有项容器重新评估高亮状态
+            RefreshHighlightState();
+        }
+
+        protected override void OnDropDownOpened(EventArgs e)
+        {
+            base.OnDropDownOpened(e);
+
+            // 当下拉框打开时，刷新高亮状态
+            RefreshHighlightState();
+        }
+
+        protected override void OnDropDownClosed(EventArgs e)
+        {
+            base.OnDropDownClosed(e);
+
+            // 当下拉框关闭时，清除所有高亮
+            ClearAllHighlights();
+        }
+
         protected override void PrepareContainerForItemOverride(
             DependencyObject element,
             object item
@@ -131,22 +91,25 @@ namespace NarakaBladepoint.Controls
 
             if (element is ToggleButtonComboBoxItem containerItem)
             {
-                containerItem.UpdateHighlight();
+                // 设置父ComboBox引用
+                containerItem.ParentComboBox = this;
             }
         }
 
-        protected override void OnItemsChanged(
-            System.Collections.Specialized.NotifyCollectionChangedEventArgs e
-        )
+        protected override void ClearContainerForItemOverride(DependencyObject element, object item)
         {
-            base.OnItemsChanged(e);
-
-            // 当项集合改变时，需要更新高亮状态
-            if (ItemContainerGenerator.Status == GeneratorStatus.ContainersGenerated)
+            if (element is ToggleButtonComboBoxItem containerItem)
             {
-                RefreshHighlightState();
+                // 清理父ComboBox引用
+                containerItem.ParentComboBox = null;
             }
+
+            base.ClearContainerForItemOverride(element, item);
         }
+
+        #endregion 重写方法
+
+        #region 私有方法
 
         /// <summary>
         /// 刷新所有项的高亮状态
@@ -156,11 +119,35 @@ namespace NarakaBladepoint.Controls
             if (ItemContainerGenerator.Status == GeneratorStatus.ContainersGenerated)
             {
                 // 遍历所有已生成的容器
-                foreach (object item in Items)
+                for (int i = 0; i < Items.Count; i++)
                 {
                     var container =
-                        ItemContainerGenerator.ContainerFromItem(item) as ToggleButtonComboBoxItem;
-                    container?.UpdateHighlight();
+                        ItemContainerGenerator.ContainerFromIndex(i) as ToggleButtonComboBoxItem;
+                    if (container != null)
+                    {
+                        // 更新高亮状态：选中的项并且下拉框打开时高亮
+                        container.IsHighlighted = (IsDropDownOpen && i == SelectedIndex);
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// 清除所有高亮状态
+        /// </summary>
+        private void ClearAllHighlights()
+        {
+            if (ItemContainerGenerator.Status == GeneratorStatus.ContainersGenerated)
+            {
+                // 遍历所有已生成的容器
+                for (int i = 0; i < Items.Count; i++)
+                {
+                    var container =
+                        ItemContainerGenerator.ContainerFromIndex(i) as ToggleButtonComboBoxItem;
+                    if (container != null)
+                    {
+                        container.IsHighlighted = false;
+                    }
                 }
             }
         }
@@ -181,34 +168,30 @@ namespace NarakaBladepoint.Controls
             );
         }
 
-        /// <summary>
-        /// 获取父级ToggleButtonComboBox
-        /// </summary>
-        private ToggleButtonComboBox ParentComboBox =>
-            ItemsControl.ItemsControlFromItemContainer(this) as ToggleButtonComboBox;
+        #region 私有字段
+
+        private ToggleButtonComboBox _parentComboBox;
+
+        #endregion 私有字段
+
+        #region 属性
 
         /// <summary>
-        /// 更新高亮状态
+        /// 获取或设置父级ToggleButtonComboBox
         /// </summary>
-        public void UpdateHighlight()
+        public ToggleButtonComboBox ParentComboBox
         {
-            var parent = ParentComboBox;
-            if (parent != null)
+            get => _parentComboBox;
+            set
             {
-                try
+                if (_parentComboBox != value)
                 {
-                    // 获取当前项在ComboBox中的索引
-                    var index = parent.ItemContainerGenerator.IndexFromContainer(this);
-
-                    // 检查是否是高亮项
-                    IsHighlighted = index >= 0 && index == parent.HighlightIndex;
-                }
-                catch
-                {
-                    IsHighlighted = false;
+                    _parentComboBox = value;
                 }
             }
         }
+
+        #endregion 属性
 
         #region IsHighlighted 依赖属性
 
@@ -217,7 +200,7 @@ namespace NarakaBladepoint.Controls
                 "IsHighlighted",
                 typeof(bool),
                 typeof(ToggleButtonComboBoxItem),
-                new FrameworkPropertyMetadata(false, FrameworkPropertyMetadataOptions.AffectsRender)
+                new FrameworkPropertyMetadata(true, FrameworkPropertyMetadataOptions.AffectsRender)
             );
 
         /// <summary>
