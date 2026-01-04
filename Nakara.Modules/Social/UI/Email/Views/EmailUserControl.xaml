@@ -66,13 +66,18 @@
                             <ColumnDefinition Width="0.5*" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
-                        <TabControl Background="Transparent" BorderThickness="0">
-                            <TabItem Header="全部">
+                        <TabControl
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Style="{StaticResource AverageTabControlStyle}">
+                            <controls:IconTabItem Header="全部">
                                 <ListBox
+                                    Width="{Binding RelativeSource={RelativeSource AncestorType=TabControl, Mode=FindAncestor, AncestorLevel=1}, Path=ActualWidth}"
                                     HorizontalContentAlignment="Stretch"
-                                    d:ItemsSource="{d:SampleData ItemCount=5}"
+                                    d:ItemsSource="{d:SampleData ItemCount=100}"
                                     Background="Transparent"
-                                    BorderThickness="0">
+                                    BorderThickness="0"
+                                    ScrollViewer.VerticalScrollBarVisibility="Hidden">
                                     <ListBox.ItemTemplate>
                                         <DataTemplate>
                                             <controls:HighlightBorder Background="#1A000000">
@@ -99,11 +104,11 @@
                                         </DataTemplate>
                                     </ListBox.ItemTemplate>
                                 </ListBox>
-                            </TabItem>
-                            <TabItem Header="通知" />
-                            <TabItem Header="问卷" />
-                            <TabItem Header="推广" />
-                            <TabItem Header="活动" />
+                            </controls:IconTabItem>
+                            <controls:IconTabItem Header="通知" />
+                            <controls:IconTabItem Header="问卷" />
+                            <controls:IconTabItem Header="推广" />
+                            <controls:IconTabItem Header="活动" />
                         </TabControl>
                         <UniformGrid Grid.Row="1" Columns="2">
                             <Button

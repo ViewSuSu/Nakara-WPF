@@ -1,55 +1,31 @@
 ﻿using Nakara.Framework.Core.Bases.ViewModels;
 using Nakara.Framework.Core.Evens;
 using Nakara.Shared.Consts;
+using Nakara.Shared.Services.Infrastructure;
 
 namespace Nakara.App.Shell
 {
     public partial class MainWindowViewModel : ViewModelBase
     {
-        public MainWindowViewModel(IContainerExtension containerExtension)
+        private readonly HomePageVisualNavigator homePageVisualNavigator;
+
+        public MainWindowViewModel(
+            IContainerExtension containerExtension,
+            HomePageVisualNavigator homePageVisualNavigator
+        )
             : base(containerExtension)
         {
-            this.eventAggregator.GetEvent<LoadHomePageRegionEvent>()
+            this.homePageVisualNavigator = homePageVisualNavigator;
+            eventAggregator
+                .GetEvent<LoadHomePageRegionEvent>()
                 .Subscribe(
-                    (viewName) =>
-                    {
-                        this.regionManager.RequestNavigate(
-                            GlobalConstant.HomePageRegion1,
-                            viewName
-                        );
-                    },
+                    viewName => this.homePageVisualNavigator.RequestNavigate(viewName),
                     ThreadOption.UIThread
                 );
 
-            this.eventAggregator.GetEvent<RemoveHomePageRegionEvent>()
-                .Subscribe(
-                    () =>
-                    {
-                        RevemoveRegionByName(GlobalConstant.HomePageRegion1);
-                    },
-                    ThreadOption.UIThread
-                );
-
-            this.eventAggregator.GetEvent<LoadHomePageRegionEvent2>()
-                .Subscribe(
-                    (viewName) =>
-                    {
-                        this.regionManager.RequestNavigate(
-                            GlobalConstant.HomePageRegion2,
-                            viewName
-                        );
-                    },
-                    ThreadOption.UIThread
-                );
-
-            this.eventAggregator.GetEvent<RemoveHomePageRegionEvent2>()
-                .Subscribe(
-                    () =>
-                    {
-                        RevemoveRegionByName(GlobalConstant.HomePageRegion2);
-                    },
-                    ThreadOption.UIThread
-                );
+            eventAggregator
+                .GetEvent<RemoveHomePageRegionEvent>()
+                .Subscribe(() => this.homePageVisualNavigator.RemoveTop(), ThreadOption.UIThread);
 
             this.eventAggregator.GetEvent<LoadMainContentRegionEvent>()
                 .Subscribe(

@@ -54,7 +54,7 @@
                                 Text="ID:123123123132" />
                             <Image
                                 Width="20"
-                                Margin="5,0,0,0"
+                                Margin="10,0,0,0"
                                 Source="pack://application:,,,/Nakara.Resources;component/Image/复制.png"
                                 Stretch="Uniform" />
                         </StackPanel>
@@ -188,7 +188,13 @@
                                                 <Image
                                                     Grid.Column="2"
                                                     Source="pack://application:,,,/Nakara.Resources;component/Image/sayhello.png"
-                                                    Stretch="Uniform" />
+                                                    Stretch="Uniform">
+                                                    <b:Interaction.Triggers>
+                                                        <b:EventTrigger EventName="MouseLeftButtonDown">
+                                                            <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource AncestorType=UserControl, Mode=FindAncestor}, Path=DataContext.SayHelloCommand}" CommandParameter="{Binding}" />
+                                                        </b:EventTrigger>
+                                                    </b:Interaction.Triggers>
+                                                </Image>
                                             </Grid>
                                         </DataTemplate>
                                     </ListBox.ItemTemplate>

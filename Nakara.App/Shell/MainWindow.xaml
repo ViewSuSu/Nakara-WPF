@@ -99,10 +99,7 @@
                     <ColumnDefinition />
                     <ColumnDefinition Width="0.45*" />
                 </Grid.ColumnDefinitions>
-                <ContentControl
-                    Grid.Column="1"
-                    Panel.ZIndex="3"
-                    prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.RightSidePanelRegion}" />
+                <ContentControl Grid.Column="1" prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.RightSidePanelRegion}" />
             </Grid>
             <personalinformation:PersonalInformationUserControl
                 Grid.Row="1"
@@ -112,13 +109,20 @@
                 VerticalAlignment="Bottom" />
             <ContentControl
                 Grid.Row="1"
-                Panel.ZIndex="2"
+                Panel.ZIndex="1"
                 prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.MainContentRegion}" />
-            <ContentControl Grid.RowSpan="2" prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.HomePageRegion1}" />
             <ContentControl
                 Grid.RowSpan="2"
-                Panel.ZIndex="1"
+                Panel.ZIndex="2"
+                prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.HomePageRegion1}" />
+            <ContentControl
+                Grid.RowSpan="2"
+                Panel.ZIndex="3"
                 prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.HomePageRegion2}" />
+            <ContentControl
+                Grid.RowSpan="2"
+                Panel.ZIndex="4"
+                prism:RegionManager.RegionName="{x:Static consts:GlobalConstant.HomePageRegion3}" />
         </Grid>
     </Grid>
 </Window>

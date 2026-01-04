@@ -25,10 +25,12 @@ namespace Nakara.Modules.Social.UI.Friend.UI.ViewModels
             });
             SettingTagCommand = new DelegateCommand(() => { });
             SearchCommand = new DelegateCommand<string>(keyword => { });
+            SayHelloCommand = new DelegateCommand(() => { });
         }
 
         public DelegateCommand CloseCommand { get; }
         public DelegateCommand SettingTagCommand { get; }
+        public DelegateCommand SayHelloCommand { get; }
         public DelegateCommand<string> SearchCommand { get; }
 
         // 好友列表数据
