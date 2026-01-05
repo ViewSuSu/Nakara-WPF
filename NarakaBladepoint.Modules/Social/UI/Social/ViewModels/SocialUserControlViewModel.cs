@@ -5,41 +5,38 @@ using NarakaBladepoint.Modules.Tutorial.UI.Views;
 
 namespace NarakaBladepoint.Modules.Social.UI.Social.ViewModels
 {
-    public class SocialUserControlViewModel : BindableBase
+    public class SocialUserControlViewModel : ViewModelBase
     {
-        private readonly IEventAggregator _eventAggregator;
-
-        public SocialUserControlViewModel(IEventAggregator eventAggregator)
+        public SocialUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider)
         {
-            _eventAggregator = eventAggregator;
-
             NavigateToMusicCommand = new DelegateCommand(() =>
             {
-                _eventAggregator
+                eventAggregator
                     .GetEvent<LoadHomePageRegionEvent>()
                     .Publish(nameof(TutorialUserControl));
             });
             NavigateToTutorialCommand = new DelegateCommand(() =>
             {
-                _eventAggregator
+                eventAggregator
                     .GetEvent<LoadHomePageRegionEvent>()
                     .Publish(nameof(TutorialUserControl));
             });
             NavigateToEmailCommand = new DelegateCommand(() =>
             {
-                _eventAggregator
+                eventAggregator
                     .GetEvent<LoadHomePageRegionEvent>()
                     .Publish(nameof(EmailUserControl));
             });
             NavigateToSettingCommand = new DelegateCommand(() =>
             {
-                _eventAggregator
+                eventAggregator
                     .GetEvent<LoadHomePageRegionEvent>()
                     .Publish(nameof(SettingUserControl));
             });
             NavigateToFrendListCommand = new DelegateCommand(() =>
             {
-                _eventAggregator
+                eventAggregator
                     .GetEvent<LoadHomePageRegionEvent>()
                     .Publish(nameof(FriendUserControl));
             });

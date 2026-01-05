@@ -4,10 +4,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:b="clr-namespace:Microsoft.Xaml.Behaviors;assembly=Microsoft.Xaml.Behaviors"
     xmlns:bases="clr-namespace:NarakaBladepoint.Framework.Core.Bases;assembly=NarakaBladepoint.Framework"
+    xmlns:consts="clr-namespace:NarakaBladepoint.Shared.Consts;assembly=NarakaBladepoint.Shared"
     xmlns:controls="clr-namespace:NarakaBladepoint.Controls;assembly=NarakaBladepoint.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:NarakaBladepoint.Modules.PersonalInformation.UI.HeroData.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="clr-namespace:NarakaBladepoint.Modules.PersonalInformation.UI.HeroData.ViewModels"
+    d:DataContext="{d:DesignInstance Type=viewmodels:HeroDataPageViewModel}"
     d:DesignHeight="720"
     d:DesignWidth="1080"
     mc:Ignorable="d">
@@ -47,15 +50,15 @@
                     <TabControl Width="200" Style="{StaticResource AverageTabControlStyle}">
                         <TabItem
                             Background="#1A000000"
-                            Header="单排"
+                            Header="{x:Static consts:TeamSizeConstant.Solo}"
                             Style="{StaticResource FriendListTabItem}" />
                         <TabItem
                             Background="#1A000000"
-                            Header="双排"
+                            Header="{x:Static consts:TeamSizeConstant.Duo}"
                             Style="{StaticResource FriendListTabItem}" />
                         <TabItem
                             Background="#1A000000"
-                            Header="三排"
+                            Header="{x:Static consts:TeamSizeConstant.Trio}"
                             Style="{StaticResource FriendListTabItem}" />
                     </TabControl>
                     <controls:ToggleButtonComboBox
@@ -71,12 +74,9 @@
                         Width="100"
                         Margin="5,0"
                         HorizontalAlignment="Left"
-                        SelectedIndex="0">
-                        <controls:ToggleButtonComboBoxItem Content="所有赛季" />
-                        <controls:ToggleButtonComboBoxItem Content="当前赛季" />
-                        <controls:ToggleButtonComboBoxItem Content="第18赛季：侠风" />
-                        <controls:ToggleButtonComboBoxItem Content="第17赛季：裂变" />
-                    </controls:ToggleButtonComboBox>
+                        DisplayMemberPath="Season"
+                        ItemsSource="{Binding SeasonDataModels}"
+                        SelectedItem="{Binding SelectedSeasonDataModel}" />
                 </StackPanel>
             </Grid>
             <Grid Grid.Row="1">
