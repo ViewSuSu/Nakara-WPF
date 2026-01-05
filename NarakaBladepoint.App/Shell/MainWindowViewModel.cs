@@ -10,10 +10,10 @@ namespace NarakaBladepoint.App.Shell
         private readonly HomePageVisualNavigator homePageVisualNavigator;
 
         public MainWindowViewModel(
-            IContainerExtension containerExtension,
+            IContainerProvider containerProvider,
             HomePageVisualNavigator homePageVisualNavigator
         )
-            : base(containerExtension)
+            : base(containerProvider)
         {
             this.homePageVisualNavigator = homePageVisualNavigator;
             this.eventAggregator.GetEvent<LoadHomePageRegionEvent>()

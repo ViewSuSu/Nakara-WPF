@@ -7,8 +7,8 @@ namespace NarakaBladepoint.Framework.Core.Bases.ViewModels
     /// </summary>
     public abstract class CanRemoveHomePageRegionViewModelBase : ViewModelBase
     {
-        protected CanRemoveHomePageRegionViewModelBase(IContainerExtension containerExtension)
-            : base(containerExtension)
+        protected CanRemoveHomePageRegionViewModelBase(IContainerProvider containerProvider)
+            : base(containerProvider)
         {
             ReturnCommand = new DelegateCommand(() =>
             {

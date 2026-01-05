@@ -6,9 +6,9 @@ namespace NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDet
     internal class PersonalInformationDetailMainContentUserControlViewModel : ViewModelBase
     {
         public PersonalInformationDetailMainContentUserControlViewModel(
-            IContainerExtension containerExtension
+            IContainerProvider containerProvider
         )
-            : base(containerExtension)
+            : base(containerProvider)
         {
             ReturnCommand = new DelegateCommand(() =>
             {

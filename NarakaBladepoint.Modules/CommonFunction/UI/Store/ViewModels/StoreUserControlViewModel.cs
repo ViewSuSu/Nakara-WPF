@@ -2,7 +2,7 @@
 {
     internal class StoreUserControlViewModel : CanRemoveMainContentRegionViewModelBase
     {
-        public StoreUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public StoreUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

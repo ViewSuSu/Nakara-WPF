@@ -22,10 +22,10 @@ namespace NarakaBladepoint.Modules.StartGame.UI.ModeSelection.ViewModels
         }
 
         public ModeSelectionUserControlViewModel(
-            IContainerExtension containerExtension,
+            IContainerProvider containerProvider,
             IServerInformation serverInformation
         )
-            : base(containerExtension)
+            : base(containerProvider)
         {
             this.serverInformation = serverInformation;
             this.ServerInfos = this.serverInformation.GetServerInformationAsync().Result;

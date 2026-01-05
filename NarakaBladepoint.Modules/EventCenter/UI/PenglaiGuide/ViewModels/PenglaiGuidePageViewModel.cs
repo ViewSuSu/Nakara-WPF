@@ -2,7 +2,7 @@
 {
     internal class PenglaiGuidePageViewModel : ViewModelBase
     {
-        public PenglaiGuidePageViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public PenglaiGuidePageViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

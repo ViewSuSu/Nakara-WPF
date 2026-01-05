@@ -7,8 +7,8 @@ namespace NarakaBladepoint.Modules.CommonFunction.UI.Inventory.ViewModels
     {
         public BindingList<InventoryItemModel> InventoryItemModels { get; set; } = [];
 
-        public InventoryUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension)
+        public InventoryUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider)
         {
             ClickItemComamnd = new DelegateCommand(() => { });
         }

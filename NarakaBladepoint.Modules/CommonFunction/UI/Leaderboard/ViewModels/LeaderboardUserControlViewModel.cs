@@ -2,7 +2,7 @@
 {
     internal class LeaderboardUserControlViewModel : CanRemoveMainContentRegionViewModelBase
     {
-        public LeaderboardUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public LeaderboardUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

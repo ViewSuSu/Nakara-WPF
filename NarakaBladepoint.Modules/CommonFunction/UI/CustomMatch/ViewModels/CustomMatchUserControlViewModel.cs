@@ -2,7 +2,7 @@
 {
     internal class CustomMatchUserControlViewModel : CanRemoveMainContentRegionViewModelBase
     {
-        public CustomMatchUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public CustomMatchUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

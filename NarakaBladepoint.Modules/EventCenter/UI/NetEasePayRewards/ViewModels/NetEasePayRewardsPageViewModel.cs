@@ -2,7 +2,7 @@
 {
     internal class NetEasePayRewardsPageViewModel : ViewModelBase
     {
-        public NetEasePayRewardsPageViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public NetEasePayRewardsPageViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

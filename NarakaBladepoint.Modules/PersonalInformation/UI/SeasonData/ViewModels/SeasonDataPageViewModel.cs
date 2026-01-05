@@ -2,7 +2,7 @@
 {
     internal class SeasonDataPageViewModel : ViewModelBase
     {
-        public SeasonDataPageViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public SeasonDataPageViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

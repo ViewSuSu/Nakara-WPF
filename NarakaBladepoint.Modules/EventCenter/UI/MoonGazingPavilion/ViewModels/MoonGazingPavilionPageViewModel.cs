@@ -2,7 +2,7 @@
 {
     internal class MoonGazingPavilionPageViewModel : ViewModelBase
     {
-        public MoonGazingPavilionPageViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public MoonGazingPavilionPageViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

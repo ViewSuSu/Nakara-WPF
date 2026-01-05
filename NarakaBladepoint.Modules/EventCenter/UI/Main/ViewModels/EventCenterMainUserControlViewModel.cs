@@ -2,7 +2,7 @@
 {
     internal class EventCenterMainUserControlViewModel : CanRemoveHomePageRegionViewModelBase
     {
-        public EventCenterMainUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public EventCenterMainUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

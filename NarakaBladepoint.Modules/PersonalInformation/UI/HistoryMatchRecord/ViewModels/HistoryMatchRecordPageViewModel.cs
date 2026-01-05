@@ -9,10 +9,10 @@ namespace NarakaBladepoint.Modules.PersonalInformation.UI.HistoryMatchRecord.Vie
         public List<MatchDataItem> MatchDataItems { get; }
 
         public HistoryMatchRecordPageViewModel(
-            IContainerExtension containerExtension,
+            IContainerProvider containerProvider,
             ICurrentUserInformationProvider matchDataInfomation
         )
-            : base(containerExtension)
+            : base(containerProvider)
         {
             this.currentUserBasicInformation = matchDataInfomation;
             this.MatchDataItems = this.currentUserBasicInformation.GetMatchDataItemsAsync().Result;

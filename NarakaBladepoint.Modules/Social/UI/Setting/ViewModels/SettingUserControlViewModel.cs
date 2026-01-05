@@ -4,8 +4,8 @@ namespace NarakaBladepoint.Modules.Social.UI.Setting.ViewModels
 {
     internal class SettingUserControlViewModel : CanRemoveHomePageRegionViewModelBase
     {
-        public SettingUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension)
+        public SettingUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider)
         {
             NavigateToTutorialCommand = new DelegateCommand(() =>
             {

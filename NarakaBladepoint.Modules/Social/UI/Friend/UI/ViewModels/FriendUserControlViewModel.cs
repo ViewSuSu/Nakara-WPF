@@ -20,10 +20,10 @@ namespace NarakaBladepoint.Modules.Social.UI.Friend.UI.ViewModels
         }
 
         public FriendUserControlViewModel(
-            IContainerExtension containerExtension,
+            IContainerProvider containerProvider,
             ICurrentUserInformationProvider currentUserInformationProvider
         )
-            : base(containerExtension)
+            : base(containerProvider)
         {
             CloseCommand = new DelegateCommand(() =>
             {

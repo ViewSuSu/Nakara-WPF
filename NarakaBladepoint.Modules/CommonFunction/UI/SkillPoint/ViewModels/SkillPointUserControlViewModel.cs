@@ -2,7 +2,7 @@
 {
     internal class SkillPointUserControlViewModel : CanRemoveMainContentRegionViewModelBase
     {
-        public SkillPointUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public SkillPointUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

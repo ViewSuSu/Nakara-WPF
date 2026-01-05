@@ -2,7 +2,7 @@
 {
     internal class PassingTheFlamePageViewModel : ViewModelBase
     {
-        public PassingTheFlamePageViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public PassingTheFlamePageViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

@@ -24,10 +24,10 @@ namespace NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDet
         }
 
         public PersonalInformationDetailsPageViewModel(
-            IContainerExtension containerExtension,
+            IContainerProvider containerProvider,
             ICurrentUserInformationProvider currentUserBasicInformation
         )
-            : base(containerExtension)
+            : base(containerProvider)
         {
             HeroTagCommand = new DelegateCommand(() =>
             {

@@ -10,10 +10,10 @@ namespace NarakaBladepoint.Modules.PersonalInformation.UI.SocialAvatar.ViewModel
         public List<AvatarItemModel> AvatarItemModels { get; set; } = [];
 
         public SocialAvatarPageViewModel(
-            IContainerExtension containerExtension,
+            IContainerProvider containerProvider,
             IImageSourceProvider imageSourceProvider
         )
-            : base(containerExtension)
+            : base(containerProvider)
         {
             AvatarItemModels = imageSourceProvider
                 .GetCurrenUserAllAvatarImageSources()

@@ -2,8 +2,8 @@
 {
     internal class MainWindowRightEventUserControlViewModel : ViewModelBase
     {
-        public MainWindowRightEventUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension)
+        public MainWindowRightEventUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider)
         {
             EventOneCommand = new DelegateCommand(() => { });
             EventFourCommand = new DelegateCommand(() => { });

@@ -2,7 +2,7 @@
 {
     internal class TutorialUserControlViewModel : CanRemoveHomePageRegionViewModelBase
     {
-        public TutorialUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public TutorialUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

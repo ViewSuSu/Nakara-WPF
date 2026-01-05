@@ -2,7 +2,7 @@
 {
     internal class PatchNotePageViewModel : ViewModelBase
     {
-        public PatchNotePageViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public PatchNotePageViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

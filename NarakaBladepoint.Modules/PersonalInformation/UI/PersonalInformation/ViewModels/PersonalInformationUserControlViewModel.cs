@@ -7,10 +7,10 @@ namespace NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformation.Vi
     internal class PersonalInformationUserControlViewModel : ViewModelBase
     {
         public PersonalInformationUserControlViewModel(
-            IContainerExtension containerExtension,
+            IContainerProvider containerProvider,
             ICurrentUserInformationProvider currentUserBasicInformation
         )
-            : base(containerExtension)
+            : base(containerProvider)
         {
             NavigateToPersonalInfomationCommand = new DelegateCommand(() =>
             {

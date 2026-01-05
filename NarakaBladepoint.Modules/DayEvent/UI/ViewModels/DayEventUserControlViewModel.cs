@@ -2,8 +2,8 @@
 {
     internal class DayEventUserControlViewModel : ViewModelBase
     {
-        public DayEventUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension)
+        public DayEventUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider)
         {
             TaskDetailsComamnd = new DelegateCommand(() => { });
         }

@@ -2,7 +2,7 @@
 {
     internal class EmailUserControlViewModel : CanRemoveHomePageRegionViewModelBase
     {
-        public EmailUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public EmailUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

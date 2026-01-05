@@ -2,7 +2,7 @@
 {
     internal class HeroListPageViewModel : CanRemoveMainContentRegionViewModelBase
     {
-        public HeroListPageViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public HeroListPageViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }

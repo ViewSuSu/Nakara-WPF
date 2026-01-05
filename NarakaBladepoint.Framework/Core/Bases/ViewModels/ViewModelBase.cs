@@ -8,10 +8,10 @@
         protected readonly IEventAggregator eventAggregator;
         protected readonly IRegionManager regionManager;
 
-        protected ViewModelBase(IContainerExtension containerExtension)
+        protected ViewModelBase(IContainerProvider containerProvider)
         {
-            this.eventAggregator = containerExtension.Resolve<IEventAggregator>();
-            this.regionManager = containerExtension.Resolve<IRegionManager>();
+            this.eventAggregator = containerProvider.Resolve<IEventAggregator>();
+            this.regionManager = containerProvider.Resolve<IRegionManager>();
         }
     }
 }

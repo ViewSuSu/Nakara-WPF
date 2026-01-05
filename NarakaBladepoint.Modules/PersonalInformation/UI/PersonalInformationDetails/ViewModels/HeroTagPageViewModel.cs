@@ -4,8 +4,8 @@ namespace NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDet
 {
     internal class HeroTagPageViewModel : ViewModelBase
     {
-        public HeroTagPageViewModel(IContainerExtension containerExtension)
-            : base(containerExtension)
+        public HeroTagPageViewModel(IContainerProvider containerProvider)
+            : base(containerProvider)
         {
             EscCommand = new DelegateCommand(() =>
             {

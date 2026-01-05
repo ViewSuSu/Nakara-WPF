@@ -9,8 +9,8 @@ namespace NarakaBladepoint.Modules.CommonFunction.UI.CommonFunction.ViewModels
 {
     public partial class CommonFunctionUserControlViewModel : ViewModelBase
     {
-        public CommonFunctionUserControlViewModel(IContainerExtension containerExtension)
-            : base(containerExtension)
+        public CommonFunctionUserControlViewModel(IContainerProvider containerProvider)
+            : base(containerProvider)
         {
             NavigateToHeroCommand = new DelegateCommand(() =>
             {

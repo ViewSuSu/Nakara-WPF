@@ -2,7 +2,7 @@
 {
     internal class BaiZeCardPageViewModel : CanRemoveHomePageRegionViewModelBase
     {
-        public BaiZeCardPageViewModel(IContainerExtension containerExtension)
-            : base(containerExtension) { }
+        public BaiZeCardPageViewModel(IContainerProvider containerProvider)
+            : base(containerProvider) { }
     }
 }
