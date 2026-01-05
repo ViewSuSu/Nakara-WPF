@@ -1,48 +1,54 @@
 ﻿using System.IO;
+using System.Resources;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
-namespace NarakaBladepoint.Shared
+namespace NarakaBladepoint.Resources
 {
     public static class ResourceImageReader
     {
-        private static readonly List<ImageSource> _heroImages = new List<ImageSource>();
+        private static readonly List<ImageSource> _heroImages = new();
 
         static ResourceImageReader()
         {
-            var assemblyLocation = typeof(ResourceImageReader).Assembly.Location;
-            var basePath = Path.GetDirectoryName(assemblyLocation);
-            var heroFolderPath = Path.Combine(basePath, "Image", "Hero");
+            var assembly = typeof(ResourceImageReader).Assembly;
+            var resourceName = assembly.GetName().Name + ".g.resources";
 
-            if (!Directory.Exists(heroFolderPath))
+            using var stream = assembly.GetManifestResourceStream(resourceName);
+            if (stream == null)
                 return;
 
-            var imageFiles = Directory.GetFiles(heroFolderPath, "*.png");
+            using var reader = new ResourceReader(stream);
 
-            foreach (var imagePath in imageFiles)
+            foreach (var entry in reader.Cast<System.Collections.DictionaryEntry>())
             {
+                var key = entry.Key as string;
+                if (key == null)
+                    continue;
+
+                // ⚠️ WPF Resource 路径是小写的
+                if (!key.StartsWith("image/hero/") || !key.EndsWith(".png"))
+                    continue;
+
+                var uri = new Uri(
+                    $"pack://application:,,,/{assembly.GetName().Name};component/{key}",
+                    UriKind.Absolute
+                );
+
                 var bitmap = new BitmapImage();
                 bitmap.BeginInit();
-                bitmap.UriSource = new Uri(imagePath, UriKind.Absolute);
+                bitmap.UriSource = uri;
                 bitmap.CacheOption = BitmapCacheOption.OnLoad;
                 bitmap.EndInit();
                 bitmap.Freeze();
+
                 _heroImages.Add(bitmap);
             }
         }
 
-        /// <summary>
-        /// 读取英雄图片
-        /// </summary>
-        /// <param name="index"></param>
-        /// <returns></returns>
         public static ImageSource GetHeroImage(int index)
         {
-            if (index >= 0 && index < _heroImages.Count)
-            {
-                return _heroImages[index];
-            }
-            return null;
+            return index >= 0 && index < _heroImages.Count ? _heroImages[index] : null;
         }
     }
 }

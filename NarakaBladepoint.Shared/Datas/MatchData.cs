@@ -1,4 +1,5 @@
 ﻿using System.Windows.Media;
+using NarakaBladepoint.Resources;
 
 namespace NarakaBladepoint.Shared.Jsons
 {
