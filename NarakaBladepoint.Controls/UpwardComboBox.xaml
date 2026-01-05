@@ -54,6 +54,8 @@
             Placement="Top"
             PlacementTarget="{Binding ElementName=PART_DisplayBorder}"
             PopupAnimation="Slide"
+            ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+            ScrollViewer.VerticalScrollBarVisibility="Hidden"
             StaysOpen="True">
             <Border
                 Background="Transparent"
@@ -67,7 +69,9 @@
                     <ItemsControl
                         x:Name="PART_ItemsControl"
                         ItemTemplate="{Binding ItemTemplate, RelativeSource={RelativeSource AncestorType=UserControl}}"
-                        ItemsSource="{Binding ItemsSource, RelativeSource={RelativeSource AncestorType=UserControl}}">
+                        ItemsSource="{Binding ItemsSource, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                        ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                        ScrollViewer.VerticalScrollBarVisibility="Hidden">
                         <ItemsControl.ItemContainerStyle>
                             <Style TargetType="ContentPresenter">
                                 <Setter Property="Height" Value="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=UserControl}}" />

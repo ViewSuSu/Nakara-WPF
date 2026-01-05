@@ -31,5 +31,8 @@ namespace NarakaBladepoint.Modules.StartGame.UI.ModeSelection.ViewModels
             this.ServerInfos = this.serverInformation.GetServerInformationAsync().Result;
             SelectedItem = ServerInfos.FirstOrDefault();
         }
+
+        public DelegateCommand ChoseHeroCommand { get; set; }
+        public DelegateCommand ChoseMapCommand { get; set; }
     }
 }
