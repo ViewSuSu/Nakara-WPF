@@ -1,4 +1,5 @@
-﻿using NarakaBladepoint.Modules.StartGame.UI.MapChose.Views;
+﻿using NarakaBladepoint.Modules.StartGame.UI.HeroChose.Views;
+using NarakaBladepoint.Modules.StartGame.UI.MapChose.Views;
 using NarakaBladepoint.Shared.Services.Abstractions;
 using NarakaBladepoint.Shared.Services.Models;
 
@@ -31,6 +32,12 @@ namespace NarakaBladepoint.Modules.StartGame.UI.ModeSelection.ViewModels
             ChoseMapCommand = new DelegateCommand(() =>
             {
                 eventAggregator.GetEvent<LoadHomePageRegionEvent>().Publish(nameof(MapChosePage));
+            });
+            ChoseHeroCommand = new DelegateCommand(() =>
+            {
+                eventAggregator
+                    .GetEvent<LoadHomePageRegionEvent>()
+                    .Publish(nameof(HeroChoseUserControl));
             });
         }
 

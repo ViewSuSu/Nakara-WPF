@@ -62,67 +62,100 @@
                         <controls:HighlightBorder.Background>
                             <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/StartGame/排位赛.png" Stretch="UniformToFill" />
                         </controls:HighlightBorder.Background>
-                        <StackPanel
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Bottom"
-                            Orientation="Vertical">
-                            <TextBlock
-                                Margin="10"
+                        <Grid>
+                            <StackPanel
+                                Margin="5"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Orientation="Horizontal">
+                                <controls:HighlightBorder Background="#2A000000">
+                                    <Image Width="40" Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon4.png" />
+                                </controls:HighlightBorder>
+                                <Image Width="25" Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon1.png" />
+                            </StackPanel>
+                            <StackPanel
                                 HorizontalAlignment="Center"
-                                FontSize="18"
-                                Foreground="White"
-                                Text="排位赛" />
-                            <TextBlock
-                                Margin="10,0,10,10"
-                                HorizontalAlignment="Center"
-                                FontSize="10"
-                                Foreground="#BBBBBB"
-                                Text="天选之人" />
-                        </StackPanel>
+                                VerticalAlignment="Bottom"
+                                Orientation="Vertical">
+                                <TextBlock
+                                    Margin="10"
+                                    HorizontalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="White"
+                                    Text="排位赛" />
+                                <TextBlock
+                                    Margin="10,0,10,10"
+                                    HorizontalAlignment="Center"
+                                    FontSize="10"
+                                    Foreground="#BBBBBB"
+                                    Text="天选之人" />
+                            </StackPanel>
+                        </Grid>
+
                     </controls:HighlightBorder>
                     <controls:HighlightBorder Margin="5,10" CornerRadius="8">
                         <controls:HighlightBorder.Background>
                             <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/StartGame/快速比赛.png" Stretch="UniformToFill" />
                         </controls:HighlightBorder.Background>
-                        <StackPanel
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Bottom"
-                            Orientation="Vertical">
-                            <TextBlock
-                                Margin="10"
+                        <Grid>
+                            <Image
+                                Width="25"
+                                Margin="5"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon1.png" />
+                            <StackPanel
                                 HorizontalAlignment="Center"
-                                FontSize="18"
-                                Foreground="White"
-                                Text="快速比赛" />
-                            <TextBlock
-                                Margin="10,0,10,10"
-                                HorizontalAlignment="Center"
-                                FontSize="10"
-                                Foreground="#BBBBBB"
-                                Text="天选之人" />
-                        </StackPanel>
+                                VerticalAlignment="Bottom"
+                                Orientation="Vertical">
+                                <TextBlock
+                                    Margin="10"
+                                    HorizontalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="White"
+                                    Text="快速比赛" />
+                                <TextBlock
+                                    Margin="10,0,10,10"
+                                    HorizontalAlignment="Center"
+                                    FontSize="10"
+                                    Foreground="#BBBBBB"
+                                    Text="天选之人" />
+                            </StackPanel>
+                        </Grid>
                     </controls:HighlightBorder>
                     <controls:HighlightBorder Margin="5,10" CornerRadius="8">
                         <controls:HighlightBorder.Background>
                             <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/StartGame/天人之战.png" Stretch="UniformToFill" />
                         </controls:HighlightBorder.Background>
-                        <StackPanel
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Bottom"
-                            Orientation="Vertical">
-                            <TextBlock
-                                Margin="10"
+                        <Grid>
+                            <StackPanel
+                                Margin="5"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Orientation="Horizontal">
+                                <controls:HighlightBorder Background="#2A000000">
+                                    <Image Width="40" Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon4.png" />
+                                </controls:HighlightBorder>
+                                <Image Width="25" Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon1.png" />
+                            </StackPanel>
+                            <StackPanel
                                 HorizontalAlignment="Center"
-                                FontSize="18"
-                                Foreground="White"
-                                Text="天人之战" />
-                            <TextBlock
-                                Margin="10,0,10,10"
-                                HorizontalAlignment="Center"
-                                FontSize="10"
-                                Foreground="Orange"
-                                Text="每日19:00-23:00开启" />
-                        </StackPanel>
+                                VerticalAlignment="Bottom"
+                                Orientation="Vertical">
+                                <TextBlock
+                                    Margin="10"
+                                    HorizontalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="White"
+                                    Text="天人之战" />
+                                <TextBlock
+                                    Margin="10,0,10,10"
+                                    HorizontalAlignment="Center"
+                                    FontSize="10"
+                                    Foreground="Orange"
+                                    Text="每日19:00-23:00开启" />
+                            </StackPanel>
+                        </Grid>
                     </controls:HighlightBorder>
                     <controls:HighlightBorder
                         Name="ModeSelection"
@@ -131,16 +164,24 @@
                         <controls:HighlightBorder.Background>
                             <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/StartGame/人机演练.png" Stretch="UniformToFill" />
                         </controls:HighlightBorder.Background>
-                        <StackPanel
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Bottom"
-                            Orientation="Vertical">
-                            <TextBlock
-                                FontSize="18"
-                                Foreground="White"
-                                Text="人机演练" />
-                            <TextBlock Margin="10" Foreground="White" />
-                        </StackPanel>
+                        <Grid>
+                            <Image
+                                Width="25"
+                                Margin="5"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon1.png" />
+                            <StackPanel
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Bottom"
+                                Orientation="Vertical">
+                                <TextBlock
+                                    FontSize="18"
+                                    Foreground="White"
+                                    Text="人机演练" />
+                                <TextBlock Margin="10" Foreground="White" />
+                            </StackPanel>
+                        </Grid>
                     </controls:HighlightBorder>
                 </UniformGrid>
                 <!--<Grid>

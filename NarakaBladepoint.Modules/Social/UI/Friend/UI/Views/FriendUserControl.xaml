@@ -176,21 +176,22 @@
                                     HorizontalContentAlignment="Stretch"
                                     Foreground="White"
                                     Header="聚义厅  0/0"
-                                    Style="{StaticResource FlatRightChevronExpander}" />
+                                    Style="{StaticResource LeftHeaderExpanderStyle}" />
                                 <Expander
                                     Grid.Row="1"
-                                    HorizontalContentAlignment="Stretch"
+                                    d:IsExpanded="True"
                                     Foreground="White"
                                     Header="默认分组   0/13"
-                                    Style="{StaticResource FlatRightChevronExpander}">
+                                    Style="{StaticResource LeftHeaderExpanderStyle}">
                                     <ListBox
                                         HorizontalContentAlignment="Stretch"
-                                        d:ItemsSource="{d:SampleData ItemCount=5}"
+                                        d:ItemsSource="{d:SampleData ItemCount=10}"
                                         Background="Transparent"
+                                        BorderThickness="0"
                                         ItemsSource="{Binding Friends}">
                                         <ListBox.ItemTemplate>
                                             <DataTemplate>
-                                                <Grid MaxHeight="40" Margin="0,0,30,0">
+                                                <Grid MaxHeight="40" Margin="0,0,20,0">
                                                     <Grid.ColumnDefinitions>
                                                         <ColumnDefinition Width="0.15*" />
                                                         <ColumnDefinition />
@@ -230,7 +231,7 @@
                                     HorizontalContentAlignment="Stretch"
                                     Foreground="White"
                                     Header="屏蔽名单  0/0"
-                                    Style="{StaticResource FlatRightChevronExpander}" />
+                                    Style="{StaticResource LeftHeaderExpanderStyle}" />
                             </Grid>
                         </TabItem>
                         <TabItem
@@ -242,7 +243,8 @@
                                 d:ItemsSource="{d:SampleData ItemCount=5}"
                                 Background="Transparent"
                                 BorderThickness="0"
-                                ItemsSource="{Binding Friends}">
+                                ItemsSource="{Binding Friends}"
+                                ScrollViewer.VerticalScrollBarVisibility="Hidden">
                                 <ListBox.ItemTemplate>
                                     <DataTemplate>
                                         <Grid MaxHeight="40">
@@ -274,6 +276,7 @@
                                             <Image
                                                 Grid.Column="2"
                                                 Width="20"
+                                                Margin="0,0,10,0"
                                                 HorizontalAlignment="Right"
                                                 Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/friendInv.png"
                                                 Stretch="Uniform" />
@@ -291,7 +294,7 @@
                                 HorizontalContentAlignment="Stretch"
                                 Foreground="White"
                                 Header="附近玩家"
-                                Style="{StaticResource FlatRightChevronExpander}" />
+                                Style="{StaticResource LeftHeaderExpanderStyle}" />
                         </TabItem>
                         <TabItem
                             Height="30"

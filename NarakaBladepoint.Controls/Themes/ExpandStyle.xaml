@@ -1,7 +1,12 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-
-    <Style x:Key="FlatRightChevronExpander" TargetType="Expander">
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converter="clr-namespace:NarakaBladepoint.Controls.Converters"
+    xmlns:ei="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors">
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    <converter:BoolInverterConverter x:Key="BoolInverterConverter" />
+    <Style x:Key="LeftHeaderExpanderStyle" TargetType="Expander">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Expander">
@@ -14,6 +19,14 @@
                             Grid.Row="0"
                             Padding="10,8"
                             Background="Transparent">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="MouseLeftButtonDown">
+                                    <ei:ChangePropertyAction
+                                        PropertyName="IsExpanded"
+                                        TargetObject="{Binding RelativeSource={RelativeSource AncestorType=Expander}}"
+                                        Value="{Binding IsExpanded, RelativeSource={RelativeSource AncestorType=Expander}, Converter={StaticResource BoolInverterConverter}}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*" />
@@ -36,35 +49,48 @@
                                     RenderTransformOrigin="0.5,0.5"
                                     Stretch="Uniform">
                                     <Path.RenderTransform>
-                                        <RotateTransform Angle="0" />
+                                        <RotateTransform x:Name="ChevronTransform" Angle="0" />
                                     </Path.RenderTransform>
+                                    <i:Interaction.Triggers>
+                                        <ei:DataTrigger Binding="{Binding IsExpanded, RelativeSource={RelativeSource AncestorType=Expander}}" Value="True">
+                                            <ei:ChangePropertyAction
+                                                PropertyName="Angle"
+                                                TargetObject="{Binding ElementName=ChevronTransform}"
+                                                Value="180" />
+                                        </ei:DataTrigger>
+                                        <ei:DataTrigger Binding="{Binding IsExpanded, RelativeSource={RelativeSource AncestorType=Expander}}" Value="False">
+                                            <ei:ChangePropertyAction
+                                                PropertyName="Angle"
+                                                TargetObject="{Binding ElementName=ChevronTransform}"
+                                                Value="0" />
+                                        </ei:DataTrigger>
+                                    </i:Interaction.Triggers>
+                                    <Path.Style>
+                                        <Style TargetType="Path">
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Fill" Value="#FF007ACC" />
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Path.Style>
                                 </Path>
                             </Grid>
                         </Border>
-                        <!--<Rectangle
-                            Grid.Row="0"
-                            Height="1"
-                            VerticalAlignment="Bottom"
-                            Fill="#FFE0E0E0" />-->
                         <ContentPresenter
                             x:Name="ExpandedContent"
                             Grid.Row="1"
-                            Visibility="Collapsed" />
+                            Visibility="Collapsed">
+                            <i:Interaction.Triggers>
+                                <ei:DataTrigger Binding="{Binding IsExpanded, RelativeSource={RelativeSource AncestorType=Expander}}" Value="True">
+                                    <ei:ChangePropertyAction PropertyName="Visibility" Value="Visible" />
+                                </ei:DataTrigger>
+                                <ei:DataTrigger Binding="{Binding IsExpanded, RelativeSource={RelativeSource AncestorType=Expander}}" Value="False">
+                                    <ei:ChangePropertyAction PropertyName="Visibility" Value="Collapsed" />
+                                </ei:DataTrigger>
+                            </i:Interaction.Triggers>
+                        </ContentPresenter>
                     </Grid>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsExpanded" Value="True">
-                            <Setter TargetName="ExpandedContent" Property="Visibility" Value="Visible" />
-                            <Setter TargetName="Chevron" Property="RenderTransform">
-                                <Setter.Value>
-                                    <RotateTransform Angle="180" />
-                                </Setter.Value>
-                            </Setter>
-                        </Trigger>
-
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="Chevron" Property="Fill" Value="#FF007ACC" />
-                        </Trigger>
-                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

@@ -53,6 +53,7 @@
 	  <None Remove="Image\background2.png" />
 	  <None Remove="Image\background3.png" />
 	  <None Remove="Image\background4.png" />
+	  <None Remove="Image\background5.png" />
 	  <None Remove="Image\Baize\1.png" />
 	  <None Remove="Image\Baize\10.png" />
 	  <None Remove="Image\Baize\11.png" />
@@ -77,7 +78,11 @@
 	  <None Remove="Image\Baize\textblockBackground.png" />
 	  <None Remove="Image\Baize\tip.png" />
 	  <None Remove="Image\BattlePassBackground.png" />
+	  <None Remove="Image\Button\CleanButtonDefaultBackgound.png" />
+	  <None Remove="Image\Button\CleanButtonHilightBackgound.png" />
+	  <None Remove="Image\Button\DetaulBackGameBackgound.png" />
 	  <None Remove="Image\Button\FriendTabItemBackground.png" />
+	  <None Remove="Image\Button\HilightBackGameBackgound.png" />
 	  <None Remove="Image\Button\HistoryMatchRecordBackground.png" />
 	  <None Remove="Image\Button\SettingCommandDefaultBackground.png" />
 	  <None Remove="Image\Button\SettingCommandHightlightBackground.png" />
@@ -193,6 +198,8 @@
 	  <None Remove="Image\Region\ModeSelection\Icon3.png" />
 	  <None Remove="Image\Region\ModeSelection\Icon4.png" />
 	  <None Remove="Image\Region\ModeSelection\Icon5.png" />
+	  <None Remove="Image\Region\ModeSelection\Icon6.png" />
+	  <None Remove="Image\Region\ModeSelection\Icon7.png" />
 	  <None Remove="Image\Region\StartGame\人机演练.png" />
 	  <None Remove="Image\Region\StartGame\天人之战.png" />
 	  <None Remove="Image\Region\StartGame\开始游戏.png" />
@@ -238,6 +245,10 @@
 	  <Resource Include="Image\Avatar\Icon\lock.png" />
 	  <Resource Include="Image\background3.png" />
 	  <Resource Include="Image\background4.png" />
+	  <Resource Include="Image\Button\CleanButtonDefaultBackgound.png" />
+	  <Resource Include="Image\Button\CleanButtonHilightBackgound.png" />
+	  <Resource Include="Image\Button\DetaulBackGameBackgound.png" />
+	  <Resource Include="Image\Button\HilightBackGameBackgound.png" />
 	  <Resource Include="Image\friendInv.png" />
 	</ItemGroup>
 
@@ -461,6 +472,8 @@
 	  <Resource Include="Image\Region\ModeSelection\Icon3.png" />
 	  <Resource Include="Image\Region\ModeSelection\Icon4.png" />
 	  <Resource Include="Image\Region\ModeSelection\Icon5.png" />
+	  <Resource Include="Image\Region\ModeSelection\Icon6.png" />
+	  <Resource Include="Image\Region\ModeSelection\Icon7.png" />
 	  <Resource Include="Image\Region\StartGame\人机演练.png" />
 	  <Resource Include="Image\Region\StartGame\天人之战.png" />
 	  <Resource Include="Image\Region\StartGame\开始游戏.png" />

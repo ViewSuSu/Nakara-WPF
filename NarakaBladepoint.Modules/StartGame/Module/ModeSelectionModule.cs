@@ -1,4 +1,6 @@
-﻿using NarakaBladepoint.Modules.StartGame.UI.ModeSelection.ViewModels;
+﻿using NarakaBladepoint.Modules.StartGame.UI.HeroChose.ViewModels;
+using NarakaBladepoint.Modules.StartGame.UI.HeroChose.Views;
+using NarakaBladepoint.Modules.StartGame.UI.ModeSelection.ViewModels;
 using NarakaBladepoint.Modules.StartGame.UI.ModeSelection.Views;
 
 namespace NarakaBladepoint.Modules.StartGame.Module
@@ -12,6 +14,10 @@ namespace NarakaBladepoint.Modules.StartGame.Module
             containerRegistry.RegisterForNavigation<
                 ModeSelectionUserControl,
                 ModeSelectionUserControlViewModel
+            >();
+            containerRegistry.RegisterForNavigation<
+                HeroChoseUserControl,
+                HeroChoseUserControlViewModel
             >();
         }
     }
