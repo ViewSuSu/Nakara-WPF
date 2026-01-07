@@ -75,5 +75,20 @@ namespace NarakaBladepoint.Shared.Services.Models
         /// 通行证等级
         /// </summary>
         public int BattlePassLevel { get; internal set; }
+
+        /// <summary>
+        /// 预选首选英雄
+        /// </summary>
+        public int FirstPickHeroIndex { get; internal set; }
+
+        /// <summary>
+        /// 预选次选英雄1
+        /// </summary>
+        public int SecondPickHeroIndex { get; internal set; }
+
+        /// <summary>
+        /// 预选次选英雄2
+        /// </summary>
+        public int ThridPickHeroIndex { get; internal set; }
     }
 }

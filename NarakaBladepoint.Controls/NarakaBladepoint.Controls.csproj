@@ -6,14 +6,12 @@
     <Nullable>enable</Nullable>
 	  <UseWPF>true</UseWPF>
 	  <Authors>Su</Authors>
+	  <NoWarn>$(NoWarn);CS8601</NoWarn>
 	  <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.135" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\NarakaBladepoint.Framework\NarakaBladepoint.Framework.csproj" />
     <ProjectReference Include="..\NarakaBladepoint.Resources\NarakaBladepoint.Resources.csproj" />
   </ItemGroup>
 

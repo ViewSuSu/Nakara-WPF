@@ -5,6 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
+		<NoWarn>$(NoWarn);CS8601</NoWarn>
 		<Authors>Su</Authors>
 		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 	</PropertyGroup>
@@ -12,8 +13,5 @@
 		<PackageReference Include="Mapster" Version="7.4.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
 		<PackageReference Include="Prism.DryIoc" Version="9.0.537" />
-	</ItemGroup>
-	<ItemGroup>
-	  <ProjectReference Include="..\NarakaBladepoint.Controls\NarakaBladepoint.Controls.csproj" />
 	</ItemGroup>
 </Project>

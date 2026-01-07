@@ -586,9 +586,9 @@
                                 Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon5.png" />
                         </Grid>
                         <UniformGrid Grid.Row="1" Columns="3">
-                            <Image d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Hero/崔三娘.png" />
-                            <Image d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Hero/顾清寒.png" />
-                            <Image d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Hero/哈迪.png" />
+                            <Image d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Hero/崔三娘.png" Source="{Binding FirstHeroAvatar, Mode=OneWay}" />
+                            <Image d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Hero/顾清寒.png" Source="{Binding SecondHeroAvatar, Mode=OneWay}" />
+                            <Image d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Hero/哈迪.png" Source="{Binding ThirdHeroAvatar, Mode=OneWay}" />
                         </UniformGrid>
                     </Grid>
                     <b:Interaction.Triggers>

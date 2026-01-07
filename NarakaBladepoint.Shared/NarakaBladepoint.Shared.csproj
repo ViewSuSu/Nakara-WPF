@@ -6,11 +6,12 @@
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<Authors>Su</Authors>
+		<NoWarn>$(NoWarn);CS8601</NoWarn>
 		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\NarakaBladepoint.Framework\NarakaBladepoint.Framework.csproj" />
+	  <ProjectReference Include="..\NarakaBladepoint.Controls\NarakaBladepoint.Controls.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

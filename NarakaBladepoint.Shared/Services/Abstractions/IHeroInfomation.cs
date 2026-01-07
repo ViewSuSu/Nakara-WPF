@@ -1,4 +1,31 @@
 ﻿namespace NarakaBladepoint.Shared.Services.Abstractions
 {
-    public interface IHeroInfomation { }
+    public interface IHeroInfomation
+    {
+        /// <summary>
+        /// 获取所有英雄头像
+        /// </summary>
+        /// <returns></returns>
+        public Task<List<HeroAvatarModel>> GetHeroAvatarModelsAsync();
+
+        /// <summary>
+        /// 根据Index获取英雄头像信息
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        public Task<HeroAvatarModel> GetHeroAvatarModelByIdAsync(int index);
+
+        /// <summary>
+        /// 保存首选英雄信息
+        /// </summary>
+        /// <param name="firstIndex"></param>
+        /// <param name="secondIndex"></param>
+        /// <param name="thirdIndex"></param>
+        /// <returns></returns>
+        public Task<bool> SaveHeroChoseIndex(
+            int firstIndex = -1,
+            int secondIndex = -1,
+            int thirdIndex = -1
+        );
+    }
 }

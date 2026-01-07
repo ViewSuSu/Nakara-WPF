@@ -49,7 +49,7 @@ namespace NarakaBladepoint.App.Shell.Infrastructure
         }
 
         /// <summary>
-        /// 移除顶层视图
+        /// 移除顶层视图，并让下面的视图上移
         /// </summary>
         public void RemoveTop()
         {
@@ -59,8 +59,37 @@ namespace NarakaBladepoint.App.Shell.Infrastructure
                 var region = _regionManager.Regions[_layers[i]];
                 if (region.ActiveViews.Any())
                 {
+                    // 移除顶层视图
                     region.RemoveAll();
+
+                    // 将下面的视图依次上移
+                    CascadeViewsUpward(i);
                     break;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 从指定层开始，将下面的视图依次上移
+        /// </summary>
+        private void CascadeViewsUpward(int startLayerIndex)
+        {
+            // 从被移除的层开始，将下面的视图依次上移
+            for (int i = startLayerIndex - 1; i >= 0; i--)
+            {
+                var currentLayer = _layers[i];
+                var currentRegion = _regionManager.Regions[currentLayer];
+
+                if (currentRegion.ActiveViews.Any())
+                {
+                    var view = currentRegion.ActiveViews.First();
+                    var viewName = GetViewName(view);
+
+                    // 移除当前层的视图
+                    currentRegion.Remove(view);
+
+                    // 导航到上一层
+                    _regionManager.RequestNavigate(_layers[i + 1], viewName);
                 }
             }
         }

@@ -23,6 +23,9 @@ namespace NarakaBladepoint.Shared.Services.Infrastructure
                 HeroSkins = 862,
                 BattlePassName = "穿云通行证",
                 BattlePassLevel = 128,
+                FirstPickHeroIndex = 0,
+                SecondPickHeroIndex = 1,
+                ThridPickHeroIndex = 2,
             };
         }
 

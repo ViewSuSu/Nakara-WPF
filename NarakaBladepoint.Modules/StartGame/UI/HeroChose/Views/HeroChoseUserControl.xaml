@@ -48,7 +48,8 @@
                 <ItemsControl
                     Grid.Column="0"
                     d:ItemsSource="{d:SampleData ItemCount=25}"
-                    ItemsSource="{Binding HeroItemModels}">
+                    IsEnabled="{Binding IsCanSelcted, Mode=OneWay}"
+                    ItemsSource="{Binding HeroChoseModuleItemModels}">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
                             <WrapPanel ItemHeight="70" ItemWidth="70" />
@@ -59,8 +60,12 @@
                             <Grid Margin="5">
                                 <Image
                                     d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Hero/崔三娘.png"
-                                    Source="{Binding Icon}"
+                                    Source="{Binding HeroAvatarModel.Avatar, Mode=OneWay}"
                                     Stretch="Uniform" />
+                                <Rectangle
+                                    Fill="#E6000000"
+                                    Opacity="0.5"
+                                    Visibility="{Binding IsSelected, Converter={StaticResource InverseBoolToVisibilityConverter}}" />
                                 <Image
                                     Width="10"
                                     Height="10"
@@ -68,11 +73,15 @@
                                     HorizontalAlignment="Right"
                                     VerticalAlignment="Top"
                                     Panel.ZIndex="1"
-                                    d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon6.png"
                                     d:Visibility="Visible"
-                                    Source="{Binding Icon}"
+                                    Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon6.png"
                                     Stretch="UniformToFill"
                                     Visibility="{Binding IsSelected, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                                <b:Interaction.Triggers>
+                                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                                        <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource AncestorType=UserControl, Mode=FindAncestor}, Path=DataContext.SelectedHeroCommand}" CommandParameter="{Binding}" />
+                                    </b:EventTrigger>
+                                </b:Interaction.Triggers>
                             </Grid>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
@@ -98,7 +107,7 @@
                             <Grid Margin="0,20,0,0">
                                 <Image
                                     d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Hero/崔三娘.png"
-                                    Source="{Binding Icon}"
+                                    Source="{Binding FirstHeroAvatar, Mode=OneWay}"
                                     Stretch="Uniform" />
                                 <Image
                                     Width="20"
@@ -106,12 +115,12 @@
                                     HorizontalAlignment="Right"
                                     VerticalAlignment="Top"
                                     Panel.ZIndex="1"
-                                    d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon7.png"
-                                    Source="{Binding Icon}"
-                                    Stretch="UniformToFill">
+                                    Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon7.png"
+                                    Stretch="UniformToFill"
+                                    Visibility="{Binding FirstHeroIsNull, Mode=OneWay, Converter={StaticResource InverseBoolToVisibilityConverter}}">
                                     <b:Interaction.Triggers>
                                         <b:EventTrigger EventName="MouseLeftButtonDown">
-                                            <b:InvokeCommandAction />
+                                            <b:InvokeCommandAction Command="{Binding RemoveFirstHeroCommand}" />
                                         </b:EventTrigger>
                                     </b:Interaction.Triggers>
                                 </Image>
@@ -125,7 +134,7 @@
                             <Grid Margin="0,20,0,0">
                                 <Image
                                     d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Hero/崔三娘.png"
-                                    Source="{Binding Icon}"
+                                    Source="{Binding SecondHeroAvatar, Mode=OneWay}"
                                     Stretch="Uniform" />
                                 <Image
                                     Width="20"
@@ -133,12 +142,12 @@
                                     HorizontalAlignment="Right"
                                     VerticalAlignment="Top"
                                     Panel.ZIndex="1"
-                                    d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon7.png"
-                                    Source="{Binding Icon}"
-                                    Stretch="UniformToFill">
+                                    Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon7.png"
+                                    Stretch="UniformToFill"
+                                    Visibility="{Binding SecondHeroIsNull, Mode=OneWay, Converter={StaticResource InverseBoolToVisibilityConverter}}">
                                     <b:Interaction.Triggers>
                                         <b:EventTrigger EventName="MouseLeftButtonDown">
-                                            <b:InvokeCommandAction />
+                                            <b:InvokeCommandAction Command="{Binding RemoveSecondHeroCommand}" />
                                         </b:EventTrigger>
                                     </b:Interaction.Triggers>
                                 </Image>
@@ -152,7 +161,7 @@
                             <Grid Margin="0,20,0,0">
                                 <Image
                                     d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Hero/崔三娘.png"
-                                    Source="{Binding Icon}"
+                                    Source="{Binding ThirdHeroAvatar, Mode=OneWay}"
                                     Stretch="Uniform" />
                                 <Image
                                     Width="20"
@@ -160,12 +169,12 @@
                                     HorizontalAlignment="Right"
                                     VerticalAlignment="Top"
                                     Panel.ZIndex="1"
-                                    d:Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon7.png"
-                                    Source="{Binding Icon}"
-                                    Stretch="UniformToFill">
+                                    Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/Icon7.png"
+                                    Stretch="UniformToFill"
+                                    Visibility="{Binding ThirdHeroIsNull, Mode=OneWay, Converter={StaticResource InverseBoolToVisibilityConverter}}">
                                     <b:Interaction.Triggers>
                                         <b:EventTrigger EventName="MouseLeftButtonDown">
-                                            <b:InvokeCommandAction />
+                                            <b:InvokeCommandAction Command="{Binding RemoveThirdHeroCommand}" />
                                         </b:EventTrigger>
                                     </b:Interaction.Triggers>
                                 </Image>
@@ -176,11 +185,13 @@
                         <Button
                             Height="30"
                             Margin="0,0,30,0"
+                            Command="{Binding SaveCommand}"
                             Content="确定"
                             Style="{StaticResource SettingBackToGameCommandButtonStyle}" />
                         <Button
                             Height="30"
                             Margin="30,0,0,0"
+                            Command="{Binding ClearCommand}"
                             Content="一键清空"
                             Style="{StaticResource CleanButtonStyle}" />
                     </UniformGrid>

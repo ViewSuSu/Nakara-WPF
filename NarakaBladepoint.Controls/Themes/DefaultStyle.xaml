@@ -1,5 +1,9 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converterts="clr-namespace:NarakaBladepoint.Framework.UI.Converters;assembly=NarakaBladepoint.Framework">
     <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    <converterts:InverseBoolToVisibilityConverter x:Key="InverseBoolToVisibilityConverter" />
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/NarakaBladepoint.Controls;component/Themes/ExpandStyle.xaml" />
         <ResourceDictionary Source="/NarakaBladepoint.Controls;component/Themes/ButtonStyle.xaml" />
