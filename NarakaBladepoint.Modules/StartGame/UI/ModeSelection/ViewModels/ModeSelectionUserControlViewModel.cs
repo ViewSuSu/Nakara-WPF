@@ -68,7 +68,31 @@ namespace NarakaBladepoint.Modules.StartGame.UI.ModeSelection.ViewModels
             }
         }
 
-        public int SelectedMapCount { get; private set; }
+        private int _selectedMapCount;
+        public int SelectedMapCount
+        {
+            get { return _selectedMapCount; }
+            set
+            {
+                _selectedMapCount = value;
+                RaisePropertyChanged();
+            }
+        }
+
+        private bool isSoloMode;
+
+        /// <summary>
+        /// 是否是单排
+        /// </summary>
+        public bool IsSoloMode
+        {
+            get { return isSoloMode; }
+            set
+            {
+                isSoloMode = value;
+                RaisePropertyChanged();
+            }
+        }
 
         public ModeSelectionUserControlViewModel(
             IContainerProvider containerProvider,

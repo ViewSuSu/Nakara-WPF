@@ -1,5 +1,8 @@
-﻿using NarakaBladepoint.Framework.Core.Attrbuites;
+﻿using System;
+using System.Linq;
+using NarakaBladepoint.Framework.Core.Attrbuites;
 using NarakaBladepoint.Shared.Consts;
+using Prism.Navigation.Regions;
 
 namespace NarakaBladepoint.App.Shell.Infrastructure
 {
@@ -37,93 +40,38 @@ namespace NarakaBladepoint.App.Shell.Infrastructure
             }
             else
             {
-                // 如果没有空区域，移除最底层视图，整体下移
-                RemoveBottomView();
-
-                // 重新查找空区域（现在应该是最顶层）
-                emptyLayer = _layers.First(layer =>
-                    !_regionManager.Regions[layer].ActiveViews.Any()
-                );
-                _regionManager.RequestNavigate(emptyLayer, viewName);
+                // 如果没有空区域，直接报错
+                throw new InvalidOperationException("没有可用的导航位置，所有层都已满");
             }
         }
 
         /// <summary>
-        /// 移除顶层视图，并让下面的视图上移
+        /// 移除顶层视图
         /// </summary>
         public void RemoveTop()
         {
             // 从顶层开始查找有视图的区域
             for (int i = _layers.Length - 1; i >= 0; i--)
             {
-                var region = _regionManager.Regions[_layers[i]];
+                IRegion region = _regionManager.Regions[_layers[i]];
                 if (region.ActiveViews.Any())
                 {
                     // 移除顶层视图
                     region.RemoveAll();
 
-                    // 将下面的视图依次上移
-                    CascadeViewsUpward(i);
+                    // 查找下面一层是否有视图需要重新激活
+                    if (i > 0)
+                    {
+                        for (int j = i - 1; j >= 0; j--)
+                        {
+                            var lowerRegion = _regionManager.Regions[_layers[j]];
+                            var view = lowerRegion.Views.FirstOrDefault();
+                            _regionManager.RequestNavigate(_layers[j], view.GetType().Name);
+                        }
+                    }
                     break;
                 }
             }
-        }
-
-        /// <summary>
-        /// 从指定层开始，将下面的视图依次上移
-        /// </summary>
-        private void CascadeViewsUpward(int startLayerIndex)
-        {
-            // 从被移除的层开始，将下面的视图依次上移
-            for (int i = startLayerIndex - 1; i >= 0; i--)
-            {
-                var currentLayer = _layers[i];
-                var currentRegion = _regionManager.Regions[currentLayer];
-
-                if (currentRegion.ActiveViews.Any())
-                {
-                    var view = currentRegion.ActiveViews.First();
-                    var viewName = GetViewName(view);
-
-                    // 移除当前层的视图
-                    currentRegion.Remove(view);
-
-                    // 导航到上一层
-                    _regionManager.RequestNavigate(_layers[i + 1], viewName);
-                }
-            }
-        }
-
-        /// <summary>
-        /// 移除最底层视图，整体下移
-        /// </summary>
-        private void RemoveBottomView()
-        {
-            // 移除最底层
-            _regionManager.Regions[_layers[0]].RemoveAll();
-
-            // 将中层移到底层
-            var middleView = _regionManager.Regions[_layers[1]].ActiveViews.FirstOrDefault();
-            if (middleView != null)
-            {
-                var viewName = GetViewName(middleView);
-                _regionManager.Regions[_layers[1]].Remove(middleView);
-                _regionManager.RequestNavigate(_layers[0], viewName);
-            }
-
-            // 将顶层移到中层
-            var topView = _regionManager.Regions[_layers[2]].ActiveViews.FirstOrDefault();
-            if (topView != null)
-            {
-                var viewName = GetViewName(topView);
-                _regionManager.Regions[_layers[2]].Remove(topView);
-                _regionManager.RequestNavigate(_layers[1], viewName);
-            }
-        }
-
-        private string GetViewName(object view)
-        {
-            return view.GetType().Name;
         }
     }
 }

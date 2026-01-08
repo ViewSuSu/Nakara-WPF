@@ -16,7 +16,6 @@ namespace NarakaBladepoint.Modules.StartGame.UI.MapChose.ViewModels
     internal class MapChosePageViewModel : CanRemoveHomePageRegionViewModelBase
     {
         private readonly ICurrentUserInformationProvider currentUserInformationProvider;
-        private readonly IMapProvider mapProvider;
         private readonly IConfiguration configuration;
 
         public BindingList<MapChoseItemModel> MapItems { get; }
@@ -43,7 +42,7 @@ namespace NarakaBladepoint.Modules.StartGame.UI.MapChose.ViewModels
             }
         }
 
-        public int SelectedCount => MapItems.Where(x => x.IsSelected).Count();
+        public int SelectedCount => MapItems.Count(x => x.IsSelected);
 
         public MapChosePageViewModel(
             IContainerProvider containerProvider,
@@ -54,12 +53,13 @@ namespace NarakaBladepoint.Modules.StartGame.UI.MapChose.ViewModels
             : base(containerProvider)
         {
             this.currentUserInformationProvider = currentUserInformationProvider;
-            this.mapProvider = mapProvider;
             this.configuration = configuration;
+            var userModel = this.currentUserInformationProvider.GetCurrentUserInfoAsync().Result;
+            TimeoutDefaultAllMap = userModel.TimeoutDefaultAllMap;
             this.MapItems = new BindingList<MapChoseItemModel>(
                 mapProvider
                     .GetMapItemDatasAsync()
-                    .Result.Select(x => new MapChoseItemModel(x))
+                    .Result.Select(x => new MapChoseItemModel(x) { IsSelected = x.IsSelected })
                     .ToList()
             );
             MapItems.ListChanged += (o, e) =>
@@ -102,12 +102,6 @@ namespace NarakaBladepoint.Modules.StartGame.UI.MapChose.ViewModels
             }
             configuration.SaveAll(datas);
             ReturnCommand.Execute();
-        }
-
-        protected override void OnNavigatedToExecute(NavigationContext navigationContext)
-        {
-            var userModel = this.currentUserInformationProvider.GetCurrentUserInfoAsync().Result;
-            TimeoutDefaultAllMap = userModel.TimeoutDefaultAllMap;
         }
 
         public bool TimeoutDefaultAllMap { get; set; }

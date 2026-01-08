@@ -169,6 +169,7 @@ namespace NarakaBladepoint.Modules.StartGame.UI.HeroChose.ViewModels
                 HeroChoseModuleItemModels[SecondHeroIndex].IsSelected = true;
             if (ThirdHeroIndex != -1)
                 HeroChoseModuleItemModels[ThirdHeroIndex].IsSelected = true;
+            RaisePropertyChanged(nameof(HeroChoseModuleItemModels));
         }
 
         private async Task<bool> Save()

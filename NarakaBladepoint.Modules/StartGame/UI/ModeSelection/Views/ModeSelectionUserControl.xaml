@@ -567,7 +567,8 @@
                     VerticalAlignment="Top"
                     Background="Transparent"
                     BorderBrush="White"
-                    BorderThickness="0.1">
+                    BorderThickness="0.1"
+                    Visibility="{Binding IsSoloMode, Converter={StaticResource InverseBoolToVisibilityConverter}}">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="0.5*" />
@@ -661,9 +662,21 @@
                         VerticalAlignment="Top"
                         Background="Transparent"
                         Style="{StaticResource AverageTabControlStyle}">
-                        <TabItem Header="单排" Style="{StaticResource FriendListTabItem}" />
-                        <TabItem Header="双排" Style="{StaticResource FriendListTabItem}" />
-                        <TabItem Header="三排" Style="{StaticResource FriendListTabItem}" />
+                        <TabItem
+                            Name="tabItem1"
+                            Header="单排"
+                            IsSelected="{Binding IsSoloMode}"
+                            Style="{StaticResource FriendListTabItem}" />
+                        <TabItem
+                            Name="tabItem2"
+                            Header="双排"
+                            Style="{StaticResource FriendListTabItem}" />
+                        <TabItem
+                            Name="tabItem3"
+                            d:IsSelected="True"
+                            Header="三排"
+                            IsSelected="True"
+                            Style="{StaticResource FriendListTabItem}" />
                     </TabControl>
                     <Button
                         Grid.Row="1"
