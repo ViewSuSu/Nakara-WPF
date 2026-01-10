@@ -6,6 +6,7 @@
     xmlns:b="clr-namespace:Microsoft.Xaml.Behaviors;assembly=Microsoft.Xaml.Behaviors"
     xmlns:base="clr-namespace:NarakaBladepoint.Framework.Core.Bases;assembly=NarakaBladepoint.Framework"
     xmlns:controls="clr-namespace:NarakaBladepoint.Controls;assembly=NarakaBladepoint.Controls"
+    xmlns:core="clr-namespace:Microsoft.Xaml.Behaviors.Core;assembly=Microsoft.Xaml.Behaviors"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:tagUsercontrol="clr-namespace:NarakaBladepoint.Modules.SocialTag.UI.Views"
@@ -92,7 +93,7 @@
                         Margin="0,5"
                         BorderBrush="White"
                         BorderThickness="0.2"
-                        Visibility="{Binding IsHaveVilidTag, Mode=OneTime, Converter={StaticResource InverseBoolToVisibilityConverter}}">
+                        Visibility="{Binding IsHaveVilidTag, Mode=OneWay, Converter={StaticResource InverseBoolToVisibilityConverter}}">
                         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                             <Image
                                 Width="20"
@@ -114,7 +115,7 @@
                     <Grid
                         Grid.Row="1"
                         Margin="0,5"
-                        Visibility="{Binding IsHaveVilidTag, Mode=OneTime, Converter={StaticResource BooleanToVisibilityConverter}}">
+                        Visibility="{Binding IsHaveVilidTag, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition />
                             <ColumnDefinition Width="40" />
@@ -176,10 +177,16 @@
                                 Grid.Column="2"
                                 Width="20"
                                 Margin="5,0,0,0"
-                                HorizontalAlignment="Left"
                                 MouseLeftButtonDown="Image_MouseLeftButtonDown"
+                                HorizontalAlignment="Left"
                                 Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/×.png"
-                                Stretch="Uniform" />
+                                Stretch="Uniform">
+                                <b:Interaction.Triggers>
+                                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                                        <b:InvokeCommandAction Command="{Binding SearchCommand}" CommandParameter="{x:Null}" />
+                                    </b:EventTrigger>
+                                </b:Interaction.Triggers>
+                            </Image>
                         </Grid>
                     </Border>
                     <TabControl

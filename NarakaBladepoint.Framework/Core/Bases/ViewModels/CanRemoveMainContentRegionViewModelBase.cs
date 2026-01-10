@@ -4,15 +4,24 @@ namespace NarakaBladepoint.Framework.Core.Bases.ViewModels
 {
     public abstract class CanRemoveMainContentRegionViewModelBase : ViewModelBase
     {
-        protected CanRemoveMainContentRegionViewModelBase(IContainerProvider containerProvider)
-            : base(containerProvider)
-        {
-            ReturnCommand = new DelegateCommand(() =>
-            {
-                this.eventAggregator.GetEvent<RemoveMainContentRegionEvent>().Publish();
-            });
-        }
+        private DelegateCommand _returnCommand;
 
-        public DelegateCommand ReturnCommand { get; }
+        protected CanRemoveMainContentRegionViewModelBase(IContainerProvider containerProvider)
+            : base(containerProvider) { }
+
+        public DelegateCommand ReturnCommand
+        {
+            get
+            {
+                if (_returnCommand == null)
+                {
+                    _returnCommand = new DelegateCommand(() =>
+                    {
+                        this.eventAggregator.GetEvent<RemoveMainContentRegionEvent>().Publish();
+                    });
+                }
+                return _returnCommand;
+            }
+        }
     }
 }

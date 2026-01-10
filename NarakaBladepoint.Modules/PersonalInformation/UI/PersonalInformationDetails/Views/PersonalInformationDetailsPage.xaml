@@ -251,11 +251,17 @@
                                 Grid.Column="1"
                                 Width="20"
                                 Height="20"
-                                Margin="0,0,8,0"
+                                Margin="0,0,5,0"
                                 HorizontalAlignment="Right"
                                 VerticalAlignment="Center"
                                 Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/PersonalInfoDetails/12.png"
-                                Stretch="UniformToFill" />
+                                Stretch="UniformToFill">
+                                <b:Interaction.Triggers>
+                                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                                        <b:InvokeCommandAction Command="{Binding DataContext.HeroTagCommand, RelativeSource={RelativeSource AncestorType=UserControl, Mode=FindAncestor}}" />
+                                    </b:EventTrigger>
+                                </b:Interaction.Triggers>
+                            </Image>
                         </Grid>
                     </Grid>
                 </Grid>

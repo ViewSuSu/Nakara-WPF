@@ -4,6 +4,8 @@
 
     public class RemoveHomePageRegionEvent : PubSubEvent { }
 
+    public class RemoveAllHomePageRegionEvent : PubSubEvent { }
+
     public class LoadMainContentRegionEvent : PubSubEvent<string> { }
 
     public class RemoveMainContentRegionEvent : PubSubEvent { }

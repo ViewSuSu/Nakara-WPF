@@ -15,8 +15,8 @@ namespace NarakaBladepoint.Modules.Social.UI.Friend.UI.Views
             System.Windows.Input.MouseButtonEventArgs e
         )
         {
-            SearchBox.Text = null;
-            SearchBox.Focus();
+            this.SearchBox.Focus();
+            this.SearchBox.Text = null;
         }
     }
 }

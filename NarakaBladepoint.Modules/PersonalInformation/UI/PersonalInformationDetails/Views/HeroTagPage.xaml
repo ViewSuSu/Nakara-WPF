@@ -77,7 +77,10 @@
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <Grid Margin="5">
-                                    <Rectangle Fill="#E6000000" Opacity="0.5">
+                                    <Rectangle
+                                        Panel.ZIndex="1"
+                                        Fill="#E8000000"
+                                        Opacity="0.5">
                                         <Rectangle.Visibility>
                                             <MultiBinding Converter="{StaticResource OutRangeMaskVisibilityConverter}">
                                                 <Binding Path="DataContext.SelectedCount" RelativeSource="{RelativeSource AncestorType=ItemsControl}" />

@@ -224,6 +224,7 @@ namespace NarakaBladepoint.Modules.SocialTag.UI.ViewModels
             if (
                 e.PropertyDescriptor != null
                 && e.PropertyDescriptor.Name == SocialTagModel.IsSelectedPropertyName
+                && e.ListChangedType == ListChangedType.ItemChanged
             )
             {
                 RaisepropertyChangedExecute();

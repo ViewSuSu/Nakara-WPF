@@ -7,15 +7,40 @@ namespace NarakaBladepoint.Framework.Core.Bases.ViewModels
     /// </summary>
     public abstract class CanRemoveHomePageRegionViewModelBase : ViewModelBase
     {
+        private DelegateCommand _returnCommand;
+        private DelegateCommand _removeAllHomePageCommand;
+
         protected CanRemoveHomePageRegionViewModelBase(IContainerProvider containerProvider)
-            : base(containerProvider)
+            : base(containerProvider) { }
+
+        public DelegateCommand ReturnCommand
         {
-            ReturnCommand = new DelegateCommand(() =>
+            get
             {
-                this.eventAggregator.GetEvent<RemoveHomePageRegionEvent>().Publish();
-            });
+                if (_returnCommand == null)
+                {
+                    _returnCommand = new DelegateCommand(() =>
+                    {
+                        this.eventAggregator.GetEvent<RemoveHomePageRegionEvent>().Publish();
+                    });
+                }
+                return _returnCommand;
+            }
         }
 
-        public DelegateCommand ReturnCommand { get; }
+        public DelegateCommand RemoveAllHomePageCommand
+        {
+            get
+            {
+                if (_removeAllHomePageCommand == null)
+                {
+                    _removeAllHomePageCommand = new DelegateCommand(() =>
+                    {
+                        this.eventAggregator.GetEvent<RemoveAllHomePageRegionEvent>().Publish();
+                    });
+                }
+                return _removeAllHomePageCommand;
+            }
+        }
     }
 }

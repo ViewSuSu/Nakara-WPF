@@ -12,6 +12,7 @@ namespace NarakaBladepoint.Modules.Social.UI.Setting.ViewModels
         public DelegateCommand NavigateToTutorialCommand =>
             _navigateToTutorialCommand ??= new DelegateCommand(() =>
             {
+                RemoveAllHomePageCommand.Execute();
                 eventAggregator.GetEvent<LoadHomePageRegionEvent>().Publish(nameof(TutorialPage));
             });
 

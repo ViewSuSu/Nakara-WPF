@@ -1,31 +1,28 @@
 using NarakaBladepoint.Modules.TopUp.UI.Views;
-using NarakaBladepoint.Modules.Wealth.UI.Main.Models;
+using NarakaBladepoint.Shared.Datas;
+using NarakaBladepoint.Shared.Services.Abstractions;
 
 namespace NarakaBladepoint.Modules.Wealth.UI.Main.ViewModels
 {
-    public partial class WealthPageViewModel : BindableBase
+    public partial class WealthPageViewModel : ViewModelBase
     {
-        private readonly IEventAggregator eventAggregator;
-
-        public WealthModel WealthModel { get; } =
-            new WealthModel()
-            {
-                GoldBrick = 12500,
-                AncientCoins = 1111,
-                HuanSi = 108520,
-            };
+        public UserInformationData CurrentUserModel { get; }
 
         private DelegateCommand _navigateToTopUpCommand;
+
+        public WealthPageViewModel(
+            IContainerProvider containerProvider,
+            ICurrentUserInfoProvider currentUserInfoProvider
+        )
+            : base(containerProvider)
+        {
+            this.CurrentUserModel = currentUserInfoProvider.GetCurrentUserInfoAsync().Result;
+        }
 
         public DelegateCommand NavigateToTopUpCommand =>
             _navigateToTopUpCommand ??= new DelegateCommand(() =>
             {
                 this.eventAggregator.GetEvent<LoadHomePageRegionEvent>().Publish(nameof(TopUpPage));
             });
-
-        public WealthPageViewModel(IEventAggregator eventAggregator)
-        {
-            this.eventAggregator = eventAggregator;
-        }
     }
 }

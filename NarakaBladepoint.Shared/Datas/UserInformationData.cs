@@ -33,6 +33,21 @@ namespace NarakaBladepoint.Shared.Datas
         public string Name { get; set; }
 
         /// <summary>
+        /// 金砖
+        /// </summary>
+        public double GoldBrick { get; set; }
+
+        /// <summary>
+        /// 古币
+        /// </summary>
+        public double AncientCoins { get; set; }
+
+        /// <summary>
+        /// 幻丝
+        /// </summary>
+        public double HuanSi { get; set; }
+
+        /// <summary>
         /// 等级
         /// </summary>
         public int Level { get; set; }

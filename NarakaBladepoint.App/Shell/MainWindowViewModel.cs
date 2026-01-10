@@ -25,6 +25,9 @@ namespace NarakaBladepoint.App.Shell
             this.eventAggregator.GetEvent<RemoveHomePageRegionEvent>()
                 .Subscribe(() => this.homePageVisualNavigator.RemoveTop(), ThreadOption.UIThread);
 
+            this.eventAggregator.GetEvent<RemoveAllHomePageRegionEvent>()
+                .Subscribe(() => this.homePageVisualNavigator.RemoveAll(), ThreadOption.UIThread);
+
             this.eventAggregator.GetEvent<LoadMainContentRegionEvent>()
                 .Subscribe(
                     (viewName) =>

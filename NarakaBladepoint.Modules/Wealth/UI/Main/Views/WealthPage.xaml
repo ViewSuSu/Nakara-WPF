@@ -16,14 +16,14 @@
             d:Text="12500"
             Spacing="-5"
             Style="{StaticResource AncientCoins}"
-            Text="{Binding WealthModel.AncientCoins}" />
+            Text="{Binding CurrentUserModel.AncientCoins}" />
         <Grid x:Name="GoldBrickPopup">
             <controls:IconTextBlockCustomControl
                 d:Text="12600"
                 Command="{Binding NavigateToTopUpCommand}"
                 Spacing="-5"
                 Style="{StaticResource GoldBrick}"
-                Text="{Binding WealthModel.GoldBrick}" />
+                Text="{Binding CurrentUserModel.GoldBrick}" />
         </Grid>
         <Popup
             HorizontalOffset="-10"
@@ -37,6 +37,6 @@
             d:Text="12500"
             Spacing="-5"
             Style="{StaticResource HuanSi}"
-            Text="{Binding WealthModel.HuanSi}" />
+            Text="{Binding CurrentUserModel.HuanSi}" />
     </UniformGrid>
 </base:UserControlBase>
