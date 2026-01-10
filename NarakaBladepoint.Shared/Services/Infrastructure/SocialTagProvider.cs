@@ -22,6 +22,13 @@ namespace NarakaBladepoint.Shared.Services.Infrastructure
             return datas.Where(x => x.TagType == socialTagType).ToList();
         }
 
+        public async Task<SocialTagData> GetSocialTagByIndex(int index)
+        {
+            return ConfigurationDataReader
+                .GetList<SocialTagData>()
+                .FirstOrDefault(x => x.Index == index);
+        }
+
         public async Task<List<SocialTagData>> GetSocialTags()
         {
             return ConfigurationDataReader.GetList<SocialTagData>();
@@ -31,6 +38,44 @@ namespace NarakaBladepoint.Shared.Services.Infrastructure
         {
             var currentModel = await currentUserInfoProvider.GetCurrentUserInfoAsync();
             return currentModel.SelectedSocialTags.Contains(index);
+        }
+
+        public async Task<SocialTagMicData> GetSocialTagMicDataByIndex(int index)
+        {
+            return ConfigurationDataReader
+                .GetList<SocialTagMicData>()
+                .FirstOrDefault(x => x.Index == index);
+        }
+
+        public Task<SocialTagOnlineData> GetSocialTagOnlineDataByIndex(int index)
+        {
+            return Task.FromResult(
+                ConfigurationDataReader
+                    .GetList<SocialTagOnlineData>()
+                    .FirstOrDefault(x => x.Index == index)
+            );
+        }
+
+        public async Task<List<SocialTagMicData>> GetSocialTagMicDatas()
+        {
+            return ConfigurationDataReader.GetList<SocialTagMicData>();
+        }
+
+        public async Task<List<SocialTagOnlineData>> GetSocialTagOnlineDatas()
+        {
+            return ConfigurationDataReader.GetList<SocialTagOnlineData>();
+        }
+
+        public async Task<bool> GetSocialTagMicDataIsSelectedByIndex(int index)
+        {
+            var currentModel = await currentUserInfoProvider.GetCurrentUserInfoAsync();
+            return currentModel.SelectedSocialTagMic == index;
+        }
+
+        public async Task<bool> GetSocialTagOnlineDataIsSelectedByIndex(int index)
+        {
+            var currentModel = await currentUserInfoProvider.GetCurrentUserInfoAsync();
+            return currentModel.SelectedSocialTagOnline == index;
         }
     }
 }

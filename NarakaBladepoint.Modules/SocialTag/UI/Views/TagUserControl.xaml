@@ -1,0 +1,76 @@
+﻿<bases:UserControlBase
+    x:Class="NarakaBladepoint.Modules.SocialTag.UI.Views.TagUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:bases="clr-namespace:NarakaBladepoint.Framework.Core.Bases;assembly=NarakaBladepoint.Framework"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:NarakaBladepoint.Modules.SocialTag.UI.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="clr-namespace:NarakaBladepoint.Modules.SocialTag.UI.ViewModels"
+    d:DataContext="{d:DesignInstance Type=viewmodels:TagUserControlViewModel}"
+    d:DesignHeight="70"
+    d:DesignWidth="360"
+    mc:Ignorable="d">
+    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+        <Grid
+            Height="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1, Mode=FindAncestor}, Path=ActualHeight}"
+            Margin="2,0"
+            Visibility="{Binding IsSettingMic, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Grid.Background>
+                <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/SocialTag/background.png" Stretch="UniformToFill" />
+            </Grid.Background>
+            <Image
+                Height="20"
+                Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/SocialTag/Icon1.png"
+                Visibility="{Binding IsHaveMicAndSelected, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}" />
+            <Image
+                Height="20"
+                Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/SocialTag/Icon2.png"
+                Visibility="{Binding IsHaveMicAndSelected, Mode=OneWay, Converter={StaticResource InverseBoolToVisibilityConverter}}" />
+        </Grid>
+        <Grid
+            Height="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1, Mode=FindAncestor}, Path=ActualHeight}"
+            Margin="2,0"
+            Visibility="{Binding IsSettingOnline, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Grid.Background>
+                <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/SocialTag/background.png" Stretch="UniformToFill" />
+            </Grid.Background>
+            <TextBlock
+                Margin="5,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                d:Text="指挥家"
+                Foreground="White"
+                Text="{Binding SelectedSocialTagOnlineModelContent, Mode=OneWay}" />
+        </Grid>
+        <ItemsControl
+            VerticalAlignment="Bottom"
+            d:ItemsSource="{d:SampleData ItemCount=5}"
+            ItemsSource="{Binding SelectedSocialTagModels, Mode=OneWay}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border
+                        Width="Auto"
+                        Height="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1, Mode=FindAncestor}, Path=ActualHeight}"
+                        Margin="2,0">
+                        <Border.Background>
+                            <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/SocialTag/background.png" Stretch="UniformToFill" />
+                        </Border.Background>
+                        <TextBlock
+                            Margin="5,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            d:Text="指挥家"
+                            Foreground="White"
+                            Text="{Binding SocialTagData.Text, Mode=OneWay}" />
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </StackPanel>
+</bases:UserControlBase>

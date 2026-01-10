@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NarakaBladepoint.Modules.SocialTag.Domain.Events;
 using NarakaBladepoint.Modules.SocialTag.UI.Models;
 using NarakaBladepoint.Shared.Datas;
 using NarakaBladepoint.Shared.Services.Abstractions;
@@ -29,12 +30,13 @@ namespace NarakaBladepoint.Modules.SocialTag.UI.ViewModels
 
         public int MaxCount { get; set; } = 4;
 
-        public int[] SelectedTagIndex =>
+        public int[] SelectedTagIndexArray =>
             FightTags
                 .Concat(SocialTags)
                 .Concat(PersonalityTags)
                 .Concat(ModeTags)
                 .Concat(LanguageTags)
+                .Where(x => x.IsSelected)
                 .Select(x => x.SocialTagData.Index)
                 .ToArray();
 
@@ -131,11 +133,85 @@ namespace NarakaBladepoint.Modules.SocialTag.UI.ViewModels
             MouseLeftButtonDown = new DelegateCommand<SocialTagModel>(tag =>
             {
                 tag.IsSelected = !tag.IsSelected;
-                CurrentUserModel.SelectedHeroTags = SelectedTagIndex;
-                this.configuration.Save(CurrentUserModel);
+                var currentModel = this.currentUserInfoProvider.GetCurrentUserInfoAsync().Result;
+                currentModel.SelectedSocialTags = SelectedTagIndexArray;
+                this.configuration.Save(currentModel);
+                eventAggregator.GetEvent<NoticeSocialTagChangeEvent>().Publish();
             });
-            RaisePropertyChanged(nameof(SelectedCount));
-            RaisePropertyChanged(nameof(SelectedSocialTagModels));
+
+            CheckOnlineCommand = new DelegateCommand<SocialTagOnlineModel>(data =>
+            {
+                var currentModel = this.currentUserInfoProvider.GetCurrentUserInfoAsync().Result;
+                if (data.IsSelected)
+                {
+                    foreach (var item in SocialTagOnlineModels)
+                    {
+                        if (item != data)
+                        {
+                            item.IsSelected = false;
+                        }
+                    }
+                    currentModel.SelectedSocialTagOnline = data.SocialTagOnlineData.Index;
+                }
+                else
+                {
+                    currentModel.SelectedSocialTagOnline = null;
+                }
+                configuration.Save(currentModel);
+                eventAggregator.GetEvent<NoticeSocialTagChangeEvent>().Publish();
+            });
+
+            CheckSocialTagMicCommand = new DelegateCommand<SocialTagMicModel>(data =>
+            {
+                var currentModel = this.currentUserInfoProvider.GetCurrentUserInfoAsync().Result;
+                if (data.IsSelected)
+                {
+                    foreach (var item in SocialTagMicModels)
+                    {
+                        if (item != data)
+                        {
+                            item.IsSelected = false;
+                        }
+                    }
+                    currentModel.SelectedSocialTagMic = data.SocialTagMicData.Index;
+                }
+                else
+                {
+                    currentModel.SelectedSocialTagMic = null;
+                }
+                configuration.Save(currentModel);
+                eventAggregator.GetEvent<NoticeSocialTagChangeEvent>().Publish();
+            });
+
+            this.SocialTagOnlineModels = new BindingList<SocialTagOnlineModel>(
+                socialTagProvider
+                    .GetSocialTagOnlineDatas()
+                    .Result.Select(x => new SocialTagOnlineModel(x)
+                    {
+                        IsSelected =
+                            CurrentUserModel.SelectedSocialTagOnline.HasValue
+                            && socialTagProvider
+                                .GetSocialTagOnlineDataIsSelectedByIndex(x.Index)
+                                .Result,
+                    })
+                    .ToList()
+            );
+            this.SocialTagMicModels = new BindingList<SocialTagMicModel>(
+                socialTagProvider
+                    .GetSocialTagMicDatas()
+                    .Result.Select(x => new SocialTagMicModel(x)
+                    {
+                        IsSelected =
+                            CurrentUserModel.SelectedSocialTagOnline.HasValue
+                            && socialTagProvider
+                                .GetSocialTagMicDataIsSelectedByIndex(x.Index)
+                                .Result,
+                    })
+                    .ToList()
+            );
+            SocialTagOnlineModels.ListChanged += OnTagListChanged;
+            SocialTagMicModels.ListChanged += OnTagListChanged;
+            RaisepropertyChangedExecute();
         }
 
         /// <summary>
@@ -150,9 +226,15 @@ namespace NarakaBladepoint.Modules.SocialTag.UI.ViewModels
                 && e.PropertyDescriptor.Name == SocialTagModel.IsSelectedPropertyName
             )
             {
-                RaisePropertyChanged(nameof(SelectedCount));
-                RaisePropertyChanged(nameof(SelectedSocialTagModels));
+                RaisepropertyChangedExecute();
             }
+        }
+
+        private void RaisepropertyChangedExecute()
+        {
+            RaisePropertyChanged(nameof(SelectedCount));
+            RaisePropertyChanged(nameof(SelectedSocialTagModels));
+            eventAggregator.GetEvent<NoticeSocialTagChangeEvent>().Publish();
         }
 
         // 当前用户信息（原有）
@@ -174,5 +256,11 @@ namespace NarakaBladepoint.Modules.SocialTag.UI.ViewModels
         public BindingList<SocialTagModel> LanguageTags { get; }
 
         public DelegateCommand<SocialTagModel> MouseLeftButtonDown { get; set; }
+
+        public DelegateCommand<SocialTagOnlineModel> CheckOnlineCommand { get; set; }
+        public DelegateCommand<SocialTagMicModel> CheckSocialTagMicCommand { get; set; }
+
+        public BindingList<SocialTagOnlineModel> SocialTagOnlineModels { get; }
+        public BindingList<SocialTagMicModel> SocialTagMicModels { get; }
     }
 }

@@ -83,6 +83,9 @@
     <Compile Update="SocialTag\UI\Views\SocialTagPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="SocialTag\UI\Views\TagUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="StartGame\UI\MapChose\Views\MapChosePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

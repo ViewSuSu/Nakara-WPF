@@ -3,6 +3,7 @@ using NarakaBladepoint.Framework.Core.Extensions;
 using NarakaBladepoint.Modules.PersonalInformation.Domain.Events;
 using NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDetails.Models;
 using NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDetails.Views;
+using NarakaBladepoint.Modules.SocialTag.Domain.Events;
 using NarakaBladepoint.Modules.SocialTag.UI.Views;
 using NarakaBladepoint.Shared.Datas;
 using NarakaBladepoint.Shared.Services.Abstractions;
@@ -13,7 +14,7 @@ namespace NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDet
     internal class PersonalInformationDetailsPageViewModel : ViewModelBase
     {
         public List<PersonalInformationDetailModel> PersonalSeasonDataModels { get; set; } = [];
-        public UserInformationData CurrentUserBasicInformationModel { get; }
+        public UserInformationData CurrentUserBasicInformationModel { get; private set; }
 
         private PersonalInformationDetailModel _selectedItem;
         private readonly ICurrentUserInfoProvider currentUserBasicInformation;
@@ -50,15 +51,34 @@ namespace NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDet
         {
             this.currentUserBasicInformation = currentUserBasicInformation;
             this.heroInfomation = heroInfomation;
+            Init();
+            eventAggregator.GetEvent<NoticeSocialTagChangeEvent>().Subscribe(Init);
+        }
+
+        private void Init()
+        {
             PersonalSeasonDataModels = currentUserBasicInformation
                 .GetPersonalSeasonsAsync()
                 .Result.ConvertToList<PersonalInformationDetailModel>();
             this.CurrentUserBasicInformationModel = currentUserBasicInformation
                 .GetCurrentUserInfoAsync()
                 .Result;
+            IsHaveTags = CurrentUserBasicInformationModel.IsExsitAnyValidSocialTag;
             SelectedItem = PersonalSeasonDataModels.FirstOrDefault();
             SetHeroTags();
             eventAggregator.GetEvent<SaveHeroTagEvent>().Subscribe(SetHeroTags);
+        }
+
+        private bool _isHaveTags;
+
+        public bool IsHaveTags
+        {
+            get { return _isHaveTags; }
+            set
+            {
+                _isHaveTags = value;
+                RaisePropertyChanged();
+            }
         }
 
         private async void SetHeroTags()

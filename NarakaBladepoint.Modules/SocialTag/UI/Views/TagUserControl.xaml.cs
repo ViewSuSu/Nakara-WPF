@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -17,11 +16,11 @@ using System.Windows.Shapes;
 namespace NarakaBladepoint.Modules.SocialTag.UI.Views
 {
     /// <summary>
-    /// SocialTagPage.xaml 的交互逻辑
+    /// TagUserControl.xaml 的交互逻辑
     /// </summary>
-    public partial class SocialTagPage : UserControlBase
+    public partial class TagUserControl : UserControlBase
     {
-        public SocialTagPage()
+        public TagUserControl()
         {
             InitializeComponent();
         }

@@ -15,6 +15,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Update="Datas\Jsons\SocialTagMicData.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Datas\Jsons\SocialTagOnlineData.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
 	  <None Update="Datas\Jsons\SocialTagData.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>

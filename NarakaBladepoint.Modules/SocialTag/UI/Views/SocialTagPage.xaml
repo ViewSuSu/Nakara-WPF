@@ -11,6 +11,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:NarakaBladepoint.Modules.SocialTag.UI.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:tagUsercontrol="clr-namespace:NarakaBladepoint.Modules.SocialTag.UI.Views"
     xmlns:viewmodels="clr-namespace:NarakaBladepoint.Modules.SocialTag.UI.ViewModels"
     attach:EscKeyAttachedProperty.Command="{Binding ReturnCommand}"
     d:DataContext="{d:DesignInstance Type=viewmodels:SocialTagPageViewModel}"
@@ -63,50 +64,7 @@
                                 FontSize="20"
                                 Foreground="White"
                                 Text="{Binding CurrentUserModel.Name, Mode=OneWay}" />
-                            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
-                                <Border Width="Auto" Height="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1, Mode=FindAncestor}, Path=ActualHeight}">
-                                    <Border.Background>
-                                        <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/SocialTag/background.png" Stretch="UniformToFill" />
-                                    </Border.Background>
-                                    <TextBlock
-                                        Margin="5,0"
-                                        HorizontalAlignment="Center"
-                                        VerticalAlignment="Center"
-                                        d:Text="指挥家"
-                                        Foreground="White"
-                                        Text="{Binding SocialTagData.Text, Mode=OneWay}" />
-                                </Border>
-                                <ItemsControl
-                                    Margin="2,0,0,0"
-                                    VerticalAlignment="Bottom"
-                                    d:ItemsSource="{d:SampleData ItemCount=5}"
-                                    ItemsSource="{Binding SelectedSocialTagModels, Mode=OneWay}">
-                                    <ItemsControl.ItemsPanel>
-                                        <ItemsPanelTemplate>
-                                            <WrapPanel />
-                                        </ItemsPanelTemplate>
-                                    </ItemsControl.ItemsPanel>
-                                    <ItemsControl.ItemTemplate>
-                                        <DataTemplate>
-                                            <Border
-                                                Width="Auto"
-                                                Height="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1, Mode=FindAncestor}, Path=ActualHeight}"
-                                                Margin="2,0">
-                                                <Border.Background>
-                                                    <ImageBrush ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/SocialTag/background.png" Stretch="UniformToFill" />
-                                                </Border.Background>
-                                                <TextBlock
-                                                    Margin="5,0"
-                                                    HorizontalAlignment="Center"
-                                                    VerticalAlignment="Center"
-                                                    d:Text="指挥家"
-                                                    Foreground="White"
-                                                    Text="{Binding SocialTagData.Text, Mode=OneWay}" />
-                                            </Border>
-                                        </DataTemplate>
-                                    </ItemsControl.ItemTemplate>
-                                </ItemsControl>
-                            </StackPanel>
+                            <tagUsercontrol:TagUserControl />
                         </UniformGrid>
                     </Grid>
                 </Border>
@@ -131,7 +89,38 @@
                                 FontSize="15"
                                 Foreground="White"
                                 Text="在线时间：" />
-                            <UniformGrid Grid.Column="1" Columns="6">
+                            <ItemsControl
+                                Grid.Column="1"
+                                d:ItemsSource="{d:SampleData ItemCount=5}"
+                                ItemsSource="{Binding SocialTagOnlineModels, Mode=OneWay}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <UniformGrid Columns="{Binding RelativeSource={RelativeSource AncestorType=UserControl, Mode=FindAncestor}, Path=DataContext.SocialTagOnlineModels.Count, Mode=OneWay}" Rows="1" />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <CheckBox
+                                            VerticalAlignment="Center"
+                                            d:Content="白天在线"
+                                            Content="{Binding SocialTagOnlineData.Text, Mode=OneWay}"
+                                            FontSize="15"
+                                            Foreground="White"
+                                            IsChecked="{Binding IsSelected}"
+                                            Style="{StaticResource DiamondCheckBoxStyle}">
+                                            <b:Interaction.Triggers>
+                                                <b:EventTrigger EventName="Checked">
+                                                    <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource AncestorType=UserControl, Mode=FindAncestor}, Path=DataContext.CheckOnlineCommand}" CommandParameter="{Binding}" />
+                                                </b:EventTrigger>
+                                                <b:EventTrigger EventName="Unchecked">
+                                                    <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource AncestorType=UserControl, Mode=FindAncestor}, Path=DataContext.CheckOnlineCommand}" CommandParameter="{Binding}" />
+                                                </b:EventTrigger>
+                                            </b:Interaction.Triggers>
+                                        </CheckBox>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                            <!--<UniformGrid Grid.Column="1" Columns="6">
                                 <CheckBox
                                     x:Name="DaytimeOnlineCheckBox"
                                     VerticalAlignment="Center"
@@ -176,32 +165,42 @@
                                     FontSize="15"
                                     Foreground="White"
                                     Style="{StaticResource DiamondCheckBoxStyle}" />
-                            </UniformGrid>
+                            </UniformGrid>-->
 
-                            <UniformGrid Grid.Column="2" Columns="3">
+                            <UniformGrid Grid.Column="2" Columns="2">
                                 <TextBlock
                                     VerticalAlignment="Center"
                                     FontSize="15"
                                     Foreground="White"
                                     Text="麦克风：" />
-
-                                <CheckBox
-                                    x:Name="HasMicrophoneCheckBox"
-                                    VerticalAlignment="Center"
-                                    Checked="HasMicrophoneCheckBox_Checked"
-                                    Content="有"
-                                    FontSize="15"
-                                    Foreground="White"
-                                    Style="{StaticResource DiamondCheckBoxStyle}" />
-
-                                <CheckBox
-                                    x:Name="NoMicrophoneCheckBox"
-                                    VerticalAlignment="Center"
-                                    Checked="NoMicrophoneCheckBox_Checked"
-                                    Content="无"
-                                    FontSize="15"
-                                    Foreground="White"
-                                    Style="{StaticResource DiamondCheckBoxStyle}" />
+                                <ItemsControl d:ItemsSource="{d:SampleData ItemCount=2}" ItemsSource="{Binding SocialTagMicModels, Mode=OneWay}">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <UniformGrid Columns="{Binding RelativeSource={RelativeSource AncestorType=UserControl, Mode=FindAncestor}, Path=DataContext.SocialTagMicModels.Count, Mode=OneWay}" Rows="1" />
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <CheckBox
+                                                VerticalAlignment="Center"
+                                                d:Content="有"
+                                                Content="{Binding SocialTagMicData.Text, Mode=OneWay}"
+                                                FontSize="15"
+                                                Foreground="White"
+                                                IsChecked="{Binding IsSelected}"
+                                                Style="{StaticResource DiamondCheckBoxStyle}">
+                                                <b:Interaction.Triggers>
+                                                    <b:EventTrigger EventName="Checked">
+                                                        <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource AncestorType=UserControl, Mode=FindAncestor}, Path=DataContext.CheckSocialTagMicCommand}" CommandParameter="{Binding}" />
+                                                    </b:EventTrigger>
+                                                    <b:EventTrigger EventName="Unchecked">
+                                                        <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource AncestorType=UserControl, Mode=FindAncestor}, Path=DataContext.CheckSocialTagMicCommand}" CommandParameter="{Binding}" />
+                                                    </b:EventTrigger>
+                                                </b:Interaction.Triggers>
+                                            </CheckBox>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
                             </UniformGrid>
                         </Grid>
                         <Grid Grid.Row="1">

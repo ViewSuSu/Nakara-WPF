@@ -17,5 +17,7 @@
   "thridPickHeroIndex": 2,
   "TimeoutDefaultAllMap": true,
   "selectedHeroTags": [ 0, 1, 2, 3 ],
-  "selectedSocialTags": [ 0, 1, 2, 3 ]
+  "selectedSocialTags": [ 0, 1, 2, 3 ],
+  "selectedSocialTagMic": 0,
+  "selectedSocialTagOnline": 0
 }

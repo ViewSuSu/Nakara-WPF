@@ -8,6 +8,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDetails.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:socialtagUsercontrol="clr-namespace:NarakaBladepoint.Modules.SocialTag.UI.Views"
     xmlns:viewmodels="clr-namespace:NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDetails.ViewModels"
     d:Background="Gray"
     d:DataContext="{d:DesignInstance Type=viewmodels:PersonalInformationDetailsPageViewModel}"
@@ -177,28 +178,44 @@
                             </Grid>
                         </Grid>
 
+
                         <Border
                             Grid.Row="2"
                             Height="30"
                             Background="#5A000000">
                             <Grid>
+                                <socialtagUsercontrol:TagUserControl
+                                    Height="20"
+                                    d:Visibility="Hidden"
+                                    Visibility="{Binding IsHaveTags, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}" />
                                 <TextBlock
                                     Margin="5,0"
                                     VerticalAlignment="Center"
                                     Foreground="White"
-                                    Text="点击装配标签" />
-                                <Image HorizontalAlignment="Right" Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/点击设置标签.png" />
+                                    Text="点击装配标签"
+                                    Visibility="{Binding IsHaveTags, Mode=OneWay, Converter={StaticResource InverseBoolToVisibilityConverter}}">
+                                    <b:Interaction.Triggers>
+                                        <b:EventTrigger EventName="MouseLeftButtonDown">
+                                            <b:InvokeCommandAction Command="{Binding ChangeTagCommand}" />
+                                        </b:EventTrigger>
+                                    </b:Interaction.Triggers>
+                                </TextBlock>
+                                <Image
+                                    Height="25"
+                                    HorizontalAlignment="Right"
+                                    Source="pack://application:,,,/NarakaBladepoint.Resources;component/Image/点击设置标签.png">
+                                    <b:Interaction.Triggers>
+                                        <b:EventTrigger EventName="MouseLeftButtonDown">
+                                            <b:InvokeCommandAction Command="{Binding ChangeTagCommand}" />
+                                        </b:EventTrigger>
+                                    </b:Interaction.Triggers>
+                                </Image>
                             </Grid>
-                            <b:Interaction.Triggers>
-                                <b:EventTrigger EventName="MouseLeftButtonDown">
-                                    <b:InvokeCommandAction Command="{Binding ChangeTagCommand}" />
-                                </b:EventTrigger>
-                            </b:Interaction.Triggers>
                         </Border>
                         <Grid Grid.Row="3">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition />
-                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="80" />
                             </Grid.ColumnDefinitions>
                             <ItemsControl
                                 Grid.Column="0"
@@ -208,15 +225,13 @@
                                 ItemsSource="{Binding SelectedHeroTagModels}">
                                 <ItemsControl.ItemsPanel>
                                     <ItemsPanelTemplate>
-                                        <WrapPanel Orientation="Horizontal" />
+                                        <UniformGrid Columns="10" Rows="1" />
                                     </ItemsPanelTemplate>
                                 </ItemsControl.ItemsPanel>
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
                                         <controls:HighlightBorder
-                                            Width="35"
-                                            Height="35"
-                                            Margin="0,0,5,0"
+                                            Margin="0,0,2,0"
                                             d:BorderBrush="White"
                                             d:BorderThickness="0.5">
                                             <controls:HighlightBorder.Background>

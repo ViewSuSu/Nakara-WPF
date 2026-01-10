@@ -15,6 +15,8 @@ namespace NarakaBladepoint.Modules.SocialTag.Module
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<SocialTagPage, SocialTagPageViewModel>();
+            containerRegistry.Register<TagUserControl>();
+            containerRegistry.Register<TagUserControlViewModel>();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,26 +12,31 @@ namespace NarakaBladepoint.Shared.Datas
         /// <summary>
         /// 战斗
         /// </summary>
+        [Description("战斗")]
         Fight,
 
         /// <summary>
         /// 社交
         /// </summary>
+        [Description("社交")]
         Social,
 
         /// <summary>
         /// 个性
         /// </summary>
+        [Description("个性")]
         Personality,
 
         /// <summary>
         /// 模式
         /// </summary>
+        [Description("模式")]
         Mode,
 
         /// <summary>
         /// 语言
         /// </summary>
+        [Description("语言")]
         Language,
     }
 

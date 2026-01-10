@@ -107,5 +107,23 @@ namespace NarakaBladepoint.Shared.Datas
         /// 选择的社交标签
         /// </summary>
         public int[] SelectedSocialTags { get; set; }
+
+        /// <summary>
+        /// 麦克风社交标签
+        /// </summary>
+        public int? SelectedSocialTagMic { get; set; }
+
+        /// <summary>
+        /// 在线时间标签
+        /// </summary>
+        public int? SelectedSocialTagOnline { get; set; }
+
+        /// <summary>
+        /// 是否有任何的标签
+        /// </summary>
+        public bool IsExsitAnyValidSocialTag =>
+            SelectedSocialTags.Any()
+            || SelectedSocialTagMic.HasValue
+            || SelectedSocialTagOnline.HasValue;
     }
 }
