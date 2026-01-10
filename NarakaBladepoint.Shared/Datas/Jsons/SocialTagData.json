@@ -1,0 +1,377 @@
+﻿[
+  {
+    "Index": 1,
+    "Text": "指挥家",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 2,
+    "Text": "carry全场",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 3,
+    "Text": "开团看我",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 4,
+    "Text": "运营为先",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 5,
+    "Text": "猛蓄猛出",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 6,
+    "Text": "振刀大师",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 7,
+    "Text": "锦鲤福星",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 8,
+    "Text": "上头",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 9,
+    "Text": "稳重",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 10,
+    "Text": "金甲给你",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 11,
+    "Text": "按需补位",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 12,
+    "Text": "救救我",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 13,
+    "Text": "卧底队友",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 14,
+    "Text": "又菜又爱玩",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 15,
+    "Text": "主玩治疗",
+    "TagType": "Fight"
+  },
+  {
+    "Index": 16,
+    "Text": "冲分",
+    "TagType": "Social"
+  },
+  {
+    "Index": 17,
+    "Text": "收徒",
+    "TagType": "Social"
+  },
+  {
+    "Index": 18,
+    "Text": "求带",
+    "TagType": "Social"
+  },
+  {
+    "Index": 19,
+    "Text": "萌新",
+    "TagType": "Social"
+  },
+  {
+    "Index": 20,
+    "Text": "蹲个男劫",
+    "TagType": "Social"
+  },
+  {
+    "Index": 21,
+    "Text": "蹲个女劫",
+    "TagType": "Social"
+  },
+  {
+    "Index": 22,
+    "Text": "cpdd",
+    "TagType": "Social"
+  },
+  {
+    "Index": 23,
+    "Text": "固玩dd",
+    "TagType": "Social"
+  },
+  {
+    "Index": 24,
+    "Text": "真心换真心",
+    "TagType": "Social"
+  },
+  {
+    "Index": 25,
+    "Text": "主打陪伴",
+    "TagType": "Social"
+  },
+  {
+    "Index": 26,
+    "Text": "随叫随到",
+    "TagType": "Social"
+  },
+  {
+    "Index": 27,
+    "Text": "鸽王",
+    "TagType": "Social"
+  },
+  {
+    "Index": 28,
+    "Text": "i人",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 29,
+    "Text": "e人",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 30,
+    "Text": "情绪稳定",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 31,
+    "Text": "超凶",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 32,
+    "Text": "躺平",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 33,
+    "Text": "元气满满",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 34,
+    "Text": "间歇性高冷",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 35,
+    "Text": "话痨",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 36,
+    "Text": "戏精",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 37,
+    "Text": "纯爱战士",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 38,
+    "Text": "佛系",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 39,
+    "Text": "黏人精",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 40,
+    "Text": "中二",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 41,
+    "Text": "显眼包",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 42,
+    "Text": "天然呆",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 43,
+    "Text": "软萌",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 44,
+    "Text": "可盐可甜",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 45,
+    "Text": "不骂人",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 46,
+    "Text": "压力拉满",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 47,
+    "Text": "易破防",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 48,
+    "Text": "学生党",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 49,
+    "Text": "打工圣体",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 50,
+    "Text": "二次元",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 51,
+    "Text": "母胎solo",
+    "TagType": "Personality"
+  },
+  {
+    "Index": 52,
+    "Text": "排位赛",
+    "TagType": "Mode"
+  },
+  {
+    "Index": 53,
+    "Text": "快速比赛",
+    "TagType": "Mode"
+  },
+  {
+    "Index": 54,
+    "Text": "天人之战",
+    "TagType": "Mode"
+  },
+  {
+    "Index": 55,
+    "Text": "人机演练",
+    "TagType": "Mode"
+  },
+  {
+    "Index": 56,
+    "Text": "征神之路",
+    "TagType": "Mode"
+  },
+  {
+    "Index": 57,
+    "Text": "无间镖客",
+    "TagType": "Mode"
+  },
+  {
+    "Index": 58,
+    "Text": "娱乐模式",
+    "TagType": "Mode"
+  },
+  {
+    "Index": 59,
+    "Text": "自定义房间",
+    "TagType": "Mode"
+  },
+  {
+    "Index": 60,
+    "Text": "English",
+    "TagType": "Language"
+  },
+  {
+    "Index": 61,
+    "Text": "日本語",
+    "TagType": "Language"
+  },
+  {
+    "Index": 62,
+    "Text": "한국어",
+    "TagType": "Language"
+  },
+  {
+    "Index": 63,
+    "Text": "Deutsch",
+    "TagType": "Language"
+  },
+  {
+    "Index": 64,
+    "Text": "Français",
+    "TagType": "Language"
+  },
+  {
+    "Index": 65,
+    "Text": "Español",
+    "TagType": "Language"
+  },
+  {
+    "Index": 66,
+    "Text": "Português",
+    "TagType": "Language"
+  },
+  {
+    "Index": 67,
+    "Text": "Русский язык",
+    "TagType": "Language"
+  },
+  {
+    "Index": 68,
+    "Text": "Türkçe",
+    "TagType": "Language"
+  },
+  {
+    "Index": 69,
+    "Text": "Tiếng Việt",
+    "TagType": "Language"
+  },
+  {
+    "Index": 70,
+    "Text": "ภาษาไทย",
+    "TagType": "Language"
+  },
+  {
+    "Index": 71,
+    "Text": "普通话",
+    "TagType": "Language"
+  },
+  {
+    "Index": 72,
+    "Text": "粤语",
+    "TagType": "Language"
+  },
+  {
+    "Index": 73,
+    "Text": "河南话",
+    "TagType": "Language"
+  },
+  {
+    "Index": 74,
+    "Text": "四川话",
+    "TagType": "Language"
+  },
+  {
+    "Index": 75,
+    "Text": "东北话",
+    "TagType": "Language"
+  }
+]

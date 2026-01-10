@@ -8,9 +8,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodels="clr-namespace:NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformation.ViewModels"
+    d:Background="White"
     d:DataContext="{d:DesignInstance Type=viewmodels:PersonalInformationPageViewModel}"
-    d:DesignHeight="70"
-    d:DesignWidth="200"
+    d:DesignHeight="150"
+    d:DesignWidth="210"
     mc:Ignorable="d">
     <base:UserControlBase.Resources>
         <ResourceDictionary>
@@ -19,56 +20,74 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </base:UserControlBase.Resources>
-    <Grid Grid.Column="0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.6*" />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Border Grid.Column="0" BorderThickness="1">
-            <controls:AvatarControl
-                d:BackgroundImage="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Avatar/1.png"
-                BackgroundImage="{Binding UserInfoModel.Avatar, Mode=OneWay}"
-                CornerLength="10"
-                CornerThickness="2"
-                ImageStretch="Fill"
-                Value="425" />
-            <b:Interaction.Triggers>
-                <b:EventTrigger EventName="MouseLeftButtonDown">
-                    <b:InvokeCommandAction Command="{Binding NavigateToPersonalInfomationCommand}" />
-                </b:EventTrigger>
-            </b:Interaction.Triggers>
-        </Border>
-        <Grid Grid.Column="1" Margin="10,0">
-            <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <StackPanel Grid.Row="0" Orientation="Horizontal">
-                <Border
-                    Width="15"
-                    Height="15"
-                    Background="Green"
-                    CornerRadius="10">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Border
+            Grid.Row="0"
+            Margin="0,5"
+            Background="#5A000000" />
+        <Border
+            Grid.Row="1"
+            Margin="0,5"
+            Background="#5A000000" />
+        <Grid
+            Grid.Row="2"
+            Margin="0,5"
+            Background="#5A000000">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="45" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" BorderThickness="1">
+                <controls:AvatarControl
+                    d:BackgroundImage="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Avatar/1.png"
+                    BackgroundImage="{Binding UserInfoModel.Avatar, Mode=OneWay}"
+                    CornerLength="10"
+                    CornerThickness="2"
+                    ImageStretch="Fill"
+                    Value="425" />
+                <b:Interaction.Triggers>
+                    <b:EventTrigger EventName="MouseLeftButtonDown">
+                        <b:InvokeCommandAction Command="{Binding NavigateToPersonalInfomationCommand}" />
+                    </b:EventTrigger>
+                </b:Interaction.Triggers>
+            </Border>
+            <Grid Grid.Column="1" Margin="10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    <Border
+                        Width="15"
+                        Height="15"
+                        Background="Green"
+                        CornerRadius="10">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            Foreground="White"
+                            Text="1" />
+                    </Border>
                     <TextBlock
-                        HorizontalAlignment="Center"
+                        Margin="5,0,0,0"
+                        VerticalAlignment="Center"
+                        d:Text="野排牢张"
                         Foreground="White"
-                        Text="1" />
-                </Border>
-                <TextBlock
-                    Margin="5,0,0,0"
-                    VerticalAlignment="Center"
-                    d:Text="野排牢张"
-                    Foreground="White"
-                    Text="{Binding UserInfoModel.Name}" />
-            </StackPanel>
-            <!--<ProgressBar
-                Grid.Row="1"
-                Grid.Column="1"
-                Height="10"
-                d:Maximum="100"
-                d:Value="10"
-                Background="DimGray"
-                Foreground="#EAB181" />-->
+                        Text="{Binding UserInfoModel.Name, Mode=OneWay}" />
+                </StackPanel>
+                <!--<ProgressBar
+             Grid.Row="1"
+             Grid.Column="1"
+             Height="10"
+             d:Maximum="100"
+             d:Value="10"
+             Background="DimGray"
+             Foreground="#EAB181" />-->
+            </Grid>
         </Grid>
     </Grid>
 </base:UserControlBase>

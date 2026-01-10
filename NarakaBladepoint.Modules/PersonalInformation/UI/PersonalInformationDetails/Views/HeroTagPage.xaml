@@ -6,11 +6,11 @@
     xmlns:b="clr-namespace:Microsoft.Xaml.Behaviors;assembly=Microsoft.Xaml.Behaviors"
     xmlns:bases="clr-namespace:NarakaBladepoint.Framework.Core.Bases;assembly=NarakaBladepoint.Framework"
     xmlns:controls="clr-namespace:NarakaBladepoint.Controls;assembly=NarakaBladepoint.Controls"
+    xmlns:converters="clr-namespace:NarakaBladepoint.Framework.UI.Converters;assembly=NarakaBladepoint.Framework"
     xmlns:core="clr-namespace:Microsoft.Xaml.Behaviors.Core;assembly=Microsoft.Xaml.Behaviors"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDetails.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:myConverters="clr-namespace:NarakaBladepoint.Modules.PersonalInformation.Domain.Converters.PersonalInformationDetails"
     xmlns:viewmodels="clr-namespace:NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDetails.ViewModels"
     attach:EscKeyAttachedProperty.Command="{Binding EscCommand}"
     d:Background="Gray"
@@ -19,8 +19,8 @@
     d:DesignWidth="1080"
     mc:Ignorable="d">
     <UserControl.Resources>
-        <myConverters:HeroTagMaskVisibilityConverter x:Key="HeroTagMaskVisibilityConverter" />
-        <myConverters:HeroTagEnableConverter x:Key="HeroTagEnableConverter" />
+        <converters:OutRangeMaskVisibilityConverter x:Key="OutRangeMaskVisibilityConverter" />
+        <converters:OutRangeEnableConverter x:Key="OutRangeEnableConverter" />
     </UserControl.Resources>
     <Grid Background="Transparent">
         <Grid Background="Transparent">
@@ -79,7 +79,7 @@
                                 <Grid Margin="5">
                                     <Rectangle Fill="#E6000000" Opacity="0.5">
                                         <Rectangle.Visibility>
-                                            <MultiBinding Converter="{StaticResource HeroTagMaskVisibilityConverter}">
+                                            <MultiBinding Converter="{StaticResource OutRangeMaskVisibilityConverter}">
                                                 <Binding Path="DataContext.SelectedCount" RelativeSource="{RelativeSource AncestorType=ItemsControl}" />
                                                 <Binding Path="IsSelected" />
                                                 <Binding Path="DataContext.TotalCount" RelativeSource="{RelativeSource AncestorType=UserControl, Mode=FindAncestor}" />
@@ -91,7 +91,7 @@
                                             <RowDefinition />
                                             <RowDefinition Height="20" />
                                         </Grid.RowDefinitions>
-                                        <Image Source="{Binding HeroTagModel.Icon}" Stretch="Uniform" />
+                                        <Image Source="{Binding HeroTagModel.Icon, Mode=OneWay}" Stretch="Uniform" />
                                         <CheckBox
                                             Name="heroTagCheckBox"
                                             Width="20"
@@ -100,53 +100,33 @@
                                             VerticalAlignment="Top"
                                             Foreground="White"
                                             IsChecked="{Binding IsSelected}"
-                                            Style="{StaticResource DiamondCheckBoxStyle}">
-                                            <CheckBox.IsEnabled>
-                                                <MultiBinding Converter="{StaticResource HeroTagEnableConverter}">
-                                                    <Binding Path="DataContext.SelectedCount" RelativeSource="{RelativeSource AncestorType=ItemsControl}" />
-                                                    <Binding Path="IsSelected" />
-                                                    <Binding Path="DataContext.TotalCount" RelativeSource="{RelativeSource AncestorType=UserControl, Mode=FindAncestor}" />
-                                                </MultiBinding>
-                                            </CheckBox.IsEnabled>
-                                        </CheckBox>
+                                            Style="{StaticResource DiamondCheckBoxStyle}" />
                                         <TextBlock
                                             Grid.Row="1"
                                             HorizontalAlignment="Center"
                                             VerticalAlignment="Bottom"
                                             Foreground="White"
-                                            Text="{Binding HeroTagModel.Name}" />
+                                            Text="{Binding HeroTagModel.Name, Mode=OneWay}" />
                                     </Grid>
+                                    <Grid.IsEnabled>
+                                        <MultiBinding Converter="{StaticResource OutRangeEnableConverter}">
+                                            <Binding Path="DataContext.SelectedCount" RelativeSource="{RelativeSource AncestorType=ItemsControl}" />
+                                            <Binding Path="IsSelected" />
+                                            <Binding Path="DataContext.TotalCount" RelativeSource="{RelativeSource AncestorType=UserControl, Mode=FindAncestor}" />
+                                        </MultiBinding>
+                                    </Grid.IsEnabled>
+                                    <b:Interaction.Triggers>
+                                        <b:EventTrigger EventName="MouseLeftButtonDown">
+                                            <core:ChangePropertyAction
+                                                PropertyName="IsChecked"
+                                                TargetObject="{Binding ElementName=heroTagCheckBox}"
+                                                Value="{Binding IsSelected, Mode=TwoWay, Converter={StaticResource InverseBoolConverter}}" />
+                                        </b:EventTrigger>
+                                    </b:Interaction.Triggers>
                                 </Grid>
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
-
-                    <!--<ItemsControl
-                        Grid.Row="2"
-                        Margin="0,0,0,30"
-                        d:ItemsSource="{d:SampleData ItemCount=5}">
-                        <ItemsControl.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <WrapPanel Height="60" ItemWidth="40" />
-                            </ItemsPanelTemplate>
-                        </ItemsControl.ItemsPanel>
-                        <ItemsControl.ItemTemplate>
-                            <DataTemplate>
-                                <Border>
-                                    <Grid>
-                                        <Image Source="{Binding Icon}" Stretch="Uniform" />
-                                        <TextBlock
-                                            Margin="0,0,2,2"
-                                            HorizontalAlignment="Right"
-                                            VerticalAlignment="Top"
-                                            FontSize="10"
-                                            Foreground="White"
-                                            Text="{Binding Count}" />
-                                    </Grid>
-                                </Border>
-                            </DataTemplate>
-                        </ItemsControl.ItemTemplate>
-                    </ItemsControl>-->
                     <Button
                         Grid.Row="3"
                         Height="35"

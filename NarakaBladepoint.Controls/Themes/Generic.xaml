@@ -8,6 +8,8 @@
     <converters:LBottomLeftConverter x:Key="LBottomLeftConverter" />
     <converters:LBottomRightConverter x:Key="LBottomRightConverter" />
     <converters:IconTabItemConverter x:Key="IconTabItemConverter" />
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    <converters:BoolToTransparentBrushConverter x:Key="BoolToTransparentBrushConverter" />
     <Style TargetType="{x:Type local:IconTextBlockCustomControl}">
         <Setter Property="Background" Value="Transparent" />
 
@@ -319,6 +321,83 @@
                         <!--<Trigger Property="IsMouseOver" Value="True">
                            <Setter TargetName="PART_HeaderContent" Property="Foreground" Value="#E6E6E6" />
                        </Trigger>-->
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <ImageBrush
+        x:Key="DefaultSelectedBackground"
+        ImageSource="pack://application:,,,/NarakaBladepoint.Resources;component/Image/Region/ModeSelection/TabBackgournd.png"
+        Stretch="Fill" />
+    <Style BasedOn="{StaticResource {x:Type TabItem}}" TargetType="{x:Type local:ImageTextTabItem}">
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="SelectedBackground" Value="{StaticResource DefaultSelectedBackground}" />
+        <Setter Property="Padding" Value="12,8" />
+        <Setter Property="HeaderTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Grid>
+                        <Grid Margin="{Binding ContentMargin, RelativeSource={RelativeSource AncestorType=local:ImageTextTabItem}}" HorizontalAlignment="{Binding ContentHorizontalAlignment, RelativeSource={RelativeSource AncestorType=local:ImageTextTabItem}}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Image
+                                Grid.Column="0"
+                                Width="{Binding ImageWidth, RelativeSource={RelativeSource AncestorType=local:ImageTextTabItem}}"
+                                Height="{Binding ImageHeight, RelativeSource={RelativeSource AncestorType=local:ImageTextTabItem}}"
+                                Margin="0,0,2,0"
+                                VerticalAlignment="Center"
+                                Source="{Binding ImageSource, RelativeSource={RelativeSource AncestorType=local:ImageTextTabItem}}" />
+                            <TextBlock
+                                Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Foreground="{Binding Foreground, RelativeSource={RelativeSource AncestorType=local:ImageTextTabItem}}"
+                                Text="{Binding Text, RelativeSource={RelativeSource AncestorType=local:ImageTextTabItem}}" />
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:ImageTextTabItem}">
+                    <Border
+                        x:Name="PART_Border"
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        SnapsToDevicePixels="True">
+                        <ContentPresenter
+                            x:Name="PART_ContentPresenter"
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                            ContentSource="Header"
+                            RecognizesAccessKey="True"
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="PART_Border" Property="Background" Value="{Binding SelectedBackground, RelativeSource={RelativeSource TemplatedParent}}" />
+                            <Setter TargetName="PART_Border" Property="BorderBrush" Value="{Binding IsSelectedHilgihtBoder, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BoolToTransparentBrushConverter}}" />
+                            <Setter TargetName="PART_Border" Property="BorderThickness" Value="1" />
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="False">
+                            <Setter TargetName="PART_Border" Property="Background" Value="{Binding Background, RelativeSource={RelativeSource TemplatedParent}}" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="PART_ContentPresenter" Property="TextElement.Foreground" Value="{Binding MouseOverTextColor, RelativeSource={RelativeSource TemplatedParent}}" />
+                            <Setter TargetName="PART_Border" Property="BorderBrush" Value="{Binding IsMouseOverHilightBoder, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BoolToTransparentBrushConverter}}" />
+                            <Setter TargetName="PART_Border" Property="BorderThickness" Value="1" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="PART_ContentPresenter" Property="Opacity" Value="0.5" />
+                        </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>

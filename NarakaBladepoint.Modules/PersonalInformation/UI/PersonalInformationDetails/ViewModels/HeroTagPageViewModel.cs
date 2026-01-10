@@ -11,7 +11,17 @@ namespace NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDet
         private readonly ICurrentUserInfoProvider currentUserInformationProvider;
         private readonly IConfiguration configuration;
 
-        public BindingList<HeroTagItemModel> ItemModels { get; private set; }
+        private BindingList<HeroTagItemModel> _itemModels = [];
+
+        public BindingList<HeroTagItemModel> ItemModels
+        {
+            get { return _itemModels; }
+            set
+            {
+                _itemModels = value;
+                RaisePropertyChanged();
+            }
+        }
 
         public int SelectedCount => ItemModels.Count(x => x.IsSelected);
 
@@ -49,6 +59,7 @@ namespace NarakaBladepoint.Modules.PersonalInformation.UI.PersonalInformationDet
                 RaisePropertyChanged(nameof(SelectedCount));
                 RaisePropertyChanged(nameof(IsOutRange));
             };
+            RaisePropertyChanged(nameof(SelectedCount));
         }
 
         private DelegateCommand _escCommand;

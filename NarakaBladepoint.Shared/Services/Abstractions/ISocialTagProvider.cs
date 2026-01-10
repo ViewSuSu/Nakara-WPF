@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NarakaBladepoint.Shared.Services.Abstractions
+{
+    /// <summary>
+    /// 社交标签提供者接口
+    /// </summary>
+    public interface ISocialTagProvider
+    {
+        /// <summary>
+        /// 获取社交标签
+        /// </summary>
+        /// <returns></returns>
+        Task<List<SocialTagData>> GetSocialTags();
+
+        /// <summary>
+        /// 根据枚举获取社交标签
+        /// </summary>
+        /// <param name="socialTagType"></param>
+        /// <returns></returns>
+        Task<List<SocialTagData>> GetSocialTags(SocialTagType socialTagType);
+
+        /// <summary>
+        /// 判断是否被选中
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        Task<bool> GetSocialTagIsSelectedByIndex(int index);
+    }
+}

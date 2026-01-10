@@ -1,9 +1,9 @@
 ﻿using System.Globalization;
 using System.Windows.Data;
 
-namespace NarakaBladepoint.Modules.PersonalInformation.Domain.Converters.PersonalInformationDetails
+namespace NarakaBladepoint.Framework.UI.Converters
 {
-    internal class HeroTagEnableConverter : IMultiValueConverter
+    public class OutRangeEnableConverter : IMultiValueConverter
     {
         public object Convert(
             object[] values,

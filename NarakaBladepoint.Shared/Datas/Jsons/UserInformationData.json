@@ -16,5 +16,6 @@
   "secondPickHeroIndex": 1,
   "thridPickHeroIndex": 2,
   "TimeoutDefaultAllMap": true,
-  "selectedHeroTags": [ 0, 1, 2, 3 ]
+  "selectedHeroTags": [ 0, 1, 2, 3 ],
+  "selectedSocialTags": [ 0, 1, 2, 3 ]
 }

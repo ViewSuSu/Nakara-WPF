@@ -204,6 +204,12 @@
 	  <None Remove="Image\Region\ModeSelection\Icon5.png" />
 	  <None Remove="Image\Region\ModeSelection\Icon6.png" />
 	  <None Remove="Image\Region\ModeSelection\Icon7.png" />
+	  <None Remove="Image\Region\ModeSelection\TabBackgournd.png" />
+	  <None Remove="Image\Region\ModeSelection\TabItem1.png" />
+	  <None Remove="Image\Region\ModeSelection\TabItem2.png" />
+	  <None Remove="Image\Region\ModeSelection\TabItem3.png" />
+	  <None Remove="Image\Region\ModeSelection\TabItem4.png" />
+	  <None Remove="Image\Region\ModeSelection\TabItem5.png" />
 	  <None Remove="Image\Region\StartGame\Map1.png" />
 	  <None Remove="Image\Region\StartGame\Map2.png" />
 	  <None Remove="Image\Region\StartGame\Map3.png" />
@@ -227,6 +233,14 @@
 	  <None Remove="Image\Region\StartGame\龙隐洞天.png" />
 	  <None Remove="Image\Region\Wealth\1.png" />
 	  <None Remove="Image\sayhello.png" />
+	  <None Remove="Image\SocialTag\background.png" />
+	  <None Remove="Image\SocialTag\Icon1.png" />
+	  <None Remove="Image\SocialTag\Icon2.png" />
+	  <None Remove="Image\SocialTag\tabItemIcon1.png" />
+	  <None Remove="Image\SocialTag\tabItemIcon2.png" />
+	  <None Remove="Image\SocialTag\tabItemIcon3.png" />
+	  <None Remove="Image\SocialTag\tabItemIcon4.png" />
+	  <None Remove="Image\SocialTag\tabItemIcon5.png" />
 	  <None Remove="Image\×.png" />
 	  <None Remove="Image\一人之下.png" />
 	  <None Remove="Image\任务详情.png" />
@@ -248,6 +262,17 @@
 	  <None Remove="Image\豪杰对局.png" />
 	  <None Remove="Image\通用功能按钮高亮背景.png" />
 	  <None Remove="Image\造成伤害.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Image\SocialTag\background.png" />
+	  <Resource Include="Image\SocialTag\Icon1.png" />
+	  <Resource Include="Image\SocialTag\Icon2.png" />
+	  <Resource Include="Image\SocialTag\tabItemIcon1.png" />
+	  <Resource Include="Image\SocialTag\tabItemIcon2.png" />
+	  <Resource Include="Image\SocialTag\tabItemIcon3.png" />
+	  <Resource Include="Image\SocialTag\tabItemIcon4.png" />
+	  <Resource Include="Image\SocialTag\tabItemIcon5.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -493,6 +518,12 @@
 	  <Resource Include="Image\Region\ModeSelection\Icon5.png" />
 	  <Resource Include="Image\Region\ModeSelection\Icon6.png" />
 	  <Resource Include="Image\Region\ModeSelection\Icon7.png" />
+	  <Resource Include="Image\Region\ModeSelection\TabBackgournd.png" />
+	  <Resource Include="Image\Region\ModeSelection\TabItem1.png" />
+	  <Resource Include="Image\Region\ModeSelection\TabItem2.png" />
+	  <Resource Include="Image\Region\ModeSelection\TabItem3.png" />
+	  <Resource Include="Image\Region\ModeSelection\TabItem4.png" />
+	  <Resource Include="Image\Region\ModeSelection\TabItem5.png" />
 	  <Resource Include="Image\Region\StartGame\Map\Gif\混沌神域Gif.png" />
 	  <Resource Include="Image\Region\StartGame\Map\Gif\火罗国Gif.png" />
 	  <Resource Include="Image\Region\StartGame\Map\Gif\聚窟州Gif.png" />

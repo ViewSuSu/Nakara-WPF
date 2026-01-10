@@ -99,8 +99,13 @@ namespace NarakaBladepoint.Shared.Datas
         public bool TimeoutDefaultAllMap { get; set; }
 
         /// <summary>
-        /// 英雄印列表
+        /// 选择的英雄印列表
         /// </summary>
         public int[] SelectedHeroTags { get; set; }
+
+        /// <summary>
+        /// 选择的社交标签
+        /// </summary>
+        public int[] SelectedSocialTags { get; set; }
     }
 }

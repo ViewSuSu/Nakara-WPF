@@ -1,8 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Style x:Key="DiamondCheckBoxStyle" TargetType="CheckBox">
+    <Style x:Key="DiamondRadioButtonStyle" TargetType="RadioButton">
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="CheckBox">
+                <ControlTemplate TargetType="RadioButton">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto" />
@@ -15,11 +15,9 @@
                             Width="18"
                             Height="18">
 
-                            <!--  使用Viewbox确保内容适配  -->
                             <Viewbox Stretch="Uniform">
-                                <!--  菱形边框  -->
                                 <Canvas Width="18" Height="18">
-                                    <!--  菱形：从(2,9)开始，到(16,9)结束  -->
+                                    <!--  菱形边框  -->
                                     <Path
                                         x:Name="diamondBorder"
                                         Data="M9,2 L16,9 9,16 2,9 Z"
@@ -27,7 +25,7 @@
                                         Stroke="{TemplateBinding Foreground}"
                                         StrokeThickness="1.5" />
 
-                                    <!--  对勾标记（修改后：向右移动1个单位，颜色改为橙黄色）  -->
+                                    <!--  对勾标记（与CheckBox完全相同）  -->
                                     <Path
                                         x:Name="checkedPath"
                                         Data="M6,9 L9,12 14,7"
@@ -38,7 +36,7 @@
                                         StrokeStartLineCap="Round"
                                         StrokeThickness="2" />
 
-                                    <!--  不确定标记（修改后：向右移动1个单位，颜色改为橙黄色）  -->
+                                    <!--  不确定标记（虽然RadioButton通常没有不确定状态，但保持样式一致）  -->
                                     <Path
                                         x:Name="indeterminatePath"
                                         Data="M6,9 L14,9"
@@ -66,7 +64,7 @@
                             <Setter TargetName="checkedPath" Property="Opacity" Value="1" />
                         </Trigger>
 
-                        <!--  不确定状态  -->
+                        <!--  不确定状态（虽然RadioButton通常没有，但为了样式一致性保留）  -->
                         <Trigger Property="IsChecked" Value="{x:Null}">
                             <Setter TargetName="indeterminatePath" Property="Opacity" Value="1" />
                         </Trigger>

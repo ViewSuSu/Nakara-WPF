@@ -2,9 +2,9 @@
 using System.Windows;
 using System.Windows.Data;
 
-namespace NarakaBladepoint.Modules.PersonalInformation.Domain.Converters.PersonalInformationDetails
+namespace NarakaBladepoint.Framework.UI.Converters
 {
-    internal class HeroTagMaskVisibilityConverter : IMultiValueConverter
+    public class OutRangeMaskVisibilityConverter : IMultiValueConverter
     {
         public object Convert(
             object[] values,
