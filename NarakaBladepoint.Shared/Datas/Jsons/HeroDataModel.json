@@ -1,0 +1,4926 @@
+[
+  {
+    "HeroIndex": 0,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 0,
+    "GameTime": 120.5,
+    "HeroScore": 4850,
+    "RankDescription": "湖南省第15名，距离全国榜还差150分",
+    "HistoricalHighestRank": "全国第89名",
+    "Recent12Games": {
+      "TopFiveRate": 85.0,
+      "AverageDamage": 18500,
+      "KillDeathRatio": 4.25,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 78.5,
+      "ChampionRate": 25.8,
+      "WinCount": 256,
+      "AverageDamage": 17200,
+      "MaxDamagePerGame": 45000,
+      "AverageHeal": 3200,
+      "TotalEliminations": 3200,
+      "KillDeathRatio": 3.95,
+      "MaxKillsPerGame": 35,
+      "AverageKills": 8.25,
+      "TotalKills": 3400
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 12500,
+      "AverageData": 31.5
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 0,
+    "GameTime": 144.6,
+    "HeroScore": 4608,
+    "RankDescription": "湖南省第15名，距离全国榜还差150分",
+    "HistoricalHighestRank": "全国第89名",
+    "Recent12Games": {
+      "TopFiveRate": 93.5,
+      "AverageDamage": 15725,
+      "KillDeathRatio": 3.825,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 86.38,
+      "ChampionRate": 28.38,
+      "WinCount": 332,
+      "AverageDamage": 14875,
+      "MaxDamagePerGame": 40500,
+      "AverageHeal": 3840,
+      "TotalEliminations": 4160,
+      "KillDeathRatio": 3.558,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.425,
+      "TotalKills": 4420
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 16250,
+      "AverageData": 37.8
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 1,
+    "GameTime": 95.2,
+    "HeroScore": 4620,
+    "RankDescription": "湖南省第28名，距离湖南省榜还差230分",
+    "HistoricalHighestRank": "湖南省第12名",
+    "Recent12Games": {
+      "TopFiveRate": 82.5,
+      "AverageDamage": 17800,
+      "KillDeathRatio": 4.05,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 76.2,
+      "ChampionRate": 24.5,
+      "WinCount": 189,
+      "AverageDamage": 16500,
+      "MaxDamagePerGame": 42000,
+      "AverageHeal": 3000,
+      "TotalEliminations": 2500,
+      "KillDeathRatio": 3.80,
+      "MaxKillsPerGame": 32,
+      "AverageKills": 7.85,
+      "TotalKills": 2650
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 9800,
+      "AverageData": 29.8
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 1,
+    "GameTime": 114.24,
+    "HeroScore": 4389,
+    "RankDescription": "湖南省第28名，距离湖南省榜还差230分",
+    "HistoricalHighestRank": "湖南省第12名",
+    "Recent12Games": {
+      "TopFiveRate": 90.78,
+      "AverageDamage": 15130,
+      "KillDeathRatio": 3.645,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 83.82,
+      "ChampionRate": 27.18,
+      "WinCount": 245,
+      "AverageDamage": 14025,
+      "MaxDamagePerGame": 37800,
+      "AverageHeal": 3600,
+      "TotalEliminations": 3250,
+      "KillDeathRatio": 3.42,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 7.065,
+      "TotalKills": 3445
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 12740,
+      "AverageData": 35.76
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 2,
+    "GameTime": 110.8,
+    "HeroScore": 4710,
+    "RankDescription": "湖南省第22名，距离湖南省榜还差190分",
+    "HistoricalHighestRank": "湖南省第8名",
+    "Recent12Games": {
+      "TopFiveRate": 83.7,
+      "AverageDamage": 18200,
+      "KillDeathRatio": 4.12,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 77.3,
+      "ChampionRate": 25.1,
+      "WinCount": 220,
+      "AverageDamage": 16800,
+      "MaxDamagePerGame": 43500,
+      "AverageHeal": 3100,
+      "TotalEliminations": 2850,
+      "KillDeathRatio": 3.88,
+      "MaxKillsPerGame": 33,
+      "AverageKills": 8.05,
+      "TotalKills": 2980
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 11200,
+      "AverageData": 30.6
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 2,
+    "GameTime": 132.96,
+    "HeroScore": 4475,
+    "RankDescription": "湖南省第22名，距离湖南省榜还差190分",
+    "HistoricalHighestRank": "湖南省第8名",
+    "Recent12Games": {
+      "TopFiveRate": 92.07,
+      "AverageDamage": 15470,
+      "KillDeathRatio": 3.708,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 85.03,
+      "ChampionRate": 27.61,
+      "WinCount": 286,
+      "AverageDamage": 14280,
+      "MaxDamagePerGame": 39150,
+      "AverageHeal": 3720,
+      "TotalEliminations": 3705,
+      "KillDeathRatio": 3.498,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.245,
+      "TotalKills": 3874
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 14560,
+      "AverageData": 36.72
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 3,
+    "GameTime": 90.3,
+    "HeroScore": 4550,
+    "RankDescription": "湖南省第35名，距离湖南省榜还差280分",
+    "HistoricalHighestRank": "湖南省第18名",
+    "Recent12Games": {
+      "TopFiveRate": 80.2,
+      "AverageDamage": 17500,
+      "KillDeathRatio": 3.95,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 74.8,
+      "ChampionRate": 23.8,
+      "WinCount": 175,
+      "AverageDamage": 16200,
+      "MaxDamagePerGame": 41000,
+      "AverageHeal": 2900,
+      "TotalEliminations": 2350,
+      "KillDeathRatio": 3.72,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.65,
+      "TotalKills": 2480
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 9200,
+      "AverageData": 28.9
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 3,
+    "GameTime": 108.36,
+    "HeroScore": 4323,
+    "RankDescription": "湖南省第35名，距离湖南省榜还差280分",
+    "HistoricalHighestRank": "湖南省第18名",
+    "Recent12Games": {
+      "TopFiveRate": 88.22,
+      "AverageDamage": 15075,
+      "KillDeathRatio": 3.555,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 82.28,
+      "ChampionRate": 26.18,
+      "WinCount": 228,
+      "AverageDamage": 13770,
+      "MaxDamagePerGame": 36900,
+      "AverageHeal": 3480,
+      "TotalEliminations": 3055,
+      "KillDeathRatio": 3.348,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 6.885,
+      "TotalKills": 3224
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 11960,
+      "AverageData": 34.68
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 0,
+    "GameTime": 135.8,
+    "HeroScore": 4920,
+    "RankDescription": "湖南省第8名，距离全国榜还差80分",
+    "HistoricalHighestRank": "全国第55名",
+    "Recent12Games": {
+      "TopFiveRate": 88.5,
+      "AverageDamage": 19200,
+      "KillDeathRatio": 4.55,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 82.2,
+      "ChampionRate": 28.5,
+      "WinCount": 310,
+      "AverageDamage": 18500,
+      "MaxDamagePerGame": 48000,
+      "AverageHeal": 2800,
+      "TotalEliminations": 3800,
+      "KillDeathRatio": 4.22,
+      "MaxKillsPerGame": 38,
+      "AverageKills": 8.85,
+      "TotalKills": 4050
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 13800,
+      "AverageData": 34.2
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 0,
+    "GameTime": 162.96,
+    "HeroScore": 4674,
+    "RankDescription": "湖南省第8名，距离全国榜还差80分",
+    "HistoricalHighestRank": "全国第55名",
+    "Recent12Games": {
+      "TopFiveRate": 97.35,
+      "AverageDamage": 16320,
+      "KillDeathRatio": 4.095,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 90.42,
+      "ChampionRate": 31.35,
+      "WinCount": 403,
+      "AverageDamage": 15725,
+      "MaxDamagePerGame": 43200,
+      "AverageHeal": 3360,
+      "TotalEliminations": 4940,
+      "KillDeathRatio": 3.798,
+      "MaxKillsPerGame": 34,
+      "AverageKills": 7.965,
+      "TotalKills": 5265
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 17940,
+      "AverageData": 41.04
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 1,
+    "GameTime": 110.5,
+    "HeroScore": 4780,
+    "RankDescription": "湖南省第12名，距离全国榜还差220分",
+    "HistoricalHighestRank": "全国第78名",
+    "Recent12Games": {
+      "TopFiveRate": 85.8,
+      "AverageDamage": 18800,
+      "KillDeathRatio": 4.35,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 79.5,
+      "ChampionRate": 26.8,
+      "WinCount": 265,
+      "AverageDamage": 18000,
+      "MaxDamagePerGame": 46000,
+      "AverageHeal": 2600,
+      "TotalEliminations": 3300,
+      "KillDeathRatio": 4.05,
+      "MaxKillsPerGame": 36,
+      "AverageKills": 8.55,
+      "TotalKills": 3520
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 11500,
+      "AverageData": 32.8
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 1,
+    "GameTime": 132.6,
+    "HeroScore": 4541,
+    "RankDescription": "湖南省第12名，距离全国榜还差220分",
+    "HistoricalHighestRank": "全国第78名",
+    "Recent12Games": {
+      "TopFiveRate": 94.38,
+      "AverageDamage": 15980,
+      "KillDeathRatio": 3.915,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 87.45,
+      "ChampionRate": 29.48,
+      "WinCount": 345,
+      "AverageDamage": 15300,
+      "MaxDamagePerGame": 41400,
+      "AverageHeal": 3120,
+      "TotalEliminations": 4290,
+      "KillDeathRatio": 3.645,
+      "MaxKillsPerGame": 32,
+      "AverageKills": 7.695,
+      "TotalKills": 4575
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 14950,
+      "AverageData": 39.36
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 2,
+    "GameTime": 125.3,
+    "HeroScore": 4850,
+    "RankDescription": "湖南省第10名，距离全国榜还差150分",
+    "HistoricalHighestRank": "全国第62名",
+    "Recent12Games": {
+      "TopFiveRate": 87.2,
+      "AverageDamage": 19000,
+      "KillDeathRatio": 4.45,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 80.8,
+      "ChampionRate": 27.6,
+      "WinCount": 290,
+      "AverageDamage": 18200,
+      "MaxDamagePerGame": 47000,
+      "AverageHeal": 2700,
+      "TotalEliminations": 3600,
+      "KillDeathRatio": 4.12,
+      "MaxKillsPerGame": 37,
+      "AverageKills": 8.70,
+      "TotalKills": 3800
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 12800,
+      "AverageData": 33.5
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 2,
+    "GameTime": 150.36,
+    "HeroScore": 4608,
+    "RankDescription": "湖南省第10名，距离全国榜还差150分",
+    "HistoricalHighestRank": "全国第62名",
+    "Recent12Games": {
+      "TopFiveRate": 95.92,
+      "AverageDamage": 16150,
+      "KillDeathRatio": 4.005,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 88.88,
+      "ChampionRate": 30.36,
+      "WinCount": 377,
+      "AverageDamage": 15470,
+      "MaxDamagePerGame": 42300,
+      "AverageHeal": 3240,
+      "TotalEliminations": 4680,
+      "KillDeathRatio": 3.708,
+      "MaxKillsPerGame": 33,
+      "AverageKills": 7.83,
+      "TotalKills": 4940
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 16640,
+      "AverageData": 40.2
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 3,
+    "GameTime": 100.2,
+    "HeroScore": 4680,
+    "RankDescription": "湖南省第20名，距离湖南省榜还差120分",
+    "HistoricalHighestRank": "全国第95名",
+    "Recent12Games": {
+      "TopFiveRate": 83.5,
+      "AverageDamage": 18500,
+      "KillDeathRatio": 4.15,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 77.8,
+      "ChampionRate": 25.8,
+      "WinCount": 240,
+      "AverageDamage": 17800,
+      "MaxDamagePerGame": 45000,
+      "AverageHeal": 2500,
+      "TotalEliminations": 2950,
+      "KillDeathRatio": 3.85,
+      "MaxKillsPerGame": 34,
+      "AverageKills": 8.20,
+      "TotalKills": 3150
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 10300,
+      "AverageData": 31.2
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 3,
+    "GameTime": 120.24,
+    "HeroScore": 4446,
+    "RankDescription": "湖南省第20名，距离湖南省榜还差120分",
+    "HistoricalHighestRank": "全国第95名",
+    "Recent12Games": {
+      "TopFiveRate": 91.85,
+      "AverageDamage": 15725,
+      "KillDeathRatio": 3.735,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 85.58,
+      "ChampionRate": 28.38,
+      "WinCount": 312,
+      "AverageDamage": 15130,
+      "MaxDamagePerGame": 40500,
+      "AverageHeal": 3000,
+      "TotalEliminations": 3835,
+      "KillDeathRatio": 3.465,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.38,
+      "TotalKills": 4095
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 13390,
+      "AverageData": 37.44
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 0,
+    "GameTime": 115.6,
+    "HeroScore": 4750,
+    "RankDescription": "湖南省第15名，距离全国榜还差250分",
+    "HistoricalHighestRank": "全国第92名",
+    "Recent12Games": {
+      "TopFiveRate": 83.5,
+      "AverageDamage": 18200,
+      "KillDeathRatio": 4.15,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 77.8,
+      "ChampionRate": 25.5,
+      "WinCount": 245,
+      "AverageDamage": 17500,
+      "MaxDamagePerGame": 44000,
+      "AverageHeal": 3000,
+      "TotalEliminations": 3100,
+      "KillDeathRatio": 3.92,
+      "MaxKillsPerGame": 32,
+      "AverageKills": 7.95,
+      "TotalKills": 3300
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 11800,
+      "AverageData": 32.5
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 0,
+    "GameTime": 138.72,
+    "HeroScore": 4512,
+    "RankDescription": "湖南省第15名，距离全国榜还差250分",
+    "HistoricalHighestRank": "全国第92名",
+    "Recent12Games": {
+      "TopFiveRate": 91.85,
+      "AverageDamage": 15470,
+      "KillDeathRatio": 3.735,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 85.58,
+      "ChampionRate": 28.05,
+      "WinCount": 318,
+      "AverageDamage": 14875,
+      "MaxDamagePerGame": 39600,
+      "AverageHeal": 3600,
+      "TotalEliminations": 4030,
+      "KillDeathRatio": 3.528,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 7.155,
+      "TotalKills": 4290
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 15340,
+      "AverageData": 39.0
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 1,
+    "GameTime": 95.3,
+    "HeroScore": 4580,
+    "RankDescription": "湖南省第28名，距离湖南省榜还差220分",
+    "HistoricalHighestRank": "湖南省第12名",
+    "Recent12Games": {
+      "TopFiveRate": 80.8,
+      "AverageDamage": 17800,
+      "KillDeathRatio": 3.95,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 75.2,
+      "ChampionRate": 24.2,
+      "WinCount": 205,
+      "AverageDamage": 17200,
+      "MaxDamagePerGame": 42000,
+      "AverageHeal": 2800,
+      "TotalEliminations": 2650,
+      "KillDeathRatio": 3.72,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.65,
+      "TotalKills": 2850
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 9800,
+      "AverageData": 31.2
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 1,
+    "GameTime": 114.36,
+    "HeroScore": 4351,
+    "RankDescription": "湖南省第28名，距离湖南省榜还差220分",
+    "HistoricalHighestRank": "湖南省第12名",
+    "Recent12Games": {
+      "TopFiveRate": 88.88,
+      "AverageDamage": 15130,
+      "KillDeathRatio": 3.555,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 82.72,
+      "ChampionRate": 26.62,
+      "WinCount": 266,
+      "AverageDamage": 14620,
+      "MaxDamagePerGame": 37800,
+      "AverageHeal": 3360,
+      "TotalEliminations": 3445,
+      "KillDeathRatio": 3.348,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 6.885,
+      "TotalKills": 3705
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 12740,
+      "AverageData": 37.44
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 2,
+    "GameTime": 105.8,
+    "HeroScore": 4680,
+    "RankDescription": "湖南省第22名，距离湖南省榜还差180分",
+    "HistoricalHighestRank": "湖南省第10名",
+    "Recent12Games": {
+      "TopFiveRate": 82.2,
+      "AverageDamage": 18000,
+      "KillDeathRatio": 4.05,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 76.5,
+      "ChampionRate": 24.8,
+      "WinCount": 230,
+      "AverageDamage": 17300,
+      "MaxDamagePerGame": 43000,
+      "AverageHeal": 2900,
+      "TotalEliminations": 2950,
+      "KillDeathRatio": 3.82,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.85,
+      "TotalKills": 3150
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 10800,
+      "AverageData": 32.0
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 2,
+    "GameTime": 126.96,
+    "HeroScore": 4446,
+    "RankDescription": "湖南省第22名，距离湖南省榜还差180分",
+    "HistoricalHighestRank": "湖南省第10名",
+    "Recent12Games": {
+      "TopFiveRate": 90.42,
+      "AverageDamage": 15300,
+      "KillDeathRatio": 3.645,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 84.15,
+      "ChampionRate": 27.28,
+      "WinCount": 299,
+      "AverageDamage": 14705,
+      "MaxDamagePerGame": 38700,
+      "AverageHeal": 3480,
+      "TotalEliminations": 3835,
+      "KillDeathRatio": 3.438,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 7.065,
+      "TotalKills": 4095
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 14040,
+      "AverageData": 38.4
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 3,
+    "GameTime": 85.5,
+    "HeroScore": 4510,
+    "RankDescription": "湖南省第35名，距离湖南省榜还差300分",
+    "HistoricalHighestRank": "湖南省第18名",
+    "Recent12Games": {
+      "TopFiveRate": 79.5,
+      "AverageDamage": 17500,
+      "KillDeathRatio": 3.85,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 73.8,
+      "ChampionRate": 23.5,
+      "WinCount": 190,
+      "AverageDamage": 16800,
+      "MaxDamagePerGame": 41000,
+      "AverageHeal": 2700,
+      "TotalEliminations": 2500,
+      "KillDeathRatio": 3.62,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.50,
+      "TotalKills": 2700
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 9300,
+      "AverageData": 30.5
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 3,
+    "GameTime": 102.6,
+    "HeroScore": 4284,
+    "RankDescription": "湖南省第35名，距离湖南省榜还差300分",
+    "HistoricalHighestRank": "湖南省第18名",
+    "Recent12Games": {
+      "TopFiveRate": 87.45,
+      "AverageDamage": 14875,
+      "KillDeathRatio": 3.465,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 81.18,
+      "ChampionRate": 25.85,
+      "WinCount": 247,
+      "AverageDamage": 14280,
+      "MaxDamagePerGame": 36900,
+      "AverageHeal": 3240,
+      "TotalEliminations": 3250,
+      "KillDeathRatio": 3.258,
+      "MaxKillsPerGame": 26,
+      "AverageKills": 6.75,
+      "TotalKills": 3510
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 12090,
+      "AverageData": 36.6
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 0,
+    "GameTime": 105.2,
+    "HeroScore": 4620,
+    "RankDescription": "湖南省第22名，距离全国榜还差380分",
+    "HistoricalHighestRank": "全国第118名",
+    "Recent12Games": {
+      "TopFiveRate": 81.2,
+      "AverageDamage": 17500,
+      "KillDeathRatio": 3.85,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 75.8,
+      "ChampionRate": 24.2,
+      "WinCount": 225,
+      "AverageDamage": 16800,
+      "MaxDamagePerGame": 42000,
+      "AverageHeal": 5200,
+      "TotalEliminations": 2800,
+      "KillDeathRatio": 3.62,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.55,
+      "TotalKills": 3000
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 10800,
+      "AverageData": 30.8
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 0,
+    "GameTime": 126.24,
+    "HeroScore": 4389,
+    "RankDescription": "湖南省第22名，距离全国榜还差380分",
+    "HistoricalHighestRank": "全国第118名",
+    "Recent12Games": {
+      "TopFiveRate": 89.32,
+      "AverageDamage": 14875,
+      "KillDeathRatio": 3.465,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 83.38,
+      "ChampionRate": 26.62,
+      "WinCount": 292,
+      "AverageDamage": 14280,
+      "MaxDamagePerGame": 37800,
+      "AverageHeal": 6240,
+      "TotalEliminations": 3640,
+      "KillDeathRatio": 3.258,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 6.795,
+      "TotalKills": 3900
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 14040,
+      "AverageData": 36.96
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 1,
+    "GameTime": 85.6,
+    "HeroScore": 4450,
+    "RankDescription": "湖南省第35名，距离湖南省榜还差350分",
+    "HistoricalHighestRank": "湖南省第25名",
+    "Recent12Games": {
+      "TopFiveRate": 78.5,
+      "AverageDamage": 17200,
+      "KillDeathRatio": 3.65,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 73.2,
+      "ChampionRate": 22.8,
+      "WinCount": 190,
+      "AverageDamage": 16500,
+      "MaxDamagePerGame": 40000,
+      "AverageHeal": 5000,
+      "TotalEliminations": 2400,
+      "KillDeathRatio": 3.42,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 7.25,
+      "TotalKills": 2600
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 8800,
+      "AverageData": 29.5
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 1,
+    "GameTime": 102.72,
+    "HeroScore": 4228,
+    "RankDescription": "湖南省第35名，距离湖南省榜还差350分",
+    "HistoricalHighestRank": "湖南省第25名",
+    "Recent12Games": {
+      "TopFiveRate": 86.35,
+      "AverageDamage": 14620,
+      "KillDeathRatio": 3.285,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 80.52,
+      "ChampionRate": 25.08,
+      "WinCount": 247,
+      "AverageDamage": 14025,
+      "MaxDamagePerGame": 36000,
+      "AverageHeal": 6000,
+      "TotalEliminations": 3120,
+      "KillDeathRatio": 3.078,
+      "MaxKillsPerGame": 25,
+      "AverageKills": 6.525,
+      "TotalKills": 3380
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 11440,
+      "AverageData": 35.4
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 2,
+    "GameTime": 95.8,
+    "HeroScore": 4550,
+    "RankDescription": "湖南省第28名，距离湖南省榜还差280分",
+    "HistoricalHighestRank": "湖南省第20名",
+    "Recent12Games": {
+      "TopFiveRate": 79.8,
+      "AverageDamage": 17300,
+      "KillDeathRatio": 3.75,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 74.5,
+      "ChampionRate": 23.5,
+      "WinCount": 210,
+      "AverageDamage": 16600,
+      "MaxDamagePerGame": 41000,
+      "AverageHeal": 5100,
+      "TotalEliminations": 2650,
+      "KillDeathRatio": 3.52,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.45,
+      "TotalKills": 2850
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 9800,
+      "AverageData": 30.2
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 2,
+    "GameTime": 114.96,
+    "HeroScore": 4323,
+    "RankDescription": "湖南省第28名，距离湖南省榜还差280分",
+    "HistoricalHighestRank": "湖南省第20名",
+    "Recent12Games": {
+      "TopFiveRate": 87.78,
+      "AverageDamage": 14705,
+      "KillDeathRatio": 3.375,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 81.95,
+      "ChampionRate": 25.85,
+      "WinCount": 273,
+      "AverageDamage": 14110,
+      "MaxDamagePerGame": 36900,
+      "AverageHeal": 6120,
+      "TotalEliminations": 3445,
+      "KillDeathRatio": 3.168,
+      "MaxKillsPerGame": 26,
+      "AverageKills": 6.705,
+      "TotalKills": 3705
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 12740,
+      "AverageData": 36.24
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 3,
+    "GameTime": 75.3,
+    "HeroScore": 4380,
+    "RankDescription": "湖南省第42名，距离湖南省榜还差420分",
+    "HistoricalHighestRank": "湖南省第30名",
+    "Recent12Games": {
+      "TopFiveRate": 76.5,
+      "AverageDamage": 16900,
+      "KillDeathRatio": 3.55,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 71.8,
+      "ChampionRate": 22.2,
+      "WinCount": 185,
+      "AverageDamage": 16200,
+      "MaxDamagePerGame": 39500,
+      "AverageHeal": 4900,
+      "TotalEliminations": 2350,
+      "KillDeathRatio": 3.32,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 7.15,
+      "TotalKills": 2550
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 8300,
+      "AverageData": 28.8
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 3,
+    "GameTime": 90.36,
+    "HeroScore": 4161,
+    "RankDescription": "湖南省第42名，距离湖南省榜还差420分",
+    "HistoricalHighestRank": "湖南省第30名",
+    "Recent12Games": {
+      "TopFiveRate": 84.15,
+      "AverageDamage": 14365,
+      "KillDeathRatio": 3.195,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 79.98,
+      "ChampionRate": 24.42,
+      "WinCount": 240,
+      "AverageDamage": 13770,
+      "MaxDamagePerGame": 35550,
+      "AverageHeal": 5880,
+      "TotalEliminations": 3055,
+      "KillDeathRatio": 2.988,
+      "MaxKillsPerGame": 24,
+      "AverageKills": 6.435,
+      "TotalKills": 3315
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 10790,
+      "AverageData": 34.56
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 0,
+    "GameTime": 95.8,
+    "HeroScore": 4520,
+    "RankDescription": "湖南省第28名，距离全国榜还差480分",
+    "HistoricalHighestRank": "全国第145名",
+    "Recent12Games": {
+      "TopFiveRate": 79.2,
+      "AverageDamage": 17200,
+      "KillDeathRatio": 3.75,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 74.2,
+      "ChampionRate": 23.5,
+      "WinCount": 205,
+      "AverageDamage": 16500,
+      "MaxDamagePerGame": 40500,
+      "AverageHeal": 3800,
+      "TotalEliminations": 2600,
+      "KillDeathRatio": 3.52,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 7.35,
+      "TotalKills": 2800
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 9800,
+      "AverageData": 29.8
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 0,
+    "GameTime": 114.96,
+    "HeroScore": 4294,
+    "RankDescription": "湖南省第28名，距离全国榜还差480分",
+    "HistoricalHighestRank": "全国第145名",
+    "Recent12Games": {
+      "TopFiveRate": 87.12,
+      "AverageDamage": 14620,
+      "KillDeathRatio": 3.375,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 81.62,
+      "ChampionRate": 25.85,
+      "WinCount": 266,
+      "AverageDamage": 14025,
+      "MaxDamagePerGame": 36450,
+      "AverageHeal": 4560,
+      "TotalEliminations": 3380,
+      "KillDeathRatio": 3.168,
+      "MaxKillsPerGame": 25,
+      "AverageKills": 6.615,
+      "TotalKills": 3640
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 12740,
+      "AverageData": 35.76
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 1,
+    "GameTime": 105.5,
+    "HeroScore": 4650,
+    "RankDescription": "湖南省第25名，距离全国榜还差420分",
+    "HistoricalHighestRank": "全国第132名",
+    "Recent12Games": {
+      "TopFiveRate": 81.5,
+      "AverageDamage": 17500,
+      "KillDeathRatio": 3.85,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 75.5,
+      "ChampionRate": 24.2,
+      "WinCount": 230,
+      "AverageDamage": 16800,
+      "MaxDamagePerGame": 41500,
+      "AverageHeal": 3900,
+      "TotalEliminations": 2850,
+      "KillDeathRatio": 3.62,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.50,
+      "TotalKills": 3050
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 10800,
+      "AverageData": 30.5
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 1,
+    "GameTime": 126.6,
+    "HeroScore": 4418,
+    "RankDescription": "湖南省第25名，距离全国榜还差420分",
+    "HistoricalHighestRank": "全国第132名",
+    "Recent12Games": {
+      "TopFiveRate": 89.65,
+      "AverageDamage": 14875,
+      "KillDeathRatio": 3.465,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 83.05,
+      "ChampionRate": 26.62,
+      "WinCount": 299,
+      "AverageDamage": 14280,
+      "MaxDamagePerGame": 37350,
+      "AverageHeal": 4680,
+      "TotalEliminations": 3705,
+      "KillDeathRatio": 3.258,
+      "MaxKillsPerGame": 26,
+      "AverageKills": 6.75,
+      "TotalKills": 3965
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 14040,
+      "AverageData": 36.6
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 2,
+    "GameTime": 85.3,
+    "HeroScore": 4450,
+    "RankDescription": "湖南省第38名，距离湖南省榜还差380分",
+    "HistoricalHighestRank": "湖南省第28名",
+    "Recent12Games": {
+      "TopFiveRate": 77.8,
+      "AverageDamage": 17000,
+      "KillDeathRatio": 3.65,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 72.8,
+      "ChampionRate": 22.8,
+      "WinCount": 195,
+      "AverageDamage": 16300,
+      "MaxDamagePerGame": 40000,
+      "AverageHeal": 3700,
+      "TotalEliminations": 2500,
+      "KillDeathRatio": 3.42,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 7.25,
+      "TotalKills": 2750
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 9300,
+      "AverageData": 29.2
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 2,
+    "GameTime": 102.36,
+    "HeroScore": 4228,
+    "RankDescription": "湖南省第38名，距离湖南省榜还差380分",
+    "HistoricalHighestRank": "湖南省第28名",
+    "Recent12Games": {
+      "TopFiveRate": 86.35,
+      "AverageDamage": 14875,
+      "KillDeathRatio": 3.285,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 80.08,
+      "ChampionRate": 25.08,
+      "WinCount": 253,
+      "AverageDamage": 14025,
+      "MaxDamagePerGame": 36000,
+      "AverageHeal": 4440,
+      "TotalEliminations": 3250,
+      "KillDeathRatio": 3.078,
+      "MaxKillsPerGame": 24,
+      "AverageKills": 6.525,
+      "TotalKills": 3575
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 12090,
+      "AverageData": 35.04
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 3,
+    "GameTime": 75.6,
+    "HeroScore": 4380,
+    "RankDescription": "湖南省第45名，距离湖南省榜还差450分",
+    "HistoricalHighestRank": "湖南省第32名",
+    "Recent12Games": {
+      "TopFiveRate": 75.5,
+      "AverageDamage": 16800,
+      "KillDeathRatio": 3.55,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 71.2,
+      "ChampionRate": 21.5,
+      "WinCount": 180,
+      "AverageDamage": 16000,
+      "MaxDamagePerGame": 39000,
+      "AverageHeal": 3600,
+      "TotalEliminations": 2350,
+      "KillDeathRatio": 3.32,
+      "MaxKillsPerGame": 26,
+      "AverageKills": 7.05,
+      "TotalKills": 2600
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 8800,
+      "AverageData": 28.5
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 3,
+    "GameTime": 90.36,
+    "HeroScore": 4161,
+    "RankDescription": "湖南省第45名，距离湖南省榜还差450分",
+    "HistoricalHighestRank": "湖南省第32名",
+    "Recent12Games": {
+      "TopFiveRate": 84.15,
+      "AverageDamage": 14620,
+      "KillDeathRatio": 3.195,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 79.98,
+      "ChampionRate": 24.42,
+      "WinCount": 240,
+      "AverageDamage": 13770,
+      "MaxDamagePerGame": 35550,
+      "AverageHeal": 4320,
+      "TotalEliminations": 3055,
+      "KillDeathRatio": 2.988,
+      "MaxKillsPerGame": 23,
+      "AverageKills": 6.435,
+      "TotalKills": 3315
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 11440,
+      "AverageData": 34.2
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 0,
+    "GameTime": 130.8,
+    "HeroScore": 4780,
+    "RankDescription": "湖南省第15名，距离全国榜还差220分",
+    "HistoricalHighestRank": "全国第88名",
+    "Recent12Games": {
+      "TopFiveRate": 84.2,
+      "AverageDamage": 18200,
+      "KillDeathRatio": 4.15,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 78.5,
+      "ChampionRate": 25.8,
+      "WinCount": 285,
+      "AverageDamage": 17500,
+      "MaxDamagePerGame": 43000,
+      "AverageHeal": 4200,
+      "TotalEliminations": 3550,
+      "KillDeathRatio": 3.92,
+      "MaxKillsPerGame": 32,
+      "AverageKills": 8.25,
+      "TotalKills": 3800
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 13300,
+      "AverageData": 32.8
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 0,
+    "GameTime": 157.0,
+    "HeroScore": 4541,
+    "RankDescription": "湖南省第15名，距离全国榜还差220分",
+    "HistoricalHighestRank": "全国第88名",
+    "Recent12Games": {
+      "TopFiveRate": 92.62,
+      "AverageDamage": 15470,
+      "KillDeathRatio": 3.735,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 86.35,
+      "ChampionRate": 28.38,
+      "WinCount": 370,
+      "AverageDamage": 14875,
+      "MaxDamagePerGame": 38700,
+      "AverageHeal": 5040,
+      "TotalEliminations": 4615,
+      "KillDeathRatio": 3.528,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 7.425,
+      "TotalKills": 4940
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 17290,
+      "AverageData": 39.36
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 1,
+    "GameTime": 105.3,
+    "HeroScore": 4650,
+    "RankDescription": "湖南省第22名，距离湖南省榜还差180分",
+    "HistoricalHighestRank": "湖南省第8名",
+    "Recent12Games": {
+      "TopFiveRate": 81.8,
+      "AverageDamage": 17800,
+      "KillDeathRatio": 4.05,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 76.5,
+      "ChampionRate": 24.8,
+      "WinCount": 235,
+      "AverageDamage": 17000,
+      "MaxDamagePerGame": 41000,
+      "AverageHeal": 3900,
+      "TotalEliminations": 3000,
+      "KillDeathRatio": 3.80,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.85,
+      "TotalKills": 3250
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 11200,
+      "AverageData": 31.5
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 1,
+    "GameTime": 126.36,
+    "HeroScore": 4419,
+    "RankDescription": "湖南省第22名，距离湖南省榜还差180分",
+    "HistoricalHighestRank": "湖南省第8名",
+    "Recent12Games": {
+      "TopFiveRate": 90.42,
+      "AverageDamage": 15300,
+      "KillDeathRatio": 3.645,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 84.15,
+      "ChampionRate": 27.28,
+      "WinCount": 305,
+      "AverageDamage": 14450,
+      "MaxDamagePerGame": 36900,
+      "AverageHeal": 4680,
+      "TotalEliminations": 3900,
+      "KillDeathRatio": 3.42,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 7.065,
+      "TotalKills": 4125
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 14560,
+      "AverageData": 37.8
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 2,
+    "GameTime": 120.5,
+    "HeroScore": 4710,
+    "RankDescription": "湖南省第18名，距离全国榜还差280分",
+    "HistoricalHighestRank": "全国第95名",
+    "Recent12Games": {
+      "TopFiveRate": 83.2,
+      "AverageDamage": 18000,
+      "KillDeathRatio": 4.12,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 77.8,
+      "ChampionRate": 25.5,
+      "WinCount": 265,
+      "AverageDamage": 17200,
+      "MaxDamagePerGame": 42000,
+      "AverageHeal": 4100,
+      "TotalEliminations": 3300,
+      "KillDeathRatio": 3.88,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 8.15,
+      "TotalKills": 3550
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 12300,
+      "AverageData": 32.2
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 2,
+    "GameTime": 144.6,
+    "HeroScore": 4475,
+    "RankDescription": "湖南省第18名，距离全国榜还差280分",
+    "HistoricalHighestRank": "全国第95名",
+    "Recent12Games": {
+      "TopFiveRate": 91.85,
+      "AverageDamage": 15470,
+      "KillDeathRatio": 3.708,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 85.58,
+      "ChampionRate": 28.05,
+      "WinCount": 344,
+      "AverageDamage": 14620,
+      "MaxDamagePerGame": 37800,
+      "AverageHeal": 4920,
+      "TotalEliminations": 4290,
+      "KillDeathRatio": 3.42,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 7.335,
+      "TotalKills": 4615
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 16000,
+      "AverageData": 38.64
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 0,
+    "TeamSize": 1,
+    "SeasonType": 3,
+    "GameTime": 95.6,
+    "HeroScore": 4580,
+    "RankDescription": "湖南省第28名，距离湖南省榜还差250分",
+    "HistoricalHighestRank": "湖南省第15名",
+    "Recent12Games": {
+      "TopFiveRate": 80.5,
+      "AverageDamage": 17500,
+      "KillDeathRatio": 3.95,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 75.2,
+      "ChampionRate": 24.2,
+      "WinCount": 215,
+      "AverageDamage": 16700,
+      "MaxDamagePerGame": 40000,
+      "AverageHeal": 3800,
+      "TotalEliminations": 2850,
+      "KillDeathRatio": 3.72,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.70,
+      "TotalKills": 3050
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 10300,
+      "AverageData": 30.8
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 0,
+    "TeamSize": 3,
+    "SeasonType": 3,
+    "GameTime": 114.72,
+    "HeroScore": 4351,
+    "RankDescription": "湖南省第28名，距离湖南省榜还差250分",
+    "HistoricalHighestRank": "湖南省第15名",
+    "Recent12Games": {
+      "TopFiveRate": 88.55,
+      "AverageDamage": 14875,
+      "KillDeathRatio": 3.555,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 82.72,
+      "ChampionRate": 26.62,
+      "WinCount": 279,
+      "AverageDamage": 14110,
+      "MaxDamagePerGame": 36000,
+      "AverageHeal": 4560,
+      "TotalEliminations": 3705,
+      "KillDeathRatio": 3.258,
+      "MaxKillsPerGame": 26,
+      "AverageKills": 6.93,
+      "TotalKills": 4015
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 13390,
+      "AverageData": 36.96
+    }
+  },
+  
+  // 崔三娘 - 快速比赛 - 单排
+  {
+    "HeroIndex": 0,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 0,
+    "GameTime": 115.5,
+    "HeroScore": 3250,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 78.0,
+      "AverageDamage": 16500,
+      "KillDeathRatio": 3.85,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 72.5,
+      "ChampionRate": 22.8,
+      "WinCount": 420,
+      "AverageDamage": 15800,
+      "MaxDamagePerGame": 41000,
+      "AverageHeal": 3000,
+      "TotalEliminations": 5100,
+      "KillDeathRatio": 3.65,
+      "MaxKillsPerGame": 32,
+      "AverageKills": 7.85,
+      "TotalKills": 5300
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 21500,
+      "AverageData": 30.2
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 1,
+    "GameTime": 90.2,
+    "HeroScore": 3120,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 75.5,
+      "AverageDamage": 16200,
+      "KillDeathRatio": 3.70,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 70.2,
+      "ChampionRate": 21.5,
+      "WinCount": 310,
+      "AverageDamage": 15500,
+      "MaxDamagePerGame": 39000,
+      "AverageHeal": 2800,
+      "TotalEliminations": 4100,
+      "KillDeathRatio": 3.50,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.55,
+      "TotalKills": 4300
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 17200,
+      "AverageData": 28.5
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 2,
+    "GameTime": 105.8,
+    "HeroScore": 3180,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 76.8,
+      "AverageDamage": 16300,
+      "KillDeathRatio": 3.78,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 71.5,
+      "ChampionRate": 22.2,
+      "WinCount": 360,
+      "AverageDamage": 15600,
+      "MaxDamagePerGame": 40000,
+      "AverageHeal": 2900,
+      "TotalEliminations": 4600,
+      "KillDeathRatio": 3.58,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.70,
+      "TotalKills": 4800
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 19200,
+      "AverageData": 29.3
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 3,
+    "GameTime": 85.3,
+    "HeroScore": 3050,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 74.2,
+      "AverageDamage": 16000,
+      "KillDeathRatio": 3.65,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 68.8,
+      "ChampionRate": 20.5,
+      "WinCount": 280,
+      "AverageDamage": 15300,
+      "MaxDamagePerGame": 38000,
+      "AverageHeal": 2700,
+      "TotalEliminations": 3800,
+      "KillDeathRatio": 3.42,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.35,
+      "TotalKills": 3950
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 15800,
+      "AverageData": 27.8
+    }
+  },
+  
+  // 顾清寒 - 快速比赛 - 单排
+  {
+    "HeroIndex": 1,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 0,
+    "GameTime": 130.8,
+    "HeroScore": 3420,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 81.5,
+      "AverageDamage": 17800,
+      "KillDeathRatio": 4.15,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 75.8,
+      "ChampionRate": 24.5,
+      "WinCount": 480,
+      "AverageDamage": 17100,
+      "MaxDamagePerGame": 44000,
+      "AverageHeal": 2600,
+      "TotalEliminations": 6200,
+      "KillDeathRatio": 3.95,
+      "MaxKillsPerGame": 35,
+      "AverageKills": 8.45,
+      "TotalKills": 6500
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 24800,
+      "AverageData": 32.8
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 1,
+    "GameTime": 105.5,
+    "HeroScore": 3280,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 79.0,
+      "AverageDamage": 17500,
+      "KillDeathRatio": 4.00,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 73.5,
+      "ChampionRate": 23.2,
+      "WinCount": 380,
+      "AverageDamage": 16800,
+      "MaxDamagePerGame": 42000,
+      "AverageHeal": 2400,
+      "TotalEliminations": 5100,
+      "KillDeathRatio": 3.80,
+      "MaxKillsPerGame": 33,
+      "AverageKills": 8.15,
+      "TotalKills": 5400
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 20500,
+      "AverageData": 31.2
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 2,
+    "GameTime": 120.3,
+    "HeroScore": 3350,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 80.2,
+      "AverageDamage": 17600,
+      "KillDeathRatio": 4.08,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 74.8,
+      "ChampionRate": 23.8,
+      "WinCount": 430,
+      "AverageDamage": 16900,
+      "MaxDamagePerGame": 43000,
+      "AverageHeal": 2500,
+      "TotalEliminations": 5700,
+      "KillDeathRatio": 3.88,
+      "MaxKillsPerGame": 34,
+      "AverageKills": 8.30,
+      "TotalKills": 5950
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 22800,
+      "AverageData": 32.0
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 3,
+    "GameTime": 95.2,
+    "HeroScore": 3210,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 77.5,
+      "AverageDamage": 17200,
+      "KillDeathRatio": 3.92,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 72.2,
+      "ChampionRate": 22.5,
+      "WinCount": 350,
+      "AverageDamage": 16500,
+      "MaxDamagePerGame": 41000,
+      "AverageHeal": 2300,
+      "TotalEliminations": 4800,
+      "KillDeathRatio": 3.72,
+      "MaxKillsPerGame": 32,
+      "AverageKills": 7.95,
+      "TotalKills": 5100
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 19200,
+      "AverageData": 30.5
+    }
+  },
+  
+  // 哈迪 - 快速比赛 - 单排
+  {
+    "HeroIndex": 2,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 0,
+    "GameTime": 110.6,
+    "HeroScore": 3350,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3600",
+    "Recent12Games": {
+      "TopFiveRate": 79.5,
+      "AverageDamage": 17200,
+      "KillDeathRatio": 4.00,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 74.2,
+      "ChampionRate": 23.8,
+      "WinCount": 450,
+      "AverageDamage": 16500,
+      "MaxDamagePerGame": 42000,
+      "AverageHeal": 2900,
+      "TotalEliminations": 5800,
+      "KillDeathRatio": 3.80,
+      "MaxKillsPerGame": 33,
+      "AverageKills": 8.15,
+      "TotalKills": 6100
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 23200,
+      "AverageData": 31.5
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 1,
+    "GameTime": 90.3,
+    "HeroScore": 3210,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3600",
+    "Recent12Games": {
+      "TopFiveRate": 77.0,
+      "AverageDamage": 16900,
+      "KillDeathRatio": 3.85,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 71.8,
+      "ChampionRate": 22.5,
+      "WinCount": 360,
+      "AverageDamage": 16200,
+      "MaxDamagePerGame": 40000,
+      "AverageHeal": 2700,
+      "TotalEliminations": 4700,
+      "KillDeathRatio": 3.65,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.85,
+      "TotalKills": 4950
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 18800,
+      "AverageData": 30.2
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 2,
+    "GameTime": 100.8,
+    "HeroScore": 3280,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3600",
+    "Recent12Games": {
+      "TopFiveRate": 78.2,
+      "AverageDamage": 17000,
+      "KillDeathRatio": 3.92,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 73.0,
+      "ChampionRate": 23.2,
+      "WinCount": 410,
+      "AverageDamage": 16300,
+      "MaxDamagePerGame": 41000,
+      "AverageHeal": 2800,
+      "TotalEliminations": 5200,
+      "KillDeathRatio": 3.72,
+      "MaxKillsPerGame": 32,
+      "AverageKills": 8.00,
+      "TotalKills": 5450
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 20800,
+      "AverageData": 30.8
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 3,
+    "GameTime": 80.5,
+    "HeroScore": 3150,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3600",
+    "Recent12Games": {
+      "TopFiveRate": 75.5,
+      "AverageDamage": 16700,
+      "KillDeathRatio": 3.78,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 70.5,
+      "ChampionRate": 21.8,
+      "WinCount": 330,
+      "AverageDamage": 16000,
+      "MaxDamagePerGame": 39000,
+      "AverageHeal": 2600,
+      "TotalEliminations": 4300,
+      "KillDeathRatio": 3.58,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.65,
+      "TotalKills": 4550
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 17500,
+      "AverageData": 29.5
+    }
+  },
+  
+  // 胡桃 - 快速比赛 - 单排
+  {
+    "HeroIndex": 3,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 0,
+    "GameTime": 100.2,
+    "HeroScore": 3180,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3400",
+    "Recent12Games": {
+      "TopFiveRate": 77.2,
+      "AverageDamage": 16500,
+      "KillDeathRatio": 3.85,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 72.8,
+      "ChampionRate": 23.2,
+      "WinCount": 410,
+      "AverageDamage": 15800,
+      "MaxDamagePerGame": 40000,
+      "AverageHeal": 4800,
+      "TotalEliminations": 5300,
+      "KillDeathRatio": 3.65,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.55,
+      "TotalKills": 5550
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 20500,
+      "AverageData": 29.8
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 1,
+    "GameTime": 80.6,
+    "HeroScore": 3050,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3400",
+    "Recent12Games": {
+      "TopFiveRate": 74.5,
+      "AverageDamage": 16200,
+      "KillDeathRatio": 3.70,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 70.2,
+      "ChampionRate": 21.8,
+      "WinCount": 330,
+      "AverageDamage": 15500,
+      "MaxDamagePerGame": 38000,
+      "AverageHeal": 4600,
+      "TotalEliminations": 4300,
+      "KillDeathRatio": 3.50,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 7.25,
+      "TotalKills": 4500
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 16800,
+      "AverageData": 28.5
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 2,
+    "GameTime": 90.8,
+    "HeroScore": 3120,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3400",
+    "Recent12Games": {
+      "TopFiveRate": 75.8,
+      "AverageDamage": 16300,
+      "KillDeathRatio": 3.78,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 71.5,
+      "ChampionRate": 22.5,
+      "WinCount": 370,
+      "AverageDamage": 15600,
+      "MaxDamagePerGame": 39000,
+      "AverageHeal": 4700,
+      "TotalEliminations": 4800,
+      "KillDeathRatio": 3.58,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.40,
+      "TotalKills": 5000
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 18500,
+      "AverageData": 29.2
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 3,
+    "GameTime": 70.3,
+    "HeroScore": 2980,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3400",
+    "Recent12Games": {
+      "TopFiveRate": 72.8,
+      "AverageDamage": 16000,
+      "KillDeathRatio": 3.65,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 68.8,
+      "ChampionRate": 20.8,
+      "WinCount": 300,
+      "AverageDamage": 15300,
+      "MaxDamagePerGame": 37000,
+      "AverageHeal": 4500,
+      "TotalEliminations": 4100,
+      "KillDeathRatio": 3.42,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 7.05,
+      "TotalKills": 4250
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 15200,
+      "AverageData": 28.0
+    }
+  },
+  
+  // 胡为 - 快速比赛 - 单排
+  {
+    "HeroIndex": 4,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 0,
+    "GameTime": 90.8,
+    "HeroScore": 3120,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3300",
+    "Recent12Games": {
+      "TopFiveRate": 76.5,
+      "AverageDamage": 16800,
+      "KillDeathRatio": 3.90,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 71.8,
+      "ChampionRate": 22.5,
+      "WinCount": 390,
+      "AverageDamage": 16100,
+      "MaxDamagePerGame": 40500,
+      "AverageHeal": 3600,
+      "TotalEliminations": 5000,
+      "KillDeathRatio": 3.70,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.65,
+      "TotalKills": 5200
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 19800,
+      "AverageData": 29.5
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 1,
+    "GameTime": 100.5,
+    "HeroScore": 3080,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3300",
+    "Recent12Games": {
+      "TopFiveRate": 75.2,
+      "AverageDamage": 16500,
+      "KillDeathRatio": 3.82,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 70.5,
+      "ChampionRate": 21.8,
+      "WinCount": 350,
+      "AverageDamage": 15800,
+      "MaxDamagePerGame": 39000,
+      "AverageHeal": 3500,
+      "TotalEliminations": 4400,
+      "KillDeathRatio": 3.62,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.45,
+      "TotalKills": 4600
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 17800,
+      "AverageData": 28.8
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 2,
+    "GameTime": 80.3,
+    "HeroScore": 3010,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3300",
+    "Recent12Games": {
+      "TopFiveRate": 73.8,
+      "AverageDamage": 16300,
+      "KillDeathRatio": 3.75,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 69.2,
+      "ChampionRate": 21.2,
+      "WinCount": 320,
+      "AverageDamage": 15600,
+      "MaxDamagePerGame": 38000,
+      "AverageHeal": 3400,
+      "TotalEliminations": 4000,
+      "KillDeathRatio": 3.55,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.25,
+      "TotalKills": 4200
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 16500,
+      "AverageData": 28.2
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 3,
+    "GameTime": 70.6,
+    "HeroScore": 2950,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3300",
+    "Recent12Games": {
+      "TopFiveRate": 72.2,
+      "AverageDamage": 16000,
+      "KillDeathRatio": 3.68,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 67.8,
+      "ChampionRate": 20.5,
+      "WinCount": 290,
+      "AverageDamage": 15300,
+      "MaxDamagePerGame": 37000,
+      "AverageHeal": 3300,
+      "TotalEliminations": 3800,
+      "KillDeathRatio": 3.48,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 7.10,
+      "TotalKills": 4000
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 15200,
+      "AverageData": 27.5
+    }
+  },
+  
+  // 季莹莹 - 快速比赛 - 单排
+  {
+    "HeroIndex": 5,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 0,
+    "GameTime": 125.8,
+    "HeroScore": 3320,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3600",
+    "Recent12Games": {
+      "TopFiveRate": 80.2,
+      "AverageDamage": 17500,
+      "KillDeathRatio": 4.05,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 74.8,
+      "ChampionRate": 24.2,
+      "WinCount": 460,
+      "AverageDamage": 16800,
+      "MaxDamagePerGame": 42500,
+      "AverageHeal": 4000,
+      "TotalEliminations": 5900,
+      "KillDeathRatio": 3.85,
+      "MaxKillsPerGame": 34,
+      "AverageKills": 8.25,
+      "TotalKills": 6200
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 24500,
+      "AverageData": 32.2
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 1,
+    "GameTime": 100.3,
+    "HeroScore": 3180,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3600",
+    "Recent12Games": {
+      "TopFiveRate": 77.8,
+      "AverageDamage": 17200,
+      "KillDeathRatio": 3.92,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 72.5,
+      "ChampionRate": 22.8,
+      "WinCount": 370,
+      "AverageDamage": 16500,
+      "MaxDamagePerGame": 40500,
+      "AverageHeal": 3800,
+      "TotalEliminations": 4800,
+      "KillDeathRatio": 3.72,
+      "MaxKillsPerGame": 32,
+      "AverageKills": 7.95,
+      "TotalKills": 5100
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 19800,
+      "AverageData": 30.8
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 2,
+    "GameTime": 115.5,
+    "HeroScore": 3250,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3600",
+    "Recent12Games": {
+      "TopFiveRate": 79.0,
+      "AverageDamage": 17300,
+      "KillDeathRatio": 3.98,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 73.8,
+      "ChampionRate": 23.5,
+      "WinCount": 420,
+      "AverageDamage": 16600,
+      "MaxDamagePerGame": 41500,
+      "AverageHeal": 3900,
+      "TotalEliminations": 5400,
+      "KillDeathRatio": 3.78,
+      "MaxKillsPerGame": 33,
+      "AverageKills": 8.10,
+      "TotalKills": 5650
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 22200,
+      "AverageData": 31.5
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 1,
+    "TeamSize": 1,
+    "SeasonType": 3,
+    "GameTime": 90.6,
+    "HeroScore": 3120,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3600",
+    "Recent12Games": {
+      "TopFiveRate": 76.2,
+      "AverageDamage": 17000,
+      "KillDeathRatio": 3.85,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 71.2,
+      "ChampionRate": 22.2,
+      "WinCount": 350,
+      "AverageDamage": 16300,
+      "MaxDamagePerGame": 39500,
+      "AverageHeal": 3700,
+      "TotalEliminations": 4500,
+      "KillDeathRatio": 3.65,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.75,
+      "TotalKills": 4800
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 18500,
+      "AverageData": 29.8
+    }
+  },
+  
+  // 崔三娘 - 快速比赛 - 双排
+  {
+    "HeroIndex": 0,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 0,
+    "GameTime": 130.5,
+    "HeroScore": 3350,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3600",
+    "Recent12Games": {
+      "TopFiveRate": 82.0,
+      "AverageDamage": 15800,
+      "KillDeathRatio": 3.95,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 76.5,
+      "ChampionRate": 25.2,
+      "WinCount": 480,
+      "AverageDamage": 15100,
+      "MaxDamagePerGame": 39500,
+      "AverageHeal": 3300,
+      "TotalEliminations": 5800,
+      "KillDeathRatio": 3.75,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.35,
+      "TotalKills": 6050
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 25200,
+      "AverageData": 32.8
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 1,
+    "GameTime": 105.2,
+    "HeroScore": 3220,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3600",
+    "Recent12Games": {
+      "TopFiveRate": 79.5,
+      "AverageDamage": 15500,
+      "KillDeathRatio": 3.80,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 74.2,
+      "ChampionRate": 23.8,
+      "WinCount": 390,
+      "AverageDamage": 14800,
+      "MaxDamagePerGame": 37500,
+      "AverageHeal": 3100,
+      "TotalEliminations": 4700,
+      "KillDeathRatio": 3.60,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 7.05,
+      "TotalKills": 4900
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 20800,
+      "AverageData": 30.5
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 2,
+    "GameTime": 120.8,
+    "HeroScore": 3290,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3600",
+    "Recent12Games": {
+      "TopFiveRate": 80.8,
+      "AverageDamage": 15600,
+      "KillDeathRatio": 3.88,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 75.5,
+      "ChampionRate": 24.5,
+      "WinCount": 430,
+      "AverageDamage": 14900,
+      "MaxDamagePerGame": 38500,
+      "AverageHeal": 3200,
+      "TotalEliminations": 5200,
+      "KillDeathRatio": 3.68,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.20,
+      "TotalKills": 5400
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 22800,
+      "AverageData": 31.8
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 3,
+    "GameTime": 95.3,
+    "HeroScore": 3150,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3600",
+    "Recent12Games": {
+      "TopFiveRate": 78.2,
+      "AverageDamage": 15300,
+      "KillDeathRatio": 3.75,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 73.2,
+      "ChampionRate": 23.2,
+      "WinCount": 360,
+      "AverageDamage": 14600,
+      "MaxDamagePerGame": 36500,
+      "AverageHeal": 3000,
+      "TotalEliminations": 4400,
+      "KillDeathRatio": 3.55,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 6.95,
+      "TotalKills": 4550
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 19200,
+      "AverageData": 30.2
+    }
+  },
+  
+  // 顾清寒 - 快速比赛 - 双排
+  {
+    "HeroIndex": 1,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 0,
+    "GameTime": 145.8,
+    "HeroScore": 3520,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3800",
+    "Recent12Games": {
+      "TopFiveRate": 84.5,
+      "AverageDamage": 17200,
+      "KillDeathRatio": 4.25,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 79.8,
+      "ChampionRate": 27.5,
+      "WinCount": 550,
+      "AverageDamage": 16500,
+      "MaxDamagePerGame": 42500,
+      "AverageHeal": 2900,
+      "TotalEliminations": 7100,
+      "KillDeathRatio": 4.05,
+      "MaxKillsPerGame": 33,
+      "AverageKills": 7.95,
+      "TotalKills": 7400
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 29500,
+      "AverageData": 35.2
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 1,
+    "GameTime": 120.5,
+    "HeroScore": 3380,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3800",
+    "Recent12Games": {
+      "TopFiveRate": 82.0,
+      "AverageDamage": 16900,
+      "KillDeathRatio": 4.10,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 77.5,
+      "ChampionRate": 26.2,
+      "WinCount": 450,
+      "AverageDamage": 16200,
+      "MaxDamagePerGame": 40500,
+      "AverageHeal": 2700,
+      "TotalEliminations": 5900,
+      "KillDeathRatio": 3.90,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.65,
+      "TotalKills": 6150
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 24800,
+      "AverageData": 33.2
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 2,
+    "GameTime": 135.3,
+    "HeroScore": 3450,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3800",
+    "Recent12Games": {
+      "TopFiveRate": 83.2,
+      "AverageDamage": 17000,
+      "KillDeathRatio": 4.18,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 78.8,
+      "ChampionRate": 26.8,
+      "WinCount": 500,
+      "AverageDamage": 16300,
+      "MaxDamagePerGame": 41500,
+      "AverageHeal": 2800,
+      "TotalEliminations": 6500,
+      "KillDeathRatio": 3.98,
+      "MaxKillsPerGame": 32,
+      "AverageKills": 7.80,
+      "TotalKills": 6750
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 27200,
+      "AverageData": 34.5
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 3,
+    "GameTime": 110.2,
+    "HeroScore": 3310,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3800",
+    "Recent12Games": {
+      "TopFiveRate": 80.5,
+      "AverageDamage": 16600,
+      "KillDeathRatio": 4.02,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 76.2,
+      "ChampionRate": 25.5,
+      "WinCount": 420,
+      "AverageDamage": 15900,
+      "MaxDamagePerGame": 39500,
+      "AverageHeal": 2600,
+      "TotalEliminations": 5600,
+      "KillDeathRatio": 3.82,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.45,
+      "TotalKills": 5850
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 23200,
+      "AverageData": 32.5
+    }
+  },
+  
+  // 哈迪 - 快速比赛 - 双排
+  {
+    "HeroIndex": 2,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 0,
+    "GameTime": 125.6,
+    "HeroScore": 3450,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 82.5,
+      "AverageDamage": 16500,
+      "KillDeathRatio": 4.10,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 77.2,
+      "ChampionRate": 26.2,
+      "WinCount": 520,
+      "AverageDamage": 15800,
+      "MaxDamagePerGame": 40500,
+      "AverageHeal": 3200,
+      "TotalEliminations": 6600,
+      "KillDeathRatio": 3.90,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.55,
+      "TotalKills": 6850
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 27800,
+      "AverageData": 34.2
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 1,
+    "GameTime": 105.3,
+    "HeroScore": 3310,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 80.0,
+      "AverageDamage": 16200,
+      "KillDeathRatio": 3.95,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 74.8,
+      "ChampionRate": 24.8,
+      "WinCount": 430,
+      "AverageDamage": 15500,
+      "MaxDamagePerGame": 38500,
+      "AverageHeal": 3000,
+      "TotalEliminations": 5400,
+      "KillDeathRatio": 3.75,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.25,
+      "TotalKills": 5650
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 22800,
+      "AverageData": 32.2
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 2,
+    "GameTime": 115.8,
+    "HeroScore": 3380,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 81.2,
+      "AverageDamage": 16300,
+      "KillDeathRatio": 4.02,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 76.0,
+      "ChampionRate": 25.5,
+      "WinCount": 470,
+      "AverageDamage": 15600,
+      "MaxDamagePerGame": 39500,
+      "AverageHeal": 3100,
+      "TotalEliminations": 5900,
+      "KillDeathRatio": 3.82,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.40,
+      "TotalKills": 6100
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 25200,
+      "AverageData": 33.5
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 3,
+    "GameTime": 95.5,
+    "HeroScore": 3250,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 78.5,
+      "AverageDamage": 16000,
+      "KillDeathRatio": 3.88,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 73.5,
+      "ChampionRate": 24.2,
+      "WinCount": 400,
+      "AverageDamage": 15300,
+      "MaxDamagePerGame": 37500,
+      "AverageHeal": 2900,
+      "TotalEliminations": 5100,
+      "KillDeathRatio": 3.68,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 7.15,
+      "TotalKills": 5300
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 20800,
+      "AverageData": 31.8
+    }
+  },
+  
+  // 胡桃 - 快速比赛 - 双排
+  {
+    "HeroIndex": 3,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 0,
+    "GameTime": 115.2,
+    "HeroScore": 3280,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 80.2,
+      "AverageDamage": 15800,
+      "KillDeathRatio": 3.95,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 74.8,
+      "ChampionRate": 25.2,
+      "WinCount": 480,
+      "AverageDamage": 15100,
+      "MaxDamagePerGame": 38500,
+      "AverageHeal": 5200,
+      "TotalEliminations": 6100,
+      "KillDeathRatio": 3.75,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 6.95,
+      "TotalKills": 6350
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 24200,
+      "AverageData": 32.5
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 1,
+    "GameTime": 95.6,
+    "HeroScore": 3150,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 77.5,
+      "AverageDamage": 15500,
+      "KillDeathRatio": 3.80,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 72.5,
+      "ChampionRate": 23.8,
+      "WinCount": 390,
+      "AverageDamage": 14800,
+      "MaxDamagePerGame": 36500,
+      "AverageHeal": 5000,
+      "TotalEliminations": 4900,
+      "KillDeathRatio": 3.60,
+      "MaxKillsPerGame": 26,
+      "AverageKills": 6.65,
+      "TotalKills": 5100
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 19500,
+      "AverageData": 30.8
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 2,
+    "GameTime": 105.8,
+    "HeroScore": 3220,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 78.8,
+      "AverageDamage": 15600,
+      "KillDeathRatio": 3.88,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 73.8,
+      "ChampionRate": 24.5,
+      "WinCount": 430,
+      "AverageDamage": 14900,
+      "MaxDamagePerGame": 37500,
+      "AverageHeal": 5100,
+      "TotalEliminations": 5400,
+      "KillDeathRatio": 3.68,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 6.80,
+      "TotalKills": 5600
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 21800,
+      "AverageData": 31.8
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 3,
+    "GameTime": 85.3,
+    "HeroScore": 3080,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 76.2,
+      "AverageDamage": 15300,
+      "KillDeathRatio": 3.75,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 71.2,
+      "ChampionRate": 23.2,
+      "WinCount": 360,
+      "AverageDamage": 14600,
+      "MaxDamagePerGame": 35500,
+      "AverageHeal": 4800,
+      "TotalEliminations": 4600,
+      "KillDeathRatio": 3.55,
+      "MaxKillsPerGame": 25,
+      "AverageKills": 6.55,
+      "TotalKills": 4800
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 18200,
+      "AverageData": 30.2
+    }
+  },
+  
+  // 胡为 - 快速比赛 - 双排
+  {
+    "HeroIndex": 4,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 0,
+    "GameTime": 105.8,
+    "HeroScore": 3220,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3400",
+    "Recent12Games": {
+      "TopFiveRate": 79.5,
+      "AverageDamage": 16200,
+      "KillDeathRatio": 4.00,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 74.2,
+      "ChampionRate": 24.8,
+      "WinCount": 450,
+      "AverageDamage": 15500,
+      "MaxDamagePerGame": 39500,
+      "AverageHeal": 3900,
+      "TotalEliminations": 5700,
+      "KillDeathRatio": 3.80,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.05,
+      "TotalKills": 5950
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 23500,
+      "AverageData": 32.2
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 1,
+    "GameTime": 115.5,
+    "HeroScore": 3180,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3400",
+    "Recent12Games": {
+      "TopFiveRate": 78.2,
+      "AverageDamage": 15900,
+      "KillDeathRatio": 3.88,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 72.8,
+      "ChampionRate": 23.8,
+      "WinCount": 410,
+      "AverageDamage": 15200,
+      "MaxDamagePerGame": 37500,
+      "AverageHeal": 3800,
+      "TotalEliminations": 5000,
+      "KillDeathRatio": 3.68,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 6.85,
+      "TotalKills": 5200
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 20200,
+      "AverageData": 30.8
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 2,
+    "GameTime": 95.3,
+    "HeroScore": 3110,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3400",
+    "Recent12Games": {
+      "TopFiveRate": 76.8,
+      "AverageDamage": 15700,
+      "KillDeathRatio": 3.80,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 71.5,
+      "ChampionRate": 23.2,
+      "WinCount": 380,
+      "AverageDamage": 15000,
+      "MaxDamagePerGame": 36500,
+      "AverageHeal": 3700,
+      "TotalEliminations": 4600,
+      "KillDeathRatio": 3.60,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 6.70,
+      "TotalKills": 4800
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 18500,
+      "AverageData": 30.2
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 3,
+    "GameTime": 85.6,
+    "HeroScore": 3050,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3400",
+    "Recent12Games": {
+      "TopFiveRate": 75.2,
+      "AverageDamage": 15400,
+      "KillDeathRatio": 3.72,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 70.2,
+      "ChampionRate": 22.5,
+      "WinCount": 350,
+      "AverageDamage": 14700,
+      "MaxDamagePerGame": 35500,
+      "AverageHeal": 3600,
+      "TotalEliminations": 4300,
+      "KillDeathRatio": 3.52,
+      "MaxKillsPerGame": 26,
+      "AverageKills": 6.55,
+      "TotalKills": 4500
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 16800,
+      "AverageData": 29.5
+    }
+  },
+  
+  // 季莹莹 - 快速比赛 - 双排
+  {
+    "HeroIndex": 5,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 0,
+    "GameTime": 140.8,
+    "HeroScore": 3420,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 83.2,
+      "AverageDamage": 16800,
+      "KillDeathRatio": 4.15,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 77.8,
+      "ChampionRate": 26.5,
+      "WinCount": 520,
+      "AverageDamage": 16100,
+      "MaxDamagePerGame": 40500,
+      "AverageHeal": 4300,
+      "TotalEliminations": 6500,
+      "KillDeathRatio": 3.95,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.45,
+      "TotalKills": 6750
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 28500,
+      "AverageData": 34.8
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 1,
+    "GameTime": 115.3,
+    "HeroScore": 3280,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 80.8,
+      "AverageDamage": 16500,
+      "KillDeathRatio": 4.02,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 75.5,
+      "ChampionRate": 25.2,
+      "WinCount": 430,
+      "AverageDamage": 15800,
+      "MaxDamagePerGame": 38500,
+      "AverageHeal": 4100,
+      "TotalEliminations": 5300,
+      "KillDeathRatio": 3.82,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.15,
+      "TotalKills": 5550
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 23200,
+      "AverageData": 32.8
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 2,
+    "GameTime": 130.5,
+    "HeroScore": 3350,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 82.0,
+      "AverageDamage": 16600,
+      "KillDeathRatio": 4.08,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 76.8,
+      "ChampionRate": 25.8,
+      "WinCount": 480,
+      "AverageDamage": 15900,
+      "MaxDamagePerGame": 39500,
+      "AverageHeal": 4200,
+      "TotalEliminations": 5900,
+      "KillDeathRatio": 3.88,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.30,
+      "TotalKills": 6150
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 25800,
+      "AverageData": 34.2
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 1,
+    "TeamSize": 2,
+    "SeasonType": 3,
+    "GameTime": 105.6,
+    "HeroScore": 3220,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 79.5,
+      "AverageDamage": 16300,
+      "KillDeathRatio": 3.95,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 74.2,
+      "ChampionRate": 24.8,
+      "WinCount": 400,
+      "AverageDamage": 15600,
+      "MaxDamagePerGame": 37500,
+      "AverageHeal": 4000,
+      "TotalEliminations": 4900,
+      "KillDeathRatio": 3.75,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 7.05,
+      "TotalKills": 5150
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 21500,
+      "AverageData": 32.2
+    }
+  },
+  
+  // 快速比赛 - 三排 (GameMode=1, TeamSize=3)
+  {
+    "HeroIndex": 0,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 0,
+    "GameTime": 140.6,
+    "HeroScore": 3380,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 85.5,
+      "AverageDamage": 15200,
+      "KillDeathRatio": 4.25,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 80.2,
+      "ChampionRate": 26.8,
+      "WinCount": 510,
+      "AverageDamage": 14500,
+      "MaxDamagePerGame": 39000,
+      "AverageHeal": 3600,
+      "TotalEliminations": 6300,
+      "KillDeathRatio": 4.05,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 6.95,
+      "TotalKills": 6600
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 26800,
+      "AverageData": 34.5
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 1,
+    "GameTime": 115.2,
+    "HeroScore": 3250,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 83.0,
+      "AverageDamage": 14900,
+      "KillDeathRatio": 4.10,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 77.8,
+      "ChampionRate": 25.5,
+      "WinCount": 420,
+      "AverageDamage": 14200,
+      "MaxDamagePerGame": 37000,
+      "AverageHeal": 3400,
+      "TotalEliminations": 5200,
+      "KillDeathRatio": 3.90,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 6.70,
+      "TotalKills": 5500
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 22500,
+      "AverageData": 32.8
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 2,
+    "GameTime": 125.8,
+    "HeroScore": 3320,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 84.2,
+      "AverageDamage": 15000,
+      "KillDeathRatio": 4.18,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 79.0,
+      "ChampionRate": 26.2,
+      "WinCount": 470,
+      "AverageDamage": 14300,
+      "MaxDamagePerGame": 38000,
+      "AverageHeal": 3500,
+      "TotalEliminations": 5800,
+      "KillDeathRatio": 3.98,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 6.82,
+      "TotalKills": 6100
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 24500,
+      "AverageData": 33.7
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 3,
+    "GameTime": 105.3,
+    "HeroScore": 3220,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 81.8,
+      "AverageDamage": 14700,
+      "KillDeathRatio": 4.05,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 76.5,
+      "ChampionRate": 24.8,
+      "WinCount": 390,
+      "AverageDamage": 13900,
+      "MaxDamagePerGame": 36000,
+      "AverageHeal": 3300,
+      "TotalEliminations": 4900,
+      "KillDeathRatio": 3.82,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 6.55,
+      "TotalKills": 5200
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 21200,
+      "AverageData": 32.1
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 0,
+    "GameTime": 155.8,
+    "HeroScore": 3550,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3800",
+    "Recent12Games": {
+      "TopFiveRate": 87.5,
+      "AverageDamage": 16500,
+      "KillDeathRatio": 4.45,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 82.2,
+      "ChampionRate": 28.5,
+      "WinCount": 580,
+      "AverageDamage": 15800,
+      "MaxDamagePerGame": 42000,
+      "AverageHeal": 3000,
+      "TotalEliminations": 7500,
+      "KillDeathRatio": 4.25,
+      "MaxKillsPerGame": 33,
+      "AverageKills": 7.55,
+      "TotalKills": 7800
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 30500,
+      "AverageData": 36.8
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 1,
+    "GameTime": 130.5,
+    "HeroScore": 3420,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3800",
+    "Recent12Games": {
+      "TopFiveRate": 85.0,
+      "AverageDamage": 16200,
+      "KillDeathRatio": 4.30,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 79.8,
+      "ChampionRate": 27.2,
+      "WinCount": 480,
+      "AverageDamage": 15500,
+      "MaxDamagePerGame": 40000,
+      "AverageHeal": 2800,
+      "TotalEliminations": 6300,
+      "KillDeathRatio": 4.10,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.25,
+      "TotalKills": 6600
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 26200,
+      "AverageData": 35.2
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 2,
+    "GameTime": 145.3,
+    "HeroScore": 3480,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3800",
+    "Recent12Games": {
+      "TopFiveRate": 86.2,
+      "AverageDamage": 16300,
+      "KillDeathRatio": 4.38,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 81.0,
+      "ChampionRate": 27.8,
+      "WinCount": 530,
+      "AverageDamage": 15600,
+      "MaxDamagePerGame": 41000,
+      "AverageHeal": 2900,
+      "TotalEliminations": 6900,
+      "KillDeathRatio": 4.18,
+      "MaxKillsPerGame": 32,
+      "AverageKills": 7.40,
+      "TotalKills": 7200
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 28500,
+      "AverageData": 36.0
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 3,
+    "GameTime": 120.2,
+    "HeroScore": 3390,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3800",
+    "Recent12Games": {
+      "TopFiveRate": 83.5,
+      "AverageDamage": 15900,
+      "KillDeathRatio": 4.15,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 78.5,
+      "ChampionRate": 26.5,
+      "WinCount": 450,
+      "AverageDamage": 15200,
+      "MaxDamagePerGame": 39000,
+      "AverageHeal": 2700,
+      "TotalEliminations": 5900,
+      "KillDeathRatio": 3.95,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.10,
+      "TotalKills": 6200
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 24800,
+      "AverageData": 34.5
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 0,
+    "GameTime": 135.6,
+    "HeroScore": 3480,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 85.5,
+      "AverageDamage": 15800,
+      "KillDeathRatio": 4.25,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 80.8,
+      "ChampionRate": 27.2,
+      "WinCount": 550,
+      "AverageDamage": 15100,
+      "MaxDamagePerGame": 40000,
+      "AverageHeal": 3500,
+      "TotalEliminations": 6800,
+      "KillDeathRatio": 4.05,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.25,
+      "TotalKills": 7100
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 28200,
+      "AverageData": 35.8
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 1,
+    "GameTime": 110.3,
+    "HeroScore": 3350,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 83.0,
+      "AverageDamage": 15500,
+      "KillDeathRatio": 4.10,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 78.5,
+      "ChampionRate": 25.9,
+      "WinCount": 460,
+      "AverageDamage": 14800,
+      "MaxDamagePerGame": 38000,
+      "AverageHeal": 3300,
+      "TotalEliminations": 5700,
+      "KillDeathRatio": 3.90,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 6.95,
+      "TotalKills": 6000
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 24200,
+      "AverageData": 34.2
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 2,
+    "GameTime": 125.5,
+    "HeroScore": 3420,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 84.2,
+      "AverageDamage": 15600,
+      "KillDeathRatio": 4.18,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 79.8,
+      "ChampionRate": 26.6,
+      "WinCount": 510,
+      "AverageDamage": 14900,
+      "MaxDamagePerGame": 39000,
+      "AverageHeal": 3400,
+      "TotalEliminations": 6300,
+      "KillDeathRatio": 3.98,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.10,
+      "TotalKills": 6600
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 26500,
+      "AverageData": 35.0
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 3,
+    "GameTime": 100.2,
+    "HeroScore": 3320,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 81.5,
+      "AverageDamage": 15200,
+      "KillDeathRatio": 4.00,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 77.2,
+      "ChampionRate": 25.2,
+      "WinCount": 430,
+      "AverageDamage": 14500,
+      "MaxDamagePerGame": 37000,
+      "AverageHeal": 3200,
+      "TotalEliminations": 5300,
+      "KillDeathRatio": 3.82,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 6.80,
+      "TotalKills": 5600
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 22800,
+      "AverageData": 33.5
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 0,
+    "GameTime": 125.2,
+    "HeroScore": 3320,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 84.5,
+      "AverageDamage": 14800,
+      "KillDeathRatio": 4.15,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 79.2,
+      "ChampionRate": 26.2,
+      "WinCount": 520,
+      "AverageDamage": 14100,
+      "MaxDamagePerGame": 38000,
+      "AverageHeal": 5500,
+      "TotalEliminations": 6500,
+      "KillDeathRatio": 3.95,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 6.65,
+      "TotalKills": 6900
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 25800,
+      "AverageData": 35.2
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 1,
+    "GameTime": 100.6,
+    "HeroScore": 3190,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 82.0,
+      "AverageDamage": 14500,
+      "KillDeathRatio": 4.00,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 76.8,
+      "ChampionRate": 24.8,
+      "WinCount": 430,
+      "AverageDamage": 13800,
+      "MaxDamagePerGame": 36000,
+      "AverageHeal": 5300,
+      "TotalEliminations": 5400,
+      "KillDeathRatio": 3.75,
+      "MaxKillsPerGame": 26,
+      "AverageKills": 6.40,
+      "TotalKills": 5700
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 21500,
+      "AverageData": 33.5
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 2,
+    "GameTime": 115.8,
+    "HeroScore": 3250,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 83.2,
+      "AverageDamage": 14600,
+      "KillDeathRatio": 4.08,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 78.0,
+      "ChampionRate": 25.5,
+      "WinCount": 470,
+      "AverageDamage": 13900,
+      "MaxDamagePerGame": 37000,
+      "AverageHeal": 5400,
+      "TotalEliminations": 5900,
+      "KillDeathRatio": 3.85,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 6.52,
+      "TotalKills": 6200
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 23800,
+      "AverageData": 34.7
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 3,
+    "GameTime": 90.3,
+    "HeroScore": 3120,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3500",
+    "Recent12Games": {
+      "TopFiveRate": 80.5,
+      "AverageDamage": 14300,
+      "KillDeathRatio": 3.92,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 75.5,
+      "ChampionRate": 24.2,
+      "WinCount": 400,
+      "AverageDamage": 13600,
+      "MaxDamagePerGame": 35500,
+      "AverageHeal": 5200,
+      "TotalEliminations": 5100,
+      "KillDeathRatio": 3.68,
+      "MaxKillsPerGame": 25,
+      "AverageKills": 6.35,
+      "TotalKills": 5400
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 20200,
+      "AverageData": 32.8
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 0,
+    "GameTime": 115.8,
+    "HeroScore": 3250,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3400",
+    "Recent12Games": {
+      "TopFiveRate": 83.5,
+      "AverageDamage": 15500,
+      "KillDeathRatio": 4.10,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 78.2,
+      "ChampionRate": 25.8,
+      "WinCount": 490,
+      "AverageDamage": 14800,
+      "MaxDamagePerGame": 39000,
+      "AverageHeal": 4200,
+      "TotalEliminations": 6200,
+      "KillDeathRatio": 3.90,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 6.85,
+      "TotalKills": 6500
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 24500,
+      "AverageData": 34.5
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 1,
+    "GameTime": 95.6,
+    "HeroScore": 3120,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3400",
+    "Recent12Games": {
+      "TopFiveRate": 81.0,
+      "AverageDamage": 15200,
+      "KillDeathRatio": 3.95,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 75.8,
+      "ChampionRate": 24.5,
+      "WinCount": 410,
+      "AverageDamage": 14500,
+      "MaxDamagePerGame": 37000,
+      "AverageHeal": 4000,
+      "TotalEliminations": 5100,
+      "KillDeathRatio": 3.70,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 6.55,
+      "TotalKills": 5400
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 20200,
+      "AverageData": 32.8
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 2,
+    "GameTime": 105.5,
+    "HeroScore": 3180,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3400",
+    "Recent12Games": {
+      "TopFiveRate": 82.2,
+      "AverageDamage": 15300,
+      "KillDeathRatio": 4.02,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 77.0,
+      "ChampionRate": 25.2,
+      "WinCount": 450,
+      "AverageDamage": 14600,
+      "MaxDamagePerGame": 38000,
+      "AverageHeal": 4100,
+      "TotalEliminations": 5600,
+      "KillDeathRatio": 3.80,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 6.70,
+      "TotalKills": 5900
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 22500,
+      "AverageData": 33.7
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 3,
+    "GameTime": 85.6,
+    "HeroScore": 3050,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3400",
+    "Recent12Games": {
+      "TopFiveRate": 79.5,
+      "AverageDamage": 14900,
+      "KillDeathRatio": 3.88,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 74.2,
+      "ChampionRate": 23.8,
+      "WinCount": 380,
+      "AverageDamage": 14300,
+      "MaxDamagePerGame": 36500,
+      "AverageHeal": 3900,
+      "TotalEliminations": 4800,
+      "KillDeathRatio": 3.62,
+      "MaxKillsPerGame": 26,
+      "AverageKills": 6.45,
+      "TotalKills": 5150
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 19200,
+      "AverageData": 32.2
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 0,
+    "GameTime": 145.8,
+    "HeroScore": 3450,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 86.5,
+      "AverageDamage": 16200,
+      "KillDeathRatio": 4.35,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 81.2,
+      "ChampionRate": 27.8,
+      "WinCount": 550,
+      "AverageDamage": 15500,
+      "MaxDamagePerGame": 41000,
+      "AverageHeal": 4600,
+      "TotalEliminations": 6900,
+      "KillDeathRatio": 4.15,
+      "MaxKillsPerGame": 32,
+      "AverageKills": 7.30,
+      "TotalKills": 7200
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 29500,
+      "AverageData": 36.8
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 1,
+    "GameTime": 120.3,
+    "HeroScore": 3320,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 84.0,
+      "AverageDamage": 15900,
+      "KillDeathRatio": 4.20,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 78.8,
+      "ChampionRate": 26.5,
+      "WinCount": 460,
+      "AverageDamage": 15200,
+      "MaxDamagePerGame": 39000,
+      "AverageHeal": 4400,
+      "TotalEliminations": 5700,
+      "KillDeathRatio": 3.95,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.00,
+      "TotalKills": 6000
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 25200,
+      "AverageData": 35.2
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 2,
+    "GameTime": 135.5,
+    "HeroScore": 3380,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 85.2,
+      "AverageDamage": 16000,
+      "KillDeathRatio": 4.28,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 80.0,
+      "ChampionRate": 27.2,
+      "WinCount": 500,
+      "AverageDamage": 15300,
+      "MaxDamagePerGame": 40000,
+      "AverageHeal": 4500,
+      "TotalEliminations": 6300,
+      "KillDeathRatio": 4.05,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.15,
+      "TotalKills": 6600
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 27500,
+      "AverageData": 36.0
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 1,
+    "TeamSize": 3,
+    "SeasonType": 3,
+    "GameTime": 110.2,
+    "HeroScore": 3290,
+    "RankDescription": "快速比赛积分",
+    "HistoricalHighestRank": "快速比赛最高积分3700",
+    "Recent12Games": {
+      "TopFiveRate": 82.8,
+      "AverageDamage": 15600,
+      "KillDeathRatio": 4.05,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 77.5,
+      "ChampionRate": 25.8,
+      "WinCount": 430,
+      "AverageDamage": 14900,
+      "MaxDamagePerGame": 38000,
+      "AverageHeal": 4300,
+      "TotalEliminations": 5300,
+      "KillDeathRatio": 3.85,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 6.85,
+      "TotalKills": 5600
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 23800,
+      "AverageData": 34.5
+    }
+  },
+
+  // 排位赛 - 双排 (GameMode=0, TeamSize=2)
+  {
+    "HeroIndex": 0,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 0,
+    "GameTime": 130.5,
+    "HeroScore": 4780,
+    "RankDescription": "湖南省第12名，距离全国榜还差120分",
+    "HistoricalHighestRank": "全国第78名",
+    "Recent12Games": {
+      "TopFiveRate": 91.5,
+      "AverageDamage": 17200,
+      "KillDeathRatio": 4.15,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 85.2,
+      "ChampionRate": 27.2,
+      "WinCount": 298,
+      "AverageDamage": 16500,
+      "MaxDamagePerGame": 44000,
+      "AverageHeal": 3100,
+      "TotalEliminations": 3600,
+      "KillDeathRatio": 3.88,
+      "MaxKillsPerGame": 33,
+      "AverageKills": 8.15,
+      "TotalKills": 3800
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 14200,
+      "AverageData": 33.6
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 1,
+    "GameTime": 104.4,
+    "HeroScore": 4560,
+    "RankDescription": "湖南省第25名，距离湖南省榜还差200分",
+    "HistoricalHighestRank": "湖南省第10名",
+    "Recent12Games": {
+      "TopFiveRate": 88.78,
+      "AverageDamage": 16800,
+      "KillDeathRatio": 3.95,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 82.62,
+      "ChampionRate": 25.98,
+      "WinCount": 224,
+      "AverageDamage": 16000,
+      "MaxDamagePerGame": 41500,
+      "AverageHeal": 2900,
+      "TotalEliminations": 2850,
+      "KillDeathRatio": 3.68,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.75,
+      "TotalKills": 2980
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 11360,
+      "AverageData": 31.8
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 2,
+    "GameTime": 118.95,
+    "HeroScore": 4690,
+    "RankDescription": "湖南省第18名，距离全国榜还差180分",
+    "HistoricalHighestRank": "湖南省第8名",
+    "Recent12Games": {
+      "TopFiveRate": 90.07,
+      "AverageDamage": 17000,
+      "KillDeathRatio": 4.05,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 83.93,
+      "ChampionRate": 26.61,
+      "WinCount": 263,
+      "AverageDamage": 16200,
+      "MaxDamagePerGame": 42800,
+      "AverageHeal": 3000,
+      "TotalEliminations": 3200,
+      "KillDeathRatio": 3.78,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.95,
+      "TotalKills": 3400
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 12680,
+      "AverageData": 32.7
+    }
+  },
+  {
+    "HeroIndex": 0,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 3,
+    "GameTime": 99.18,
+    "HeroScore": 4431,
+    "RankDescription": "湖南省第32名，距离湖南省榜还差280分",
+    "HistoricalHighestRank": "湖南省第15名",
+    "Recent12Games": {
+      "TopFiveRate": 86.95,
+      "AverageDamage": 16500,
+      "KillDeathRatio": 3.825,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 81.08,
+      "ChampionRate": 25.18,
+      "WinCount": 208,
+      "AverageDamage": 15700,
+      "MaxDamagePerGame": 40500,
+      "AverageHeal": 2800,
+      "TotalEliminations": 2700,
+      "KillDeathRatio": 3.594,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.575,
+      "TotalKills": 2850
+    },
+    "SpecialSkill": {
+      "SkillName": "崔三娘特殊技能命中次数",
+      "SkillEffectData": 10640,
+      "AverageData": 30.96
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 0,
+    "GameTime": 145.8,
+    "HeroScore": 4850,
+    "RankDescription": "湖南省第6名，距离全国榜还差50分",
+    "HistoricalHighestRank": "全国第42名",
+    "Recent12Games": {
+      "TopFiveRate": 94.5,
+      "AverageDamage": 18500,
+      "KillDeathRatio": 4.65,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 88.2,
+      "ChampionRate": 29.8,
+      "WinCount": 345,
+      "AverageDamage": 17800,
+      "MaxDamagePerGame": 46500,
+      "AverageHeal": 2700,
+      "TotalEliminations": 4200,
+      "KillDeathRatio": 4.32,
+      "MaxKillsPerGame": 36,
+      "AverageKills": 8.95,
+      "TotalKills": 4500
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 15800,
+      "AverageData": 35.8
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 1,
+    "GameTime": 116.64,
+    "HeroScore": 4630,
+    "RankDescription": "湖南省第10名，距离全国榜还差180分",
+    "HistoricalHighestRank": "全国第68名",
+    "Recent12Games": {
+      "TopFiveRate": 91.85,
+      "AverageDamage": 18100,
+      "KillDeathRatio": 4.45,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 85.45,
+      "ChampionRate": 28.18,
+      "WinCount": 288,
+      "AverageDamage": 17300,
+      "MaxDamagePerGame": 44500,
+      "AverageHeal": 2500,
+      "TotalEliminations": 3550,
+      "KillDeathRatio": 4.10,
+      "MaxKillsPerGame": 34,
+      "AverageKills": 8.65,
+      "TotalKills": 3800
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 12950,
+      "AverageDamage": 34.32
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 2,
+    "GameTime": 131.22,
+    "HeroScore": 4760,
+    "RankDescription": "湖南省第8名，距离全国榜还差120分",
+    "HistoricalHighestRank": "全国第55名",
+    "Recent12Games": {
+      "TopFiveRate": 93.2,
+      "AverageDamage": 18300,
+      "KillDeathRatio": 4.55,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 86.8,
+      "ChampionRate": 29.0,
+      "WinCount": 320,
+      "AverageDamage": 17500,
+      "MaxDamagePerGame": 45500,
+      "AverageHeal": 2600,
+      "TotalEliminations": 3900,
+      "KillDeathRatio": 4.22,
+      "MaxKillsPerGame": 35,
+      "AverageKills": 8.80,
+      "TotalKills": 4150
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 14500,
+      "AverageData": 35.1
+    }
+  },
+  {
+    "HeroIndex": 1,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 3,
+    "GameTime": 105.0,
+    "HeroScore": 4570,
+    "RankDescription": "湖南省第18名，距离全国榜还差250分",
+    "HistoricalHighestRank": "全国第88名",
+    "Recent12Games": {
+      "TopFiveRate": 89.65,
+      "AverageDamage": 17800,
+      "KillDeathRatio": 4.275,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 83.85,
+      "ChampionRate": 27.52,
+      "WinCount": 272,
+      "AverageDamage": 17000,
+      "MaxDamagePerGame": 43500,
+      "AverageHeal": 2400,
+      "TotalEliminations": 3400,
+      "KillDeathRatio": 3.99,
+      "MaxKillsPerGame": 32,
+      "AverageKills": 8.475,
+      "TotalKills": 3650
+    },
+    "SpecialSkill": {
+      "SkillName": "顾清寒特殊技能命中次数",
+      "SkillEffectData": 12250,
+      "AverageData": 33.48
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 0,
+    "GameTime": 125.6,
+    "HeroScore": 4680,
+    "RankDescription": "湖南省第12名，距离全国榜还差220分",
+    "HistoricalHighestRank": "全国第85名",
+    "Recent12Games": {
+      "TopFiveRate": 92.5,
+      "AverageDamage": 17800,
+      "KillDeathRatio": 4.25,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 86.2,
+      "ChampionRate": 27.2,
+      "WinCount": 285,
+      "AverageDamage": 17100,
+      "MaxDamagePerGame": 43500,
+      "AverageHeal": 3100,
+      "TotalEliminations": 3700,
+      "KillDeathRatio": 3.98,
+      "MaxKillsPerGame": 33,
+      "AverageKills": 8.35,
+      "TotalKills": 3950
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 13800,
+      "AverageData": 34.2
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 1,
+    "GameTime": 100.48,
+    "HeroScore": 4460,
+    "RankDescription": "湖南省第25名，距离湖南省榜还差230分",
+    "HistoricalHighestRank": "湖南省第10名",
+    "Recent12Games": {
+      "TopFiveRate": 89.78,
+      "AverageDamage": 17400,
+      "KillDeathRatio": 4.05,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 83.62,
+      "ChampionRate": 25.98,
+      "WinCount": 229,
+      "AverageDamage": 16500,
+      "MaxDamagePerGame": 41000,
+      "AverageHeal": 2900,
+      "TotalEliminations": 2950,
+      "KillDeathRatio": 3.78,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.95,
+      "TotalKills": 3180
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 11140,
+      "AverageData": 32.64
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 2,
+    "GameTime": 115.04,
+    "HeroScore": 4590,
+    "RankDescription": "湖南省第18名，距离湖南省榜还差190分",
+    "HistoricalHighestRank": "湖南省第8名",
+    "Recent12Games": {
+      "TopFiveRate": 91.07,
+      "AverageDamage": 17600,
+      "KillDeathRatio": 4.15,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 84.93,
+      "ChampionRate": 26.61,
+      "WinCount": 258,
+      "AverageDamage": 16800,
+      "MaxDamagePerGame": 42000,
+      "AverageHeal": 3000,
+      "TotalEliminations": 3300,
+      "KillDeathRatio": 3.88,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 8.15,
+      "TotalKills": 3480
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 12440,
+      "AverageData": 33.48
+    }
+  },
+  {
+    "HeroIndex": 2,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 3,
+    "GameTime": 94.56,
+    "HeroScore": 4341,
+    "RankDescription": "湖南省第32名，距离湖南省榜还差320分",
+    "HistoricalHighestRank": "湖南省第15名",
+    "Recent12Games": {
+      "TopFiveRate": 87.45,
+      "AverageDamage": 17100,
+      "KillDeathRatio": 3.885,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 81.88,
+      "ChampionRate": 25.18,
+      "WinCount": 213,
+      "AverageDamage": 16300,
+      "MaxDamagePerGame": 39500,
+      "AverageHeal": 2800,
+      "TotalEliminations": 2800,
+      "KillDeathRatio": 3.678,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.725,
+      "TotalKills": 2950
+    },
+    "SpecialSkill": {
+      "SkillName": "哈迪特殊技能命中次数",
+      "SkillEffectData": 10460,
+      "AverageData": 31.56
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 0,
+    "GameTime": 115.2,
+    "HeroScore": 4520,
+    "RankDescription": "湖南省第20名，距离全国榜还差350分",
+    "HistoricalHighestRank": "全国第110名",
+    "Recent12Games": {
+      "TopFiveRate": 90.2,
+      "AverageDamage": 16800,
+      "KillDeathRatio": 3.95,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 84.8,
+      "ChampionRate": 25.8,
+      "WinCount": 265,
+      "AverageDamage": 16100,
+      "MaxDamagePerGame": 42500,
+      "AverageHeal": 5300,
+      "TotalEliminations": 3200,
+      "KillDeathRatio": 3.72,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 7.65,
+      "TotalKills": 3450
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 12800,
+      "AverageData": 32.8
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 1,
+    "GameTime": 92.16,
+    "HeroScore": 4300,
+    "RankDescription": "湖南省第32名，距离湖南省榜还差320分",
+    "HistoricalHighestRank": "湖南省第22名",
+    "Recent12Games": {
+      "TopFiveRate": 87.45,
+      "AverageDamage": 16400,
+      "KillDeathRatio": 3.75,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 82.22,
+      "ChampionRate": 24.58,
+      "WinCount": 211,
+      "AverageDamage": 15700,
+      "MaxDamagePerGame": 40000,
+      "AverageHeal": 5100,
+      "TotalEliminations": 2550,
+      "KillDeathRatio": 3.52,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.35,
+      "TotalKills": 2800
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 10300,
+      "AverageData": 31.2
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 2,
+    "GameTime": 104.64,
+    "HeroScore": 4430,
+    "RankDescription": "湖南省第25名，距离湖南省榜还差280分",
+    "HistoricalHighestRank": "湖南省第18名",
+    "Recent12Games": {
+      "TopFiveRate": 88.88,
+      "AverageDamage": 16600,
+      "KillDeathRatio": 3.85,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 83.55,
+      "ChampionRate": 25.18,
+      "WinCount": 238,
+      "AverageDamage": 15900,
+      "MaxDamagePerGame": 41200,
+      "AverageHeal": 5200,
+      "TotalEliminations": 2900,
+      "KillDeathRatio": 3.62,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.50,
+      "TotalKills": 3150
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 11600,
+      "AverageData": 32.16
+    }
+  },
+  {
+    "HeroIndex": 3,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 3,
+    "GameTime": 87.66,
+    "HeroScore": 4191,
+    "RankDescription": "湖南省第40名，距离湖南省榜还差400分",
+    "HistoricalHighestRank": "湖南省第28名",
+    "Recent12Games": {
+      "TopFiveRate": 85.55,
+      "AverageDamage": 16000,
+      "KillDeathRatio": 3.645,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 80.48,
+      "ChampionRate": 23.88,
+      "WinCount": 196,
+      "AverageDamage": 15400,
+      "MaxDamagePerGame": 39200,
+      "AverageHeal": 5000,
+      "TotalEliminations": 2400,
+      "KillDeathRatio": 3.438,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 7.275,
+      "TotalKills": 2650
+    },
+    "SpecialSkill": {
+      "SkillName": "胡桃特殊技能命中次数",
+      "SkillEffectData": 9620,
+      "AverageData": 30.48
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 0,
+    "GameTime": 105.8,
+    "HeroScore": 4420,
+    "RankDescription": "湖南省第25名，距离全国榜还差450分",
+    "HistoricalHighestRank": "全国第135名",
+    "Recent12Games": {
+      "TopFiveRate": 89.2,
+      "AverageDamage": 16500,
+      "KillDeathRatio": 3.85,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 83.8,
+      "ChampionRate": 25.2,
+      "WinCount": 245,
+      "AverageDamage": 15800,
+      "MaxDamagePerGame": 41500,
+      "AverageHeal": 3900,
+      "TotalEliminations": 3000,
+      "KillDeathRatio": 3.62,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.45,
+      "TotalKills": 3250
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 11800,
+      "AverageData": 31.8
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 1,
+    "GameTime": 84.64,
+    "HeroScore": 4200,
+    "RankDescription": "湖南省第35名，距离湖南省榜还差380分",
+    "HistoricalHighestRank": "湖南省第25名",
+    "Recent12Games": {
+      "TopFiveRate": 86.35,
+      "AverageDamage": 16100,
+      "KillDeathRatio": 3.65,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 81.22,
+      "ChampionRate": 23.88,
+      "WinCount": 200,
+      "AverageDamage": 15400,
+      "MaxDamagePerGame": 39500,
+      "AverageHeal": 3700,
+      "TotalEliminations": 2450,
+      "KillDeathRatio": 3.42,
+      "MaxKillsPerGame": 28,
+      "AverageKills": 7.15,
+      "TotalKills": 2950
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 9800,
+      "AverageData": 30.2
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 2,
+    "GameTime": 95.3,
+    "HeroScore": 4330,
+    "RankDescription": "湖南省第30名，距离湖南省榜还差320分",
+    "HistoricalHighestRank": "湖南省第22名",
+    "Recent12Games": {
+      "TopFiveRate": 87.78,
+      "AverageDamage": 16300,
+      "KillDeathRatio": 3.75,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 82.55,
+      "ChampionRate": 24.58,
+      "WinCount": 225,
+      "AverageDamage": 15600,
+      "MaxDamagePerGame": 40500,
+      "AverageHeal": 3800,
+      "TotalEliminations": 2750,
+      "KillDeathRatio": 3.52,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.30,
+      "TotalKills": 3100
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 10800,
+      "AverageData": 31.2
+    }
+  },
+  {
+    "HeroIndex": 4,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 3,
+    "GameTime": 78.84,
+    "HeroScore": 4091,
+    "RankDescription": "湖南省第42名，距离湖南省榜还差420分",
+    "HistoricalHighestRank": "湖南省第30名",
+    "Recent12Games": {
+      "TopFiveRate": 84.15,
+      "AverageDamage": 15800,
+      "KillDeathRatio": 3.555,
+      "IsTop1_5Percent": false
+    },
+    "AllGames": {
+      "TopFiveRate": 79.88,
+      "ChampionRate": 23.22,
+      "WinCount": 189,
+      "AverageDamage": 15200,
+      "MaxDamagePerGame": 38500,
+      "AverageHeal": 3600,
+      "TotalEliminations": 2350,
+      "KillDeathRatio": 3.348,
+      "MaxKillsPerGame": 27,
+      "AverageKills": 7.035,
+      "TotalKills": 2800
+    },
+    "SpecialSkill": {
+      "SkillName": "胡为特殊技能命中次数",
+      "SkillEffectData": 9140,
+      "AverageData": 29.76
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 0,
+    "GameTime": 135.8,
+    "HeroScore": 4680,
+    "RankDescription": "湖南省第12名，距离全国榜还差200分",
+    "HistoricalHighestRank": "全国第82名",
+    "Recent12Games": {
+      "TopFiveRate": 92.5,
+      "AverageDamage": 17500,
+      "KillDeathRatio": 4.25,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 86.8,
+      "ChampionRate": 27.2,
+      "WinCount": 315,
+      "AverageDamage": 16800,
+      "MaxDamagePerGame": 43500,
+      "AverageHeal": 4300,
+      "TotalEliminations": 3900,
+      "KillDeathRatio": 3.98,
+      "MaxKillsPerGame": 33,
+      "AverageKills": 8.35,
+      "TotalKills": 4150
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 14800,
+      "AverageData": 34.8
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 1,
+    "GameTime": 108.64,
+    "HeroScore": 4460,
+    "RankDescription": "湖南省第22名，距离湖南省榜还差180分",
+    "HistoricalHighestRank": "湖南省第8名",
+    "Recent12Games": {
+      "TopFiveRate": 89.78,
+      "AverageDamage": 17100,
+      "KillDeathRatio": 4.05,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 84.22,
+      "ChampionRate": 25.98,
+      "WinCount": 250,
+      "AverageDamage": 16300,
+      "MaxDamagePerGame": 41000,
+      "AverageHeal": 4100,
+      "TotalEliminations": 3200,
+      "KillDeathRatio": 3.78,
+      "MaxKillsPerGame": 30,
+      "AverageKills": 7.95,
+      "TotalKills": 3350
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 12100,
+      "AverageData": 33.12
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 2,
+    "GameTime": 125.5,
+    "HeroScore": 4590,
+    "RankDescription": "湖南省第18名，距离全国榜还差250分",
+    "HistoricalHighestRank": "全国第90名",
+    "Recent12Games": {
+      "TopFiveRate": 91.07,
+      "AverageDamage": 17300,
+      "KillDeathRatio": 4.15,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 85.55,
+      "ChampionRate": 26.61,
+      "WinCount": 285,
+      "AverageDamage": 16500,
+      "MaxDamagePerGame": 42000,
+      "AverageHeal": 4200,
+      "TotalEliminations": 3600,
+      "KillDeathRatio": 3.88,
+      "MaxKillsPerGame": 31,
+      "AverageKills": 8.15,
+      "TotalKills": 3800
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 13600,
+      "AverageData": 34.08
+    }
+  },
+  {
+    "HeroIndex": 5,
+    "GameMode": 0,
+    "TeamSize": 2,
+    "SeasonType": 3,
+    "GameTime": 103.74,
+    "HeroScore": 4341,
+    "RankDescription": "湖南省第30名，距离湖南省榜还差300分",
+    "HistoricalHighestRank": "湖南省第15名",
+    "Recent12Games": {
+      "TopFiveRate": 87.45,
+      "AverageDamage": 16800,
+      "KillDeathRatio": 3.885,
+      "IsTop1_5Percent": true
+    },
+    "AllGames": {
+      "TopFiveRate": 82.98,
+      "ChampionRate": 25.42,
+      "WinCount": 234,
+      "AverageDamage": 16000,
+      "MaxDamagePerGame": 40000,
+      "AverageHeal": 4000,
+      "TotalEliminations": 3050,
+      "KillDeathRatio": 3.678,
+      "MaxKillsPerGame": 29,
+      "AverageKills": 7.875,
+      "TotalKills": 3250
+    },
+    "SpecialSkill": {
+      "SkillName": "季莹莹特殊技能命中次数",
+      "SkillEffectData": 11460,
+      "AverageData": 32.04
+    }
+  }
+]

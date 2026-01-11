@@ -18,6 +18,9 @@
 	  <None Update="Datas\Jsons\EmailItemData.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
+	  <None Update="Datas\Jsons\HeroDataModel.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
 	  <None Update="Datas\Jsons\SocialTagMicData.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>

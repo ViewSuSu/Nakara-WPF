@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Resources;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;

@@ -110,6 +110,8 @@
 	  <None Remove="Image\HeroStandArt\岳山.png" />
 	  <None Remove="Image\HeroStandArt\胡为.png" />
 	  <None Remove="Image\HeroStandArt\胡桃.png" />
+	  <None Remove="Image\Hero\万钧.png" />
+	  <None Remove="Image\Hero\刘炼.png" />
 	  <None Remove="Image\Hero\哈迪.png" />
 	  <None Remove="Image\Hero\天海.png" />
 	  <None Remove="Image\Hero\妖刀姬.png" />
@@ -117,7 +119,10 @@
 	  <None Remove="Image\Hero\宁红叶.png" />
 	  <None Remove="Image\Hero\岳山.png" />
 	  <None Remove="Image\Hero\崔三娘.png" />
+	  <None Remove="Image\Hero\席拉.png" />
+	  <None Remove="Image\Hero\张起灵.png" />
 	  <None Remove="Image\Hero\无尘.png" />
+	  <None Remove="Image\Hero\李寻欢.png" />
 	  <None Remove="Image\Hero\武田信忠.png" />
 	  <None Remove="Image\Hero\殷紫萍.png" />
 	  <None Remove="Image\Hero\沈妙.png" />
@@ -126,6 +131,7 @@
 	  <None Remove="Image\Hero\玉玲珑.png" />
 	  <None Remove="Image\Hero\胡为.png" />
 	  <None Remove="Image\Hero\胡桃.png" />
+	  <None Remove="Image\Hero\蓝梦.png" />
 	  <None Remove="Image\Hero\迦南.png" />
 	  <None Remove="Image\Hero\顾清寒.png" />
 	  <None Remove="Image\Hero\魏轻.png" />
@@ -277,6 +283,12 @@
 	  <Resource Include="Image\Email\4.png" />
 	  <Resource Include="Image\Email\5.png" />
 	  <Resource Include="Image\Email\Icon.png" />
+	  <Resource Include="Image\Hero\万钧.png" />
+	  <Resource Include="Image\Hero\刘炼.png" />
+	  <Resource Include="Image\Hero\席拉.png" />
+	  <Resource Include="Image\Hero\张起灵.png" />
+	  <Resource Include="Image\Hero\李寻欢.png" />
+	  <Resource Include="Image\Hero\蓝梦.png" />
 	  <Resource Include="Image\SocialTag\background.png" />
 	  <Resource Include="Image\SocialTag\Icon1.png" />
 	  <Resource Include="Image\SocialTag\Icon2.png" />
